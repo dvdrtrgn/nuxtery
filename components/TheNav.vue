@@ -2,17 +2,17 @@
 </script>
 
 <template>
-  <nav data-main-nav>
-    <NuxtLink to="/">
-      home
-    </NuxtLink>
-    <NuxtLink to="/tv?foo">
-      tv
-    </NuxtLink>
-    <NuxtLink to="/mpls/2022/02/01">
-      market
-    </NuxtLink>
-  </nav>
+    <nav data-main-nav>
+        <NuxtLink to="/">
+            home
+        </NuxtLink>
+        <NuxtLink to="/tv?foo">
+            tv
+        </NuxtLink>
+        <NuxtLink to="/mpls/2022/02/01">
+            market
+        </NuxtLink>
+    </nav>
 </template>
 
 <style lang="scss">

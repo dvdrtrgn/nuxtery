@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const vitals = computed(() => {
-  const { name, path, query } = useRoute()
-  return { name, path, query }
-})
+    const { name, path, query } = useRoute();
+    return { name, path, query };
+});
 </script>
 
 <template>
-  <footer>
-    <p>{{ vitals }}</p>
-  </footer>
+    <footer>
+        <p>{{ vitals }}</p>
+    </footer>
 </template>
 
 <style lang="scss">

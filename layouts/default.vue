@@ -2,11 +2,11 @@
 </script>
 
 <template>
-  <div data-template>
-    <TheNav />
-    <slot />
-    <TheFooter />
-  </div>
+    <div data-template>
+        <TheNav />
+        <slot />
+        <TheFooter />
+    </div>
 </template>
 
 <style lang="scss">
