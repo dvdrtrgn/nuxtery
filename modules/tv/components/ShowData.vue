@@ -12,7 +12,8 @@ defineProps({
         <img
             :src="show.image?.medium || './show.jpg'"
             :alt="show.name"
-            style="float:left; margin: 1em 3em 1em 1em;"
+            width="210"
+            height="295"
         >
         <ul data-details>
             <ShowDataLine
@@ -25,3 +26,11 @@ defineProps({
         <hr>
     </div>
 </template>
+
+<style>
+[data-show] img {
+    background: url(./show.jpg) no-repeat;
+    float: left;
+    margin: 1em 2em 1em 1em;
+}
+</style>
