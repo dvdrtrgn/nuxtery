@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div>
+    <div modules-list>
         <NuxtLink to="/tv">
             <h1>tv</h1>
         </NuxtLink>

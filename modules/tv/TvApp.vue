@@ -1,14 +1,23 @@
 <script setup lang="ts">
 import ShowList from './components/ShowList.vue';
 
-const searchText = ref('');
+const route = useRoute();
+const router = useRouter();
+const searchText = ref(route.query.show || 'barry');
 const list = ref([]);
 
 async function searchForStuff () {
     const url = `/api/proxy-tvmaze?search=${searchText.value}`;
 
+    router.replace({ query: { show: searchText.value } });
     list.value = await $fetch(url);
 }
+
+onMounted(() => {
+    if (searchText.value) {
+        searchForStuff();
+    }
+});
 </script>
 
 <template>

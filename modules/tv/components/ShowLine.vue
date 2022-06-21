@@ -13,7 +13,7 @@ const descAsDate = computed(() => {
 </script>
 
 <template>
-    <li>
+    <li show-line>
         <b>{{ name }}: </b>
         <span>{{ name !== 'updated' ? desc : descAsDate }}</span>
     </li>

@@ -6,7 +6,7 @@
         <NuxtLink to="/">
             home
         </NuxtLink>
-        <NuxtLink to="/tv?foo">
+        <NuxtLink to="/tv">
             tv
         </NuxtLink>
         <NuxtLink to="/mpls/2022/02/01">
