@@ -1,3 +1,5 @@
+export { default as listify } from './makeListFromObject.ts';
+
 export function secondsToDate (str = '') {
     const num = Number(str + '000');
 

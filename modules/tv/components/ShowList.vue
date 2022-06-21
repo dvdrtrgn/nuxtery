@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import listify from '../utils/makeListFromObject';
-import ShowDataLine from './ShowDataLine.vue';
+import { listify } from '../utils';
+import ShowLine from './ShowLine.vue';
 
 defineProps({
     show: { type: Object, required: true },
@@ -8,15 +8,15 @@ defineProps({
 </script>
 
 <template>
-    <div data-show>
+    <div show-list>
         <img
             :src="show.image?.medium || './show.jpg'"
             :alt="show.name"
             width="210"
             height="295"
         >
-        <ul data-details>
-            <ShowDataLine
+        <ul>
+            <ShowLine
                 v-for="detail in listify(show)"
                 :key="detail.order"
                 :name="detail.name"
@@ -28,7 +28,7 @@ defineProps({
 </template>
 
 <style>
-[data-show] img {
+[show-list] img {
     background: url(./show.jpg) no-repeat;
     float: left;
     margin: 1em 2em 1em 1em;

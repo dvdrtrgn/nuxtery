@@ -1,4 +1,4 @@
-import useProxy from '~~/server/utils/simProxy';
+import useProxy from '~/server/utils/simProxy';
 
 export default useProxy({
     queryParam: 'search',

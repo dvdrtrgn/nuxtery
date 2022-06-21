@@ -1,17 +1,14 @@
 <script setup lang="ts">
-
 const route = useRoute();
-const [year, month, day] = route.params.date;
-const date = { year, month, day };
 
-const { path, query, name } = route;
+const [year, month, day] = route.params.date;
+
 </script>
 
 <template>
     <div>
-        market: <b>{{ $route.params.market }}</b>
-        <pre>Date: {{ date }}</pre>
-        <pre>{{ { name,path, query } }}</pre>
-        <p>params {{ route.params }}</p>
+        <pre>Market: {{ $route.params.market }}</pre>
+
+        <pre>Date: {{ { year, month, day } }}</pre>
     </div>
 </template>

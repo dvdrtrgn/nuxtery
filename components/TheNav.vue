@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <nav data-main-nav>
+    <nav the-nav>
         <NuxtLink to="/">
             home
         </NuxtLink>
@@ -16,7 +16,7 @@
 </template>
 
 <style lang="scss">
-[data-main-nav] {
+[the-nav] {
     background-color: #eee;
     display: flex;
     font-family: sans-serif;
