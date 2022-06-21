@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div data-template>
+    <div default-template>
         <TheNav />
         <slot />
         <TheFooter />

@@ -1,8 +1,9 @@
 const PRIMITIVES = ['string', 'number', 'bigint', 'boolean', 'undefined', 'symbol', 'null'];
 const isPrimitive = (arg: any) => PRIMITIVES.includes(typeof arg);
+
 let SOMEDIV: HTMLDivElement; // make later
 
-export function sanitizeHTML (html: string) {
+function sanitizeHTML (html: string) {
     SOMEDIV = SOMEDIV || window.document.createElement('div');
     SOMEDIV.innerHTML = html;
 

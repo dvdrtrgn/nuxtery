@@ -12,25 +12,29 @@ defineProps({
         <img
             :src="show.image?.medium || './show.jpg'"
             :alt="show.name"
-            width="210"
             height="295"
+            width="210"
         >
         <ul>
             <ShowLine
                 v-for="detail in listify(show)"
                 :key="detail.order"
-                :name="detail.name"
                 :desc="detail.desc"
+                :name="detail.name"
             />
         </ul>
-        <hr>
     </div>
 </template>
 
-<style>
-[show-list] img {
-    background: url(./show.jpg) no-repeat;
-    float: left;
-    margin: 1em 2em 1em 1em;
+<style lang="scss">
+[show-list] {
+    border-bottom: 1px solid silver;
+    display: flex;
+
+    img {
+        background: url(./show.jpg) no-repeat;
+        float: left;
+        margin: 1em;
+    }
 }
 </style>

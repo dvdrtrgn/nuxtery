@@ -14,7 +14,7 @@ defineProps({
 
 <template>
     <div :pre-text="before" :post-text="after" dev-only>
-        |– <slot>??</slot> –|
+        <slot>??</slot>
     </div>
 </template>
 
@@ -24,7 +24,7 @@ div[dev-only] {
 }
 .dev-active div[dev-only] {
     background-color: rgba(steelblue, 0.1);
-    color: gray;
+    color: red;
     display: block;
     font-size: 80%;
     height: 1.2rem;
@@ -33,13 +33,11 @@ div[dev-only] {
 
     &:after {
         content: attr(post-text);
-        color: red;
         position: absolute;
         right: 0;
     }
     &:before {
         content: attr(pre-text);
-        color: red;
         position: absolute;
         left: 0;
     }

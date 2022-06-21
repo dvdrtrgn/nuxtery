@@ -12,19 +12,21 @@ const vitals = computed(() => {
 </template>
 
 <style lang="scss">
-$footie: 7vh;
+html {
+    $footie: 7vh;
 
-body {
-  margin-bottom: $footie;
-}
+    body {
+        margin-bottom: $footie * 2;
+    }
 
-footer {
-    background-color: white;
-    box-shadow: 0 0 1em black;
-    bottom: 0;
-    height: $footie;
-    left: 0;
-    position: fixed;
-    width: 100%;
+    footer {
+        background-color: white;
+        box-shadow: 0 0 1em black;
+        bottom: 0;
+        height: $footie;
+        left: 0;
+        position: fixed;
+        width: 100%;
+    }
 }
 </style>

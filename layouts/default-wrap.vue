@@ -4,14 +4,14 @@ import DefaultVue from './default.vue';
 
 import AnnoText from './components/AnnoText.vue';
 import AnnoToggle from './components/AnnoToggle.vue';
-import DateSlug from './components/DateSlug.vue';
+import AlertSlug from './components/AlertSlug.vue';
 
 const toggle = ref(false);
 </script>
 
 <template>
     <div id="DateTemplate" :class="{ 'dev-active': toggle }">
-        <DateSlug />
+        <AlertSlug />
 
         <AnnoText before="begin">DefaultVue layout</AnnoText>
         <DefaultVue>
