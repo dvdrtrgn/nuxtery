@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import TV from '~/modules/tv/TvApp';
+import TV from '~/modules/tv/TvApp.vue';
 </script>
 
 <template>
     <TV />
 </template>
 
-<style></style>
+<style lang="scss">
+// foo
+</style>

@@ -12,3 +12,7 @@ const [year, month, day] = route.params.date;
         <pre>Date: {{ { year, month, day } }}</pre>
     </div>
 </template>
+
+<style lang="scss">
+// foo
+</style>

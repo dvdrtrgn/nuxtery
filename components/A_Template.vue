@@ -1,13 +1,12 @@
 <script setup lang="ts">
-definePageMeta({
-    layout: 'default-wrap',
+
+defineProps({
 });
+
 </script>
 
 <template>
-    <div>
-        <h1>hello world</h1>
-    </div>
+    <slot />
 </template>
 
 <style lang="scss">

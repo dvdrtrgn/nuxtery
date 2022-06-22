@@ -6,6 +6,9 @@
         <NuxtLink to="/">
             home
         </NuxtLink>
+        <NuxtLink to="/article">
+            article
+        </NuxtLink>
         <NuxtLink to="/tv">
             tv
         </NuxtLink>
@@ -18,6 +21,7 @@
 <style lang="scss">
 [the-nav] {
     background-color: #eee;
+    box-shadow: 0 0 1em silver;
     display: flex;
     font-family: sans-serif;
 
