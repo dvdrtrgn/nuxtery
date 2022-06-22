@@ -19,69 +19,81 @@ onMounted(() => {
 <template>
     <div data-article>
         <h1>Article Data</h1>
-
-        <div>
+        <div dev-inset>
             <PreCollapse :data="articleData">
-                Full object
+                <b>All Data</b>
             </PreCollapse>
         </div>
 
-        <AuthorList :authors="articleData.authors">
-            <h2>authors</h2>
-        </AuthorList>
-
-        <div>
-            <h2>content</h2>
-            <PreCollapse :data="articleData.content">
-                ex. {{ articleData.content[0].content_html }}
-            </PreCollapse>
-        </div>
-        <div>
-            <h2>journal</h2>
+        <!-- JOURNAL -->
+        <div dev-inset>
             <PreCollapse :data="articleData.journal">
+                <b>journal: </b>
                 ex. {{ articleData.journal.journal_name }}
             </PreCollapse>
         </div>
-        <div>
-            <h2>leadins</h2>
+
+        <!-- LEADINS -->
+        <div dev-inset>
             <PreCollapse :data="articleData.leadins">
+                <b>leadins: </b>
                 ex. {{ articleData.leadins.data[0].group_class }}
             </PreCollapse>
         </div>
-        <div>
-            <h2>market</h2>
+
+        <!-- MARKET -->
+        <div dev-inset>
             <PreCollapse :data="articleData.market">
+                <b>market: </b>
                 ex. {{ articleData.market.market_name }}
             </PreCollapse>
         </div>
-        <div>
-            <h2>metadata</h2>
-            <PreCollapse :data="articleData.metadata">
-                # items {{ articleData.metadata.data.length }}
-            </PreCollapse>
+
+        <!-- AUTHORS -->
+        <div dev-inset>
+            <AuthorList :authors="articleData.authors">
+                <h2>authors</h2>
+            </AuthorList>
         </div>
 
-        <div>
-            <h2>randos</h2>
+        <!-- CONTENT -->
+        <div dev-inset>
+            <div dev-grid>
+                <b>content: </b>
+                <PreCollapse :data="articleData.content">
+                    # items {{ articleData.content.length }}
+                </PreCollapse>
+            </div>
+            <ContentDump :data="articleData.content">
+                <!--  -->
+            </ContentDump>
+        </div>
+
+        <h2>Other</h2>
+        <!-- RANDOS -->
+        <div dev-inset>
             <PreCollapse :data="looseItems">
+                <b>randos: </b>
                 # items {{ looseItems.length }}
+            </PreCollapse>
+        </div>
+        <!-- METADATA -->
+        <div dev-inset>
+            <PreCollapse :data="articleData.metadata">
+                <b>metadata: </b>
+                # items {{ articleData.metadata.data.length }}
             </PreCollapse>
         </div>
     </div>
 </template>
 
 <style lang="scss">
-[dev-grid] {
-    align-items: center;
-    display: grid;
-    grid-auto-flow: column;
-}
 [data-article] {
     h2 {
-        margin-bottom: 0;
+        margin: 0;
         text-transform: capitalize;
     }
-    .dev-inset {
+    [dev-inset] {
         // border: 1px solid red;
         box-shadow: 0 0 0.5rem inset silver;
         // margin: 1em;

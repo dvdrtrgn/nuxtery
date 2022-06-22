@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-    <details class="dev-inset">
+    <details>
         <summary><slot /></summary>
         <pre>{{ data }}</pre>
     </details>
