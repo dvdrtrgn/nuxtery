@@ -8,10 +8,9 @@ defineProps({
 
 <template>
     <slot />
-    <b>
-        {{ author.data.contact_description }}
-    </b>
-    <pre>
-        {{ author }}
-    </pre>
+    <PreCollapse :data="author">
+        <b>
+            {{ author.data.contact_description }}
+        </b>
+    </PreCollapse>
 </template>

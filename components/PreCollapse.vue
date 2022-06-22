@@ -1,0 +1,22 @@
+<script setup lang="ts">
+
+defineProps({
+    data: { type: Object, required: true },
+});
+
+</script>
+
+<template>
+    <details>
+        <summary><slot /></summary>
+        <pre>{{ data }}</pre>
+    </details>
+</template>
+
+<style lang="scss">
+// details {
+//     summary pre {
+//         display: none;
+//     }
+// }
+</style>
