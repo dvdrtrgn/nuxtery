@@ -12,32 +12,52 @@ useHead(headData);
 </script>
 
 <template>
-    <div>
+    <div data-article>
         <h1>Article Data</h1>
 
         <AuthorList :authors="articleData.authors" />
 
-        <pre data-content>
+        <div data-content>
             <h2>content</h2>
-            {{ articleData.content }}
-        </pre>
-        <pre data-journal>
+            <PreCollapse :data="articleData.content">
+                ex. {{ articleData.content[0].content_html }}
+            </PreCollapse>
+        </div>
+        <div data-journal>
             <h2>journal</h2>
-            {{ articleData.journal }}
-        </pre>
-        <pre data-leadins>
+            <PreCollapse :data="articleData.journal">
+                ex. {{ articleData.journal.journal_name }}
+            </PreCollapse>
+        </div>
+        <div data-leadins>
             <h2>leadins</h2>
-            {{ articleData.leadins }}
-        </pre>
-        <pre data-market>
+            <PreCollapse :data="articleData.leadins">
+                ex. {{ articleData.leadins.data[0].group_class }}
+            </PreCollapse>
+        </div>
+        <div data-market>
             <h2>market</h2>
-            {{ articleData.market }}
-        </pre>
-        <pre data-metadata>
+            <PreCollapse :data="articleData.market">
+                ex. {{ articleData.market.market_name }}
+            </PreCollapse>
+        </div>
+        <div data-metadata>
             <h2>metadata</h2>
-            {{ articleData.metadata }}
-        </pre>
+            <PreCollapse :data="articleData.metadata">
+                items # {{ articleData.metadata.data.length }}
+            </PreCollapse>
+        </div>
     </div>
 </template>
 
-<style></style>
+<style lang="scss">
+[data-article] {
+    > div {
+        // border: 1px solid red;
+        margin: 1em;
+        overflow: scroll;
+        padding: 1em;
+        box-shadow: 0 0 1em inset silver;
+    }
+}
+</style>
