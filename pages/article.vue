@@ -18,9 +18,8 @@ onMounted(() => {
 
 <template>
     <div data-article>
-        <div dev-grid>
+        <div dev-flex>
             <h1>Article Data</h1>
-
             <div dev-inset>
                 <PreCollapse :data="articleData">
                     <b>All Data</b>
@@ -28,9 +27,8 @@ onMounted(() => {
             </div>
         </div>
 
-        <!-- JOURNAL / MARKET -->
+        <h2>JOURNAL / MARKET</h2>
         <div dev-inset>
-            <h2>journal/market</h2>
             <PreCollapse :data="articleData.journal">
                 <b>journal: </b>
                 ex. {{ articleData.journal.journal_name }}
@@ -41,23 +39,15 @@ onMounted(() => {
             </PreCollapse>
         </div>
 
-        <!-- AUTHORS -->
-        <div dev-inset>
-            <AuthorList :authors="articleData.authors">
-                <h2>authors</h2>
-            </AuthorList>
-        </div>
-
         <!-- LEADINS -->
-        <div dev-inset>
-            <PreCollapse :data="articleData.leadins">
-                <b>leadins: </b>
-                ex. {{ articleData.leadins.data[0].group_class }}
-            </PreCollapse>
-        </div>
+        <PreCollapse dev-inset :data="articleData.leadins">
+            <b>leadins: </b>
+            ex. {{ articleData.leadins.data[0].group_class }}
+        </PreCollapse>
 
-        <!-- CONTENT -->
+        <h2>AUTHORS / CONTENT </h2>
         <div dev-inset>
+            <AuthorList :authors="articleData.authors" />
             <div dev-grid>
                 <b>content: </b>
                 <PreCollapse :data="articleData.content">
@@ -67,16 +57,12 @@ onMounted(() => {
             <ContentDump :data="articleData.content" />
         </div>
 
-        <h2>Other</h2>
-        <!-- RANDOS -->
+        <h2>RANDOS / METADATA</h2>
         <div dev-inset>
             <PreCollapse :data="looseItems">
                 <b>randos: </b>
                 # items {{ looseItems.length }}
             </PreCollapse>
-        </div>
-        <!-- METADATA -->
-        <div dev-inset>
             <PreCollapse :data="articleData.metadata">
                 <b>metadata: </b>
                 # items {{ articleData.metadata.data.length }}
@@ -87,8 +73,9 @@ onMounted(() => {
 
 <style lang="scss">
 [data-article] {
-    h2 {
-        margin: 0;
+    h1,h2,h3 {
+        margin: 1rem;
+        text-align: center;
         text-transform: capitalize;
     }
 }

@@ -3,7 +3,9 @@
 
 <template>
     <div default-template>
-        <TheNav />
+        <header>
+            <TheNav />
+        </header>
         <slot />
         <TheFooter />
     </div>
@@ -13,8 +15,12 @@
 body {
     margin: 0;
 }
+[dev-flex] {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 [dev-grid] {
-    // align-items: center;
     border-bottom: 1px dotted silver;
     display: grid;
     grid-auto-flow: column;
@@ -24,10 +30,32 @@ body {
     }
 }
 [dev-inset] {
-    // border: 1px solid red;
     box-shadow: 0 0 0.5rem inset silver;
-    // margin: 1em;
     overflow: scroll;
     padding: 1em;
 }
+html {
+    $headerHeight: 4vh;
+    $footerHeight: 4vh;
+
+    body {
+        margin-top: $headerHeight * 1;
+        margin-bottom: $footerHeight * 1.2;
+    }
+    header, footer {
+        left: 0;
+        position: fixed;
+        width: 100%;
+    }
+
+    header {
+        top: 0;
+        height: $headerHeight;
+    }
+    footer {
+        bottom: 0;
+        height: $footerHeight;
+    }
+}
+
 </style>

@@ -7,26 +7,13 @@ const vitals = computed(() => {
 
 <template>
     <footer>
-        <p>{{ vitals }}</p>
+        <code>{{ vitals }}</code>
     </footer>
 </template>
 
 <style lang="scss">
-html {
-    $footie: 7vh;
-
-    body {
-        margin-bottom: $footie * 2;
-    }
-
-    footer {
-        background-color: white;
-        box-shadow: 0 0 1em black;
-        bottom: 0;
-        height: $footie;
-        left: 0;
-        position: fixed;
-        width: 100%;
-    }
+footer {
+    background-color: #eee;
+    box-shadow: 0 0 1em silver;
 }
 </style>
