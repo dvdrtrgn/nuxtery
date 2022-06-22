@@ -1,8 +1,14 @@
 <script setup lang="ts">
+definePageMeta({ layout: 'default' });
 
 const url = '/api/article';
 const articleData = ref(await $fetch(url) as any);
 
+const headData = {
+    title: 'TITLE: ' + articleData.value.title,
+};
+
+useHead(headData);
 </script>
 
 <template>
