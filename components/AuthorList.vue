@@ -10,7 +10,7 @@ defineProps({
     <div>
         <slot />
         <AuthorSingle v-for="(author, id) in authors" :key="id" :author="author">
-            <h3>author {{ id }}</h3>
+            <b>author: {{ id }}</b>
         </AuthorSingle>
     </div>
 </template>

@@ -18,31 +18,23 @@ onMounted(() => {
 
 <template>
     <div data-article>
-        <h1>Article Data</h1>
-        <div dev-inset>
-            <PreCollapse :data="articleData">
-                <b>All Data</b>
-            </PreCollapse>
+        <div dev-grid>
+            <h1>Article Data</h1>
+
+            <div dev-inset>
+                <PreCollapse :data="articleData">
+                    <b>All Data</b>
+                </PreCollapse>
+            </div>
         </div>
 
-        <!-- JOURNAL -->
+        <!-- JOURNAL / MARKET -->
         <div dev-inset>
+            <h2>journal/market</h2>
             <PreCollapse :data="articleData.journal">
                 <b>journal: </b>
                 ex. {{ articleData.journal.journal_name }}
             </PreCollapse>
-        </div>
-
-        <!-- LEADINS -->
-        <div dev-inset>
-            <PreCollapse :data="articleData.leadins">
-                <b>leadins: </b>
-                ex. {{ articleData.leadins.data[0].group_class }}
-            </PreCollapse>
-        </div>
-
-        <!-- MARKET -->
-        <div dev-inset>
             <PreCollapse :data="articleData.market">
                 <b>market: </b>
                 ex. {{ articleData.market.market_name }}
@@ -56,6 +48,14 @@ onMounted(() => {
             </AuthorList>
         </div>
 
+        <!-- LEADINS -->
+        <div dev-inset>
+            <PreCollapse :data="articleData.leadins">
+                <b>leadins: </b>
+                ex. {{ articleData.leadins.data[0].group_class }}
+            </PreCollapse>
+        </div>
+
         <!-- CONTENT -->
         <div dev-inset>
             <div dev-grid>
@@ -64,9 +64,7 @@ onMounted(() => {
                     # items {{ articleData.content.length }}
                 </PreCollapse>
             </div>
-            <ContentDump :data="articleData.content">
-                <!--  -->
-            </ContentDump>
+            <ContentDump :data="articleData.content" />
         </div>
 
         <h2>Other</h2>
@@ -92,13 +90,6 @@ onMounted(() => {
     h2 {
         margin: 0;
         text-transform: capitalize;
-    }
-    [dev-inset] {
-        // border: 1px solid red;
-        box-shadow: 0 0 0.5rem inset silver;
-        // margin: 1em;
-        overflow: scroll;
-        padding: 1em;
     }
 }
 </style>
