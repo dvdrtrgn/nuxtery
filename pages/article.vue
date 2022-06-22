@@ -7,11 +7,10 @@ const articleData = ref(await $fetch(url) as any);
 
 <template>
     <div>
-        <h1>Article</h1>
-        <pre data-authors>
-            <h2>authors</h2>
-            {{ articleData.authors }}
-        </pre>
+        <h1>Article Data</h1>
+
+        <AuthorList :authors="articleData.authors" />
+
         <pre data-content>
             <h2>content</h2>
             {{ articleData.content }}
