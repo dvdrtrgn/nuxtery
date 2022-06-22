@@ -2,12 +2,15 @@
 </script>
 
 <template>
-  <div data-template>
-    <TheNav />
-    <slot />
-    <TheFooter />
-  </div>
+    <div default-template>
+        <TheNav />
+        <slot />
+        <TheFooter />
+    </div>
 </template>
 
 <style lang="scss">
+body {
+    margin: 0;
+}
 </style>

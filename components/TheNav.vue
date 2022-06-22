@@ -2,21 +2,21 @@
 </script>
 
 <template>
-  <nav data-main-nav>
-    <NuxtLink to="/">
-      home
-    </NuxtLink>
-    <NuxtLink to="/tv?foo">
-      tv
-    </NuxtLink>
-    <NuxtLink to="/mpls/2022/02/01">
-      market
-    </NuxtLink>
-  </nav>
+    <nav the-nav>
+        <NuxtLink to="/">
+            home
+        </NuxtLink>
+        <NuxtLink to="/tv">
+            tv
+        </NuxtLink>
+        <NuxtLink to="/mpls/2022/02/01">
+            market
+        </NuxtLink>
+    </nav>
 </template>
 
 <style lang="scss">
-[data-main-nav] {
+[the-nav] {
     background-color: #eee;
     display: flex;
     font-family: sans-serif;

@@ -17,7 +17,7 @@ npm install
 
 Start the development server on http://localhost:3000
 
-(or, run the `server: nuxt`` in the VS code debug tab)
+(or, run `server: nuxt` in the VS code debug tab)
 
 ```bash
 npm run dev
