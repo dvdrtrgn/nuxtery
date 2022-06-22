@@ -6,6 +6,9 @@
         <NuxtLink to="/">
             home
         </NuxtLink>
+        <NuxtLink to="/article">
+            article
+        </NuxtLink>
         <NuxtLink to="/tv">
             tv
         </NuxtLink>

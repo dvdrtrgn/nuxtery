@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TV from '~/modules/tv/TvApp';
+import TV from '~/modules/tv/TvApp.vue';
 </script>
 
 <template>

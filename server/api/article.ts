@@ -2,7 +2,7 @@
 import type { IncomingMessage, ServerResponse } from 'http';
 import data from '~/data/potentialfullreturn.json';
 
-export default async (req: IncomingMessage, res: ServerResponse) => {
+export default (req: IncomingMessage, res: ServerResponse) => {
     const dataStr = JSON.stringify(data.article);
     // if (query) {
     //     try {
@@ -11,7 +11,6 @@ export default async (req: IncomingMessage, res: ServerResponse) => {
     //         console.warn(err);
     //     }
     // }
-
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.write(dataStr);
