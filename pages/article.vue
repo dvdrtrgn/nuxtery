@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { makeListFromObject } from '~/utils';
 definePageMeta({ layout: 'default' });
 
 const url = '/api/article';
@@ -8,6 +9,11 @@ const headData = {
     title: 'TITLE: ' + articleData.value.title,
 };
 
+const looseItems = ref([]);
+onMounted(() => {
+    looseItems.value = makeListFromObject(articleData.value);
+});
+
 useHead(headData);
 </script>
 
@@ -15,7 +21,15 @@ useHead(headData);
     <div data-article>
         <h1>Article Data</h1>
 
-        <AuthorList :authors="articleData.authors" />
+        <div data-all>
+            <PreCollapse :data="articleData">
+                Full object
+            </PreCollapse>
+        </div>
+
+        <AuthorList :authors="articleData.authors">
+            <h2>authors</h2>
+        </AuthorList>
 
         <div data-content>
             <h2>content</h2>
@@ -45,6 +59,13 @@ useHead(headData);
             <h2>metadata</h2>
             <PreCollapse :data="articleData.metadata">
                 items # {{ articleData.metadata.data.length }}
+            </PreCollapse>
+        </div>
+
+        <div data-metadata>
+            <h2>randos</h2>
+            <PreCollapse :data="looseItems">
+                items # {{ looseItems.length }}
             </PreCollapse>
         </div>
     </div>
