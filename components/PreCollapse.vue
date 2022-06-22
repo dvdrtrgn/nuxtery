@@ -7,16 +7,12 @@ defineProps({
 </script>
 
 <template>
-    <details>
+    <details class="dev-inset">
         <summary><slot /></summary>
         <pre>{{ data }}</pre>
     </details>
 </template>
 
 <style lang="scss">
-// details {
-//     summary pre {
-//         display: none;
-//     }
-// }
+//
 </style>

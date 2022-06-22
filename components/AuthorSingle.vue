@@ -7,8 +7,14 @@ defineProps({
 </script>
 
 <template>
-    <slot />
-    <PreCollapse :data="author">
-        ex. <b>{{ author.data.contact_description }}</b>
-    </PreCollapse>
+    <div dev-grid>
+        <slot />
+        <PreCollapse :data="author">
+            ex. <b>{{ author.data.contact_description }}</b>
+        </PreCollapse>
+    </div>
 </template>
+
+<style lang="scss">
+//
+</style>

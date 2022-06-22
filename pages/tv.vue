@@ -6,4 +6,6 @@ import TV from '~/modules/tv/TvApp.vue';
     <TV />
 </template>
 
-<style></style>
+<style lang="scss">
+// foo
+</style>

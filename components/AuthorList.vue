@@ -14,3 +14,7 @@ defineProps({
         </AuthorSingle>
     </div>
 </template>
+
+<style lang="scss">
+//
+</style>
