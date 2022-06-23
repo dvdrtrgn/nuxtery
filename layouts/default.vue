@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+});
+
 </script>
 
 <template>
@@ -12,33 +15,12 @@
 </template>
 
 <style lang="scss">
-body {
-    margin: 0;
-}
-[dev-flex] {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-[dev-grid] {
-    border-bottom: 1px dotted silver;
-    display: grid;
-    grid-auto-flow: column;
-
-    pre {
-        border: 1px dashed silver;
-    }
-}
-[dev-inset] {
-    box-shadow: 0 0 0.5rem inset silver;
-    overflow: scroll;
-    padding: 1em;
-}
 html {
     $headerHeight: 4vh;
     $footerHeight: 4vh;
 
     body {
+        margin: 0;
         margin-top: $headerHeight * 1;
         margin-bottom: $footerHeight * 1.2;
     }
@@ -57,5 +39,4 @@ html {
         height: $footerHeight;
     }
 }
-
 </style>

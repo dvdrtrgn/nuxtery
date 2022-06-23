@@ -10,6 +10,6 @@ definePageMeta({
     </div>
 </template>
 
-<style lang="scss">
+<!-- <style lang="scss">
 // foo
-</style>
+</style> -->

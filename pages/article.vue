@@ -17,7 +17,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div data-article>
+    <div vue-article>
         <div dev-flex>
             <h1>Article Data</h1>
             <div dev-inset>
@@ -72,7 +72,7 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-[data-article] {
+[vue-article] {
     h1,h2,h3 {
         margin: 1rem;
         text-align: center;

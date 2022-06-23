@@ -10,7 +10,7 @@ defineProps({
 <template>
     <div show-list>
         <img
-            :src="show.image?.medium || './show.jpg'"
+            :src="show.image?.medium || '/show.jpg'"
             :alt="show.name"
             height="295"
             width="210"
@@ -32,7 +32,7 @@ defineProps({
     display: flex;
 
     img {
-        background: url(./show.jpg) no-repeat;
+        background: url('/show.jpg') no-repeat;
         float: left;
         margin: 1em;
     }
