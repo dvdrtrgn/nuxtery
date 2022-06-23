@@ -1,5 +1,9 @@
 <script setup lang="ts">
+
+const route = reactive(useRoute());
+
 useHead({
+    title: String(route.name),
 });
 
 </script>
