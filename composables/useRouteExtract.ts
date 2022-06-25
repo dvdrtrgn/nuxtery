@@ -15,7 +15,7 @@ function extractor (e:xRecord) {
 };
 
 export default function () {
-    console.log('useRouteExtract');
+    // console.log('useRouteExtract');
 
     const routes = useRouter().options.routes;
     const unsort = routes.map(extractor);
