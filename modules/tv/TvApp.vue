@@ -23,7 +23,7 @@ onMounted(() => {
 <template>
     <div tv-app>
         <form @submit.prevent="searchForStuff">
-            <input v-model="searchText">
+            <input v-model="searchText" />
             <button>Search For TV Shows</button>
         </form>
 

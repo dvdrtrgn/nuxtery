@@ -1,11 +1,5 @@
 <script setup lang="ts">
-
-const route = reactive(useRoute());
-
-useHead({
-    title: String(route.name),
-});
-
+useStockTitle();
 </script>
 
 <template>
@@ -13,7 +7,7 @@ useHead({
         <header>
             <TheNav />
         </header>
-        <slot />
+        <slot></slot>
         <TheFooter />
     </div>
 </template>

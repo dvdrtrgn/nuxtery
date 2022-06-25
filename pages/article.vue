@@ -7,9 +7,7 @@ const articleData = ref(await $fetch(url) as any);
 
 definePageMeta({ layout: 'default' });
 
-useHead({
-    title: 'TITLE: ' + articleData.value.title,
-});
+useStockTitle('TITLE: ' + articleData.value.title);
 
 onMounted(() => {
     looseItems.value = makeListFromObject(articleData.value);

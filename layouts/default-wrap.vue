@@ -17,7 +17,7 @@ const toggle = ref(false);
         <DefaultVue>
             <AnnoText before="begin">default slot</AnnoText>
 
-            <slot />
+            <slot></slot>
 
             <AnnoText after="end">default slot</AnnoText>
         </DefaultVue>

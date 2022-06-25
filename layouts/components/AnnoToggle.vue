@@ -21,7 +21,7 @@ function switchEmit () {
 <template>
     <button dev-toggle @click="switchEmit">
         <!--  -->
-        {{ flip ? 'HIDE' : 'SHOW' }}<br>annotations
+        {{ flip ? 'HIDE' : 'SHOW' }}<br />annotations
     </button>
 </template>
 

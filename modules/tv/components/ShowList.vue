@@ -10,11 +10,10 @@ defineProps({
 <template>
     <div show-list>
         <img
-            :src="show.image?.medium || '/show.jpg'"
             :alt="show.name"
-            height="295"
-            width="210"
-        >
+            :src="show.image?.medium || '/show.jpg'"
+            width="210" height="295"
+        />
         <ul>
             <ShowLine
                 v-for="detail in listify(show)"

@@ -1,12 +1,11 @@
 <script setup lang="ts">
-
-const pageXy = useMouse();
+const pageXY = useMouse();
 const clientXY = useMouseClient();
 </script>
 
 <template>
     <div>
-        <code>pageXY: {{ pageXy }}</code>
+        <code>pageXY: {{ pageXY }}</code>
         <br />
         <code>clientXY: {{ clientXY }}</code>
     </div>

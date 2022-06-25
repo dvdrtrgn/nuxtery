@@ -13,15 +13,6 @@ module.exports = {
             'as-needed', { unnecessary: false },
         ],
         'semi': [2, 'always'],
-        'vue/attributes-order': ['warn', {
-            // 'order': [
-            //     'DEFINITION', 'LIST_RENDERING', 'CONDITIONALS', 'RENDER_MODIFIERS',
-            //     'GLOBAL', ['UNIQUE', 'SLOT'],
-            //     'TWO_WAY_BINDING', 'OTHER_DIRECTIVES', 'OTHER_ATTR',
-            //     'EVENTS', 'CONTENT',
-            // ],
-            'alphabetical': true,
-        }],
         'vue/html-indent': ['warn', 4],
         'vue/html-self-closing': ['warn', {
             'html': { void: 'always', normal: 'never', component: 'any' },
