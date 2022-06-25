@@ -7,9 +7,11 @@
         "preview": "nuxt preview"
     },
     "devDependencies": {
-        "@nuxtjs/eslint-config-typescript": "latest",
-        "@types/express": "latest",
+        "@nuxtjs/eslint-config-typescript": "^10.0.0",
+        "@types/express": "^4.17.13",
+        "@vueuse/core": "^8.7.5",
+        "@vueuse/nuxt": "^8.7.5",
         "nuxt": "^3.0.0-rc.4",
-        "sass": "latest"
+        "sass": "^1.53.0"
     }
 }
