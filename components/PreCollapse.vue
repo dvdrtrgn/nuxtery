@@ -8,11 +8,11 @@ defineProps({
 
 <template>
     <details>
-        <summary><slot /></summary>
+        <summary><slot></slot></summary>
         <pre>{{ data }}</pre>
     </details>
 </template>
 
-<style lang="scss">
-//
-</style>
+<!-- <style lang="scss">
+// foo
+</style> -->

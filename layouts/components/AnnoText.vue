@@ -13,7 +13,7 @@ defineProps({
 </script>
 
 <template>
-    <div :pre-text="before" :post-text="after" dev-only>
+    <div dev-only :post-text="after" :pre-text="before">
         <slot>??</slot>
     </div>
 </template>

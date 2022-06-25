@@ -18,3 +18,7 @@ const descAsDate = computed(() => {
         <span>{{ name !== 'updated' ? desc : descAsDate }}</span>
     </li>
 </template>
+
+<!-- <style lang="scss">
+// foo
+</style> -->

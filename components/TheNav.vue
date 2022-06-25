@@ -1,19 +1,14 @@
 <script setup lang="ts">
+const nav = useRouteExtract();
 </script>
 
 <template>
     <nav the-nav>
-        <NuxtLink to="/">
-            home
-        </NuxtLink>
-        <NuxtLink to="/article">
-            article
-        </NuxtLink>
-        <NuxtLink to="/tv">
-            tv
-        </NuxtLink>
-        <NuxtLink to="/mpls/2022/02/01">
-            market
+        <NuxtLink
+            v-for="item in nav" :key="item.path"
+            :to="item.path"
+        >
+            {{ item.name }}
         </NuxtLink>
     </nav>
 </template>

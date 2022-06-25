@@ -24,19 +24,21 @@ onBeforeMount(() => {
 
 </script>
 
+<!-- eslint-disable vue/no-v-html -->
 <template>
-    <!-- eslint-disable vue/no-v-html -->
     <article>
-        <slot />
-        <component
-            :is="item.tag"
-            v-for="item in betterData"
-            :key="item.html"
-            v-html="item.html"
-        />
+        <slot></slot>
+        <client-only>
+            <component
+                :is="item.tag"
+                v-for="item in betterData"
+                :key="item.html"
+                v-html="item.html"
+            />
+        </client-only>
     </article>
 </template>
 
-<style lang="scss">
+<!-- <style lang="scss">
 // foo
-</style>
+</style> -->

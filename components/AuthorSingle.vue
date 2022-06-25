@@ -8,13 +8,13 @@ defineProps({
 
 <template>
     <div dev-grid>
-        <slot />
+        <slot></slot>
         <PreCollapse :data="author">
             ex. <b>{{ author.data.contact_description }}</b>
         </PreCollapse>
     </div>
 </template>
 
-<style lang="scss">
-//
-</style>
+<!-- <style lang="scss">
+// foo
+</style> -->

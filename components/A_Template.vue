@@ -6,9 +6,9 @@ defineProps({
 </script>
 
 <template>
-    <slot />
+    <slot></slot>
 </template>
 
-<style lang="scss">
+<!-- <style lang="scss">
 // foo
-</style>
+</style> -->

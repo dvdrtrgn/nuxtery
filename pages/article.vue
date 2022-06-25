@@ -7,9 +7,7 @@ const articleData = ref(await $fetch(url) as any);
 
 definePageMeta({ layout: 'default' });
 
-useHead({
-    title: 'TITLE: ' + articleData.value.title,
-});
+useStockTitle('TITLE: ' + articleData.value.title);
 
 onMounted(() => {
     looseItems.value = makeListFromObject(articleData.value);
@@ -17,7 +15,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div data-article>
+    <div vue-article>
         <div dev-flex>
             <h1>Article Data</h1>
             <div dev-inset>
@@ -40,7 +38,7 @@ onMounted(() => {
         </div>
 
         <!-- LEADINS -->
-        <PreCollapse dev-inset :data="articleData.leadins">
+        <PreCollapse :data="articleData.leadins" dev-inset>
             <b>leadins: </b>
             ex. {{ articleData.leadins.data[0].group_class }}
         </PreCollapse>
@@ -72,7 +70,7 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-[data-article] {
+[vue-article] {
     h1,h2,h3 {
         margin: 1rem;
         text-align: center;
