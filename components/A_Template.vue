@@ -6,7 +6,7 @@ defineProps({
 </script>
 
 <template>
-    <slot />
+    <slot></slot>
 </template>
 
 <!-- <style lang="scss">

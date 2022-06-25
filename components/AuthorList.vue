@@ -8,7 +8,7 @@ defineProps({
 
 <template>
     <div>
-        <slot />
+        <slot></slot>
         <AuthorSingle v-for="(author, id) in authors" :key="id" :author="author">
             <b>author: {{ id }}</b>
         </AuthorSingle>

@@ -40,7 +40,7 @@ onMounted(() => {
         </div>
 
         <!-- LEADINS -->
-        <PreCollapse dev-inset :data="articleData.leadins">
+        <PreCollapse :data="articleData.leadins" dev-inset>
             <b>leadins: </b>
             ex. {{ articleData.leadins.data[0].group_class }}
         </PreCollapse>

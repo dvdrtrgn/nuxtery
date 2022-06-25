@@ -8,7 +8,7 @@ defineProps({
 
 <template>
     <div dev-grid>
-        <slot />
+        <slot></slot>
         <PreCollapse :data="author">
             ex. <b>{{ author.data.contact_description }}</b>
         </PreCollapse>

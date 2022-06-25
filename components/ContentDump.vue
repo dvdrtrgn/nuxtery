@@ -27,7 +27,7 @@ onBeforeMount(() => {
 <!-- eslint-disable vue/no-v-html -->
 <template>
     <article>
-        <slot />
+        <slot></slot>
         <client-only>
             <component
                 :is="item.tag"

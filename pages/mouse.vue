@@ -5,8 +5,9 @@ const clientXY = useMouseClient();
 </script>
 
 <template>
-    <pre>
-        <div>clientXY: {{ clientXY }}</div>
-        <div>pageXY: {{ pageXy }}</div>
-    </pre>
+    <div>
+        <code>pageXY: {{ pageXy }}</code>
+        <br />
+        <code>clientXY: {{ clientXY }}</code>
+    </div>
 </template>
