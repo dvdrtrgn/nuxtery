@@ -2,7 +2,7 @@
 import type { IncomingMessage, ServerResponse } from 'http';
 import data from '~/data/potentialfullreturn.json';
 
-export default (req: IncomingMessage, res: ServerResponse) => {
+export default (_req: IncomingMessage, res: ServerResponse) => {
     const dataStr = JSON.stringify(data.article);
     // if (query) {
     //     try {

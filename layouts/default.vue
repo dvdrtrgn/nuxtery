@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useStockTitle();
+useTitleHelper();
 </script>
 
 <template>

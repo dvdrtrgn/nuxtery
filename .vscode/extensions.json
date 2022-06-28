@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "abumalick.vscode-nvm",
+    "alefragnani.Bookmarks",
+    "alefragnani.project-manager",
+    "antfu.vite",
+    "bierner.lit-html",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "GitLab.gitlab-workflow",
+    "hollowtree.vue-snippets",
+    "johnpapa.vscode-peacock",
+    "mhutchie.git-graph",
+    "patricklee.vsnotes",
+    "vscode-icons-team.vscode-icons",
+    "Vue.volar",
+    "yamajyn.commandlist"
+  ]
+}
