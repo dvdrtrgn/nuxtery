@@ -97,13 +97,6 @@
                 "content_type": "paragraph"
             }
         ],
-        "cxense_autotag": "business-and-finance",
-        "cxense_normalized_score": "3",
-        "cxense_premium_score": "-0.159662102",
-        "event": "167829",
-        "is_advertorial": 0,
-        "is_native": 0,
-        "is_premium": 0,
         "journal": {
             "ad_mgr_contact_id": 7471,
             "calendar_rp_contact_id": 0,
@@ -130,8 +123,32 @@
             "short_name": "Business Journal",
             "updated_at": "2020-02-05 10:45:27"
         },
-        "journal_id": 981,
-        "layout_type": "standard",
+        "market": {
+            "analytics_code": "kan",
+            "center_latitude": "39.12",
+            "center_longitude": "-94.6",
+            "city": "Kansas City",
+            "created_at": "2010-10-15 23:50:33",
+            "deleted_at": null,
+            "has_inno": true,
+            "local_sales_tax": 0,
+            "market_abbrev": "Kansas City",
+            "market_code": "kansascity",
+            "market_id": 2411,
+            "market_name": "Kansas City",
+            "msa_or_pmsa": "3760",
+            "nomination_faq": null,
+            "payment_contact_id": 16621,
+            "primary_zip_code": "64105",
+            "region": "Kansas City",
+            "region_objective": "Kansas City",
+            "staff_count": 0,
+            "state": "MO",
+            "timezone": "America/Chicago",
+            "updated_at": "2022-06-15 16:04:32",
+            "utc_dst_offset": 5,
+            "utc_std_offset": 6
+        },
         "leadins": {
             "data": [
                 {
@@ -168,35 +185,6 @@
                 }
             ]
         },
-        "market": {
-            "analytics_code": "kan",
-            "center_latitude": "39.12",
-            "center_longitude": "-94.6",
-            "city": "Kansas City",
-            "created_at": "2010-10-15 23:50:33",
-            "deleted_at": null,
-            "has_inno": true,
-            "local_sales_tax": 0,
-            "market_abbrev": "Kansas City",
-            "market_code": "kansascity",
-            "market_id": 2411,
-            "market_name": "Kansas City",
-            "msa_or_pmsa": "3760",
-            "nomination_faq": null,
-            "payment_contact_id": 16621,
-            "primary_zip_code": "64105",
-            "region": "Kansas City",
-            "region_objective": "Kansas City",
-            "staff_count": 0,
-            "state": "MO",
-            "timezone": "America/Chicago",
-            "updated_at": "2022-06-15 16:04:32",
-            "utc_dst_offset": 5,
-            "utc_std_offset": 6
-        },
-        "meta_description": "The Lenexa-based company, which also had a location in Kansas City, ranked No. 141 on Electrical Wholesaling's Top 150 ranking in 2021 with $24.6 million in 2020 sales.",
-        "meta_og_image": "https://media.bizj.us/view/img/10668219/20171025familybusiness103*400xx2012-2012-0-119.jpg",
-        "meta_title": "Kansas City Electrical Supply sells to Elliott Electric Supply",
         "metadata": {
             "data": [
                 {
@@ -285,6 +273,18 @@
                 }
             ]
         },
+        "cxense_autotag": "business-and-finance",
+        "cxense_normalized_score": "3",
+        "cxense_premium_score": "-0.159662102",
+        "event": "167829",
+        "is_advertorial": 0,
+        "is_native": 0,
+        "is_premium": 0,
+        "journal_id": 981,
+        "layout_type": "standard",
+        "meta_description": "The Lenexa-based company, which also had a location in Kansas City, ranked No. 141 on Electrical Wholesaling's Top 150 ranking in 2021 with $24.6 million in 2020 sales.",
+        "meta_og_image": "https://media.bizj.us/view/img/10668219/20171025familybusiness103*400xx2012-2012-0-119.jpg",
+        "meta_title": "Kansas City Electrical Supply sells to Elliott Electric Supply",
         "oneoff_byline": null,
         "page_id": 22099864,
         "social_teaser": "After nearly a century in business, one of the #KansasCity area's largest women-owned businesses has sold. #KCbiz",

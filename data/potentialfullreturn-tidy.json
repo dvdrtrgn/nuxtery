@@ -1,7 +1,7 @@
 {
     "article": {
-        "authors": {
-            "37081": {
+        "authors": [
+            {
                 "contact_id": 37081,
                 "created_at": "2015-01-20 15:23:24",
                 "data": {
@@ -60,13 +60,13 @@
                 "staff_id": 26971,
                 "updated_at": "2015-01-20 15:23:24"
             },
-            "123": {
+            {
                 "contact_id": 123,
                 "data": {
                     "contact_description": "Jane Doe: ...."
                 }
             }
-        },
+        ],
         "content": [
             {
                 "content_html": "One of the Kansas City area's largest  — and oldest — women-owned businesses has sold.",

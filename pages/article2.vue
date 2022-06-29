@@ -23,17 +23,9 @@ useTitleHelper('TITLE: ' + articleData.value.title);
 
 <template>
     <div vue-article>
-        <div dev-flex>
-            <h1>Article Data</h1>
-            <div dev-inset>
-                <PreCollapse :data="allData">
-                    <b>All Data</b>
-                </PreCollapse>
-            </div>
-        </div>
-
+        <h1>Article Data</h1>
         <h2>BUSINESS</h2>
-        <h3>JOURNAL / MARKET</h3>
+        <h3>Journal / Market</h3>
         <div dev-inset>
             <PreCollapse :data="businessData.journal">
                 <b>journal: </b>
@@ -52,7 +44,7 @@ useTitleHelper('TITLE: ' + articleData.value.title);
         </PreCollapse>
 
         <h2>ARTICLE </h2>
-        <h3>AUTHORS / CONTENT </h3>
+        <h3>Authors / Content</h3>
         <div dev-inset>
             <AuthorList :authors="articleData.authors" />
             <div dev-grid>
@@ -64,7 +56,8 @@ useTitleHelper('TITLE: ' + articleData.value.title);
             <ContentDump :data="articleData.content" />
         </div>
 
-        <h2>RANDOS / METADATA</h2>
+        <h2>ETC</h2>
+        <h3>Metadata / Randos</h3>
         <div dev-inset>
             <PreCollapse :data="metaData">
                 <b>metadata: </b>
@@ -73,6 +66,14 @@ useTitleHelper('TITLE: ' + articleData.value.title);
             <PreCollapse :data="randoData">
                 <b>randos: </b>
             </PreCollapse>
+        </div>
+
+        <div dev-flex>
+            <div dev-inset>
+                <PreCollapse :data="allData">
+                    <b>All Data</b>
+                </PreCollapse>
+            </div>
         </div>
     </div>
 </template>
