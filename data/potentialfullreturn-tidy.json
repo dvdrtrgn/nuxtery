@@ -1,0 +1,300 @@
+{
+    "article": {
+        "authors": {
+            "37081": {
+                "contact_id": 37081,
+                "created_at": "2015-01-20 15:23:24",
+                "data": {
+                    "address1": null,
+                    "address2": null,
+                    "address3": null,
+                    "backlink_class": "Core_Model_MarketStaff",
+                    "backlink_id": 26971,
+                    "community": null,
+                    "contact_description": "Greg Ryan covers real estate, development and public policy.",
+                    "contact_id": 37081,
+                    "contact_name": "Greg Ryan",
+                    "contact_subtype": null,
+                    "contact_title": "Senior Reporter",
+                    "contact_type": "person",
+                    "country": null,
+                    "created_at": "2015-01-20 15:23:24",
+                    "email1": "gryan@bizjournals.com",
+                    "email1_notes": null,
+                    "email2": null,
+                    "email2_notes": null,
+                    "email3": null,
+                    "email3_notes": null,
+                    "headshot_crops": "[{\"ratio\":\"16:9\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/12231513\\/greg-ryan-11*120xx4480-2520-0-1568.jpg\",\"cropdata\":\"4480-2520-0-1568-4480-6720\"},{\"ratio\":\"3:2\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/12231513\\/greg-ryan-11*120xx4480-2987-0-1092.jpg\",\"cropdata\":\"4480-2987-0-1092-4480-6720\"},{\"ratio\":\"4:3\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/12231513\\/greg-ryan-11*120xx4480-3360-0-840.jpg\",\"cropdata\":\"4480-3360-0-840-4480-6720\"},{\"ratio\":\"1:1\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/12231513\\/greg-ryan-11*120xx4480-4480-0-868.jpg\",\"cropdata\":\"4480-4480-0-868-4480-6720\"},{\"ratio\":\"3:4\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/12231513\\/greg-ryan-11*120xx4480-5973-0-84.jpg\",\"cropdata\":\"4480-5973-0-84-4480-6720\"},{\"ratio\":\"2:3\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/12231513\\/greg-ryan-11*120xx4480-6720-0-0.jpg\",\"cropdata\":\"4480-6720-0-0-4480-6720\"}]",
+                    "headshot_media_id": 12231513,
+                    "phone1": "617-316-3235",
+                    "phone1_notes": null,
+                    "phone1_type": "voice",
+                    "phone2": null,
+                    "phone2_notes": null,
+                    "phone2_type": null,
+                    "phone3": null,
+                    "phone3_notes": null,
+                    "phone3_type": null,
+                    "photo_headshot_url": "https://media.bizj.us/view/img/12231513/greg-ryan-11.jpg",
+                    "photo_social_url": null,
+                    "postal_code": null,
+                    "social1": "https://twitter.com/BosBizGregRyan",
+                    "social1_notes": null,
+                    "social1_type": "Twitter",
+                    "social2": null,
+                    "social2_notes": null,
+                    "social2_type": null,
+                    "social3": null,
+                    "social3_notes": null,
+                    "social3_type": null,
+                    "state_province": null,
+                    "updated_at": "2022-04-04 16:47:52"
+                },
+                "is_callcenter_accountexec": 0,
+                "is_callcenter_custserv": 0,
+                "is_contributor": 0,
+                "is_former_staff": 0,
+                "is_writer": 1,
+                "market_id": 2311,
+                "staff_id": 26971,
+                "updated_at": "2015-01-20 15:23:24"
+            },
+            "123": {
+                "contact_id": 123,
+                "data": {
+                    "contact_description": "Jane Doe: ...."
+                }
+            }
+        },
+        "content": [
+            {
+                "content_html": "One of the Kansas City area's largest  — and oldest — women-owned businesses has sold.",
+                "content_type": "paragraph"
+            },
+            {
+                "content_html": "After nearly a century in business, Kansas City Electrical Supply Co. was acquired by Elliott Electric Supply in late April. The Lenexa-based company, which also had a location in Kansas City, had 49 employees as of August.",
+                "content_type": "paragraph"
+            },
+            {
+                "content_html": "KCES ranked No. 141 on <em>Electrical Wholesaling</em>'s Top 150 ranking in 2021 with $24.6 million in 2020 sales. Elliott Electric Supply ranked No. 9 on the industry publication's ranking in 2021 — the same position it holds in the magazine's <a href=\"https://cdn.baseplatform.io/files/base/ebm/ewweb/document/2022/05/EW_2022_Top_150_Ranking_and_A_Z_list.629650c280b74.pdf\" target=\"_blank\">recently released Top 150 ranking [PDF]</a>.",
+                "content_type": "paragraph"
+            },
+            {
+                "content_html": "Founded in 1927, KCES was a distributor of electrical products. Led by owner and President Kaylin Crain, the 100% women-owned business ranked No. 15 on the <em>Kansas City Business Journal</em>'s most recent <a href=\"https://www.bizjournals.com/kansascity/subscriber-only/2021/09/10/kc-area-female-owned-businesses.html\" target=\"_blank\">Women-Owned Businesses List</a>.",
+                "content_type": "paragraph"
+            },
+            {
+                "content_html": "\"I want to thank each of you for choosing Kansas City Electrical Supply Co. and putting your trust in us over the last 95 years and bringing us to where we are today,\" Crain said in a letter to customers <a href=\"https://tedmag.com/elliott-electric-supply-acquires-kansas-city-electrical-supply/\" target=\"_blank\">obtained by the online magazine tED</a>. \"We come to work every day for you and our commitment is stronger than ever to continue serving you.\"",
+                "content_type": "paragraph"
+            },
+            {
+                "content_html": "Nacogdoches, Texas-based Elliott Electric Supply also is an electrical distributor. According to its website, the company currently has more than 170 locations and more than 2,100 employees. It reports more than $1.5 billion in annual sales.",
+                "content_type": "paragraph"
+            },
+            {
+                "content_html": "Founded in 1972, Elliott Electric Supply is a family-owned business led by its founder, Bill Elliott, who remains the company's chairman.",
+                "content_type": "paragraph"
+            }
+        ]
+    },
+    "business": {
+        "journal": {
+            "ad_mgr_contact_id": 7471,
+            "calendar_rp_contact_id": 0,
+            "circ_mgr_contact_id": 7461,
+            "circ_product_id": "KA",
+            "created_at": "2010-10-15 23:51:09",
+            "descriptive_name": "Kansas City Business Journal",
+            "editor_contact_id": 7481,
+            "embargo_days": 60,
+            "is_digital_only": false,
+            "journal_abbreviation": "KCBJ",
+            "journal_code": "kansascity_main",
+            "journal_id": 981,
+            "journal_name": "Kansas City Business Journal",
+            "market_id": 2411,
+            "objective_name": "the Kansas City Business Journal",
+            "objective_short_name": "the Business Journal",
+            "online_product_id": 0,
+            "potm_rp_contact_id": 49547,
+            "primary_contact_id": 7441,
+            "print_product_id": 2731,
+            "publisher_contact_id": 7451,
+            "research_dir_contact_id": 7491,
+            "short_name": "Business Journal",
+            "updated_at": "2020-02-05 10:45:27"
+        },
+        "market": {
+            "analytics_code": "kan",
+            "center_latitude": "39.12",
+            "center_longitude": "-94.6",
+            "city": "Kansas City",
+            "created_at": "2010-10-15 23:50:33",
+            "deleted_at": null,
+            "has_inno": true,
+            "local_sales_tax": 0,
+            "market_abbrev": "Kansas City",
+            "market_code": "kansascity",
+            "market_id": 2411,
+            "market_name": "Kansas City",
+            "msa_or_pmsa": "3760",
+            "nomination_faq": null,
+            "payment_contact_id": 16621,
+            "primary_zip_code": "64105",
+            "region": "Kansas City",
+            "region_objective": "Kansas City",
+            "staff_count": 0,
+            "state": "MO",
+            "timezone": "America/Chicago",
+            "updated_at": "2022-06-15 16:04:32",
+            "utc_dst_offset": 5,
+            "utc_std_offset": 6
+        }
+    },
+    "leadins": {
+        "data": [
+            {
+                "auto_query": "",
+                "group_class": "related_content",
+                "group_id": 9107575,
+                "group_teaser": null,
+                "group_title": null,
+                "group_topic": null,
+                "group_type": "curate",
+                "group_url": null,
+                "items": [
+                    {
+                        "additional_data": "{\"medialibrary_id\":\"10668229\",\"crops\":{\"16:9\":{\"cropdata\":\"3000-1690-0-32-3000-1851\",\"ratio\":\"16:9\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx3000-1690-0-32.jpg\"},\"3:2\":{\"cropdata\":\"2773-1851-106-0-3000-1851\",\"ratio\":\"3:2\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx2773-1851-106-0.jpg\"},\"4:3\":{\"cropdata\":\"2465-1851-243-0-3000-1851\",\"ratio\":\"4:3\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx2465-1851-243-0.jpg\"},\"1:1\":{\"cropdata\":\"1849-1851-908-0-3000-1851\",\"ratio\":\"1:1\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx1849-1851-908-0.jpg\"},\"3:4\":{\"cropdata\":\"1388-1851-806-0-3000-1851\",\"ratio\":\"3:4\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx1388-1851-806-0.jpg\"},\"2:3\":{\"cropdata\":\"1234-1851-883-0-3000-1851\",\"ratio\":\"2:3\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx1234-1851-883-0.jpg\"}}}",
+                        "group_id": 9107575,
+                        "headline": "Talking family (business) dynamics with KCES' Kaylin Crain, others",
+                        "item_id": 58134907,
+                        "item_media_id": 4294967295,
+                        "item_media_url": "https://media.bizj.us/view/img/10668229/20171025familybusiness117*xx3000-1690-0-32.jpg",
+                        "item_page_id": 21150900,
+                        "item_video_id": "",
+                        "kicker": "",
+                        "media_alt_text": null,
+                        "media_caption": null,
+                        "ord": 1,
+                        "teaser": "KCBJ recently convened a panel to talk about life in the family business. Four executives shared their insights into the experience. Here are a few highlights.",
+                        "thumb_media_id": null,
+                        "url": "https://www.bizjournals.com/kansascity/news/2017/11/09/entrepreneur-talking-family-business-dynamics.html"
+                    }
+                ],
+                "ord": 0,
+                "page_id": 22099864,
+                "placement": "story_grouping"
+            }
+        ]
+    },
+    "metadata": {
+        "data": [
+            {
+                "meta_id": 67437537,
+                "meta_name": "cxense_premium_score",
+                "meta_value": "-0.159662102",
+                "ord": 0,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437538,
+                "meta_name": "cxense_normalized_score",
+                "meta_value": "3",
+                "ord": 0,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437539,
+                "meta_name": "cxense_autotag",
+                "meta_value": "business-and-finance",
+                "ord": 0,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437499,
+                "meta_name": "meta_title",
+                "meta_value": "Kansas City Electrical Supply sells to Elliott Electric Supply",
+                "ord": 1,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437500,
+                "meta_name": "meta_description",
+                "meta_value": "The Lenexa-based company, which also had a location in Kansas City, ranked No. 141 on Electrical Wholesaling's Top 150 ranking in 2021 with $24.6 million in 2020 sales.",
+                "ord": 2,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437501,
+                "meta_name": "meta_og_image",
+                "meta_value": "https://media.bizj.us/view/img/10668219/20171025familybusiness103*400xx2012-2012-0-119.jpg",
+                "ord": 3,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437502,
+                "meta_name": "staff_author",
+                "meta_value": "16871",
+                "ord": 4,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437503,
+                "meta_name": "social_teaser",
+                "meta_value": "After nearly a century in business, one of the #KansasCity area's largest women-owned businesses has sold. #KCbiz",
+                "ord": 5,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437504,
+                "meta_name": "story_type",
+                "meta_value": "standard",
+                "ord": 6,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437505,
+                "meta_name": "tease",
+                "meta_value": "The Lenexa-based company, which also had a location in Kansas City, ranked No. 141 on Electrical Wholesaling's Top 150 ranking in 2021 with $24.6 million in 2020 sales.",
+                "ord": 7,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437506,
+                "meta_name": "layout_type",
+                "meta_value": "standard",
+                "ord": 8,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437507,
+                "meta_name": "event",
+                "meta_value": "167829",
+                "ord": 9,
+                "page_id": 22099864
+            }
+        ]
+    },
+    "randos": {
+        "cxense_autotag": "business-and-finance",
+        "cxense_normalized_score": "3",
+        "cxense_premium_score": "-0.159662102",
+        "event": "167829",
+        "is_advertorial": 0,
+        "is_native": 0,
+        "is_premium": 0,
+        "journal_id": 981,
+        "layout_type": "standard",
+        "meta_description": "The Lenexa-based company, which also had a location in Kansas City, ranked No. 141 on Electrical Wholesaling's Top 150 ranking in 2021 with $24.6 million in 2020 sales.",
+        "meta_og_image": "https://media.bizj.us/view/img/10668219/20171025familybusiness103*400xx2012-2012-0-119.jpg",
+        "meta_title": "Kansas City Electrical Supply sells to Elliott Electric Supply",
+        "oneoff_byline": null,
+        "page_id": 22099864,
+        "social_teaser": "After nearly a century in business, one of the #KansasCity area's largest women-owned businesses has sold. #KCbiz",
+        "staff_author": "16871",
+        "story_type": "standard",
+        "tease": "The Lenexa-based company, which also had a location in Kansas City, ranked No. 141 on Electrical Wholesaling's Top 150 ranking in 2021 with $24.6 million in 2020 sales.",
+        "title": "Kansas City Electrical Supply, a nearly 100-year-old women-owned business, sells to industry giant"
+    }
+}
