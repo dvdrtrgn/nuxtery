@@ -14,8 +14,8 @@ useTitleHelper();
 
 <style lang="scss">
 html {
-    $headerHeight: 4vh;
-    $footerHeight: 4vh;
+    $headerHeight: 7vh;
+    $footerHeight: 5vh;
 
     body {
         margin: 0;

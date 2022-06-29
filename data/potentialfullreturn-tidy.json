@@ -1,7 +1,7 @@
 {
     "article": {
-        "authors": {
-            "37081": {
+        "authors": [
+            {
                 "contact_id": 37081,
                 "created_at": "2015-01-20 15:23:24",
                 "data": {
@@ -60,13 +60,13 @@
                 "staff_id": 26971,
                 "updated_at": "2015-01-20 15:23:24"
             },
-            "123": {
+            {
                 "contact_id": 123,
                 "data": {
                     "contact_description": "Jane Doe: ...."
                 }
             }
-        },
+        ],
         "content": [
             {
                 "content_html": "One of the Kansas City area's largest  — and oldest — women-owned businesses has sold.",
@@ -96,7 +96,9 @@
                 "content_html": "Founded in 1972, Elliott Electric Supply is a family-owned business led by its founder, Bill Elliott, who remains the company's chairman.",
                 "content_type": "paragraph"
             }
-        ],
+        ]
+    },
+    "business": {
         "journal": {
             "ad_mgr_contact_id": 7471,
             "calendar_rp_contact_id": 0,
@@ -148,131 +150,133 @@
             "updated_at": "2022-06-15 16:04:32",
             "utc_dst_offset": 5,
             "utc_std_offset": 6
-        },
-        "leadins": {
-            "data": [
-                {
-                    "auto_query": "",
-                    "group_class": "related_content",
-                    "group_id": 9107575,
-                    "group_teaser": null,
-                    "group_title": null,
-                    "group_topic": null,
-                    "group_type": "curate",
-                    "group_url": null,
-                    "items": [
-                        {
-                            "additional_data": "{\"medialibrary_id\":\"10668229\",\"crops\":{\"16:9\":{\"cropdata\":\"3000-1690-0-32-3000-1851\",\"ratio\":\"16:9\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx3000-1690-0-32.jpg\"},\"3:2\":{\"cropdata\":\"2773-1851-106-0-3000-1851\",\"ratio\":\"3:2\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx2773-1851-106-0.jpg\"},\"4:3\":{\"cropdata\":\"2465-1851-243-0-3000-1851\",\"ratio\":\"4:3\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx2465-1851-243-0.jpg\"},\"1:1\":{\"cropdata\":\"1849-1851-908-0-3000-1851\",\"ratio\":\"1:1\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx1849-1851-908-0.jpg\"},\"3:4\":{\"cropdata\":\"1388-1851-806-0-3000-1851\",\"ratio\":\"3:4\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx1388-1851-806-0.jpg\"},\"2:3\":{\"cropdata\":\"1234-1851-883-0-3000-1851\",\"ratio\":\"2:3\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx1234-1851-883-0.jpg\"}}}",
-                            "group_id": 9107575,
-                            "headline": "Talking family (business) dynamics with KCES' Kaylin Crain, others",
-                            "item_id": 58134907,
-                            "item_media_id": 4294967295,
-                            "item_media_url": "https://media.bizj.us/view/img/10668229/20171025familybusiness117*xx3000-1690-0-32.jpg",
-                            "item_page_id": 21150900,
-                            "item_video_id": "",
-                            "kicker": "",
-                            "media_alt_text": null,
-                            "media_caption": null,
-                            "ord": 1,
-                            "teaser": "KCBJ recently convened a panel to talk about life in the family business. Four executives shared their insights into the experience. Here are a few highlights.",
-                            "thumb_media_id": null,
-                            "url": "https://www.bizjournals.com/kansascity/news/2017/11/09/entrepreneur-talking-family-business-dynamics.html"
-                        }
-                    ],
-                    "ord": 0,
-                    "page_id": 22099864,
-                    "placement": "story_grouping"
-                }
-            ]
-        },
-        "metadata": {
-            "data": [
-                {
-                    "meta_id": 67437537,
-                    "meta_name": "cxense_premium_score",
-                    "meta_value": "-0.159662102",
-                    "ord": 0,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437538,
-                    "meta_name": "cxense_normalized_score",
-                    "meta_value": "3",
-                    "ord": 0,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437539,
-                    "meta_name": "cxense_autotag",
-                    "meta_value": "business-and-finance",
-                    "ord": 0,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437499,
-                    "meta_name": "meta_title",
-                    "meta_value": "Kansas City Electrical Supply sells to Elliott Electric Supply",
-                    "ord": 1,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437500,
-                    "meta_name": "meta_description",
-                    "meta_value": "The Lenexa-based company, which also had a location in Kansas City, ranked No. 141 on Electrical Wholesaling's Top 150 ranking in 2021 with $24.6 million in 2020 sales.",
-                    "ord": 2,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437501,
-                    "meta_name": "meta_og_image",
-                    "meta_value": "https://media.bizj.us/view/img/10668219/20171025familybusiness103*400xx2012-2012-0-119.jpg",
-                    "ord": 3,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437502,
-                    "meta_name": "staff_author",
-                    "meta_value": "16871",
-                    "ord": 4,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437503,
-                    "meta_name": "social_teaser",
-                    "meta_value": "After nearly a century in business, one of the #KansasCity area's largest women-owned businesses has sold. #KCbiz",
-                    "ord": 5,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437504,
-                    "meta_name": "story_type",
-                    "meta_value": "standard",
-                    "ord": 6,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437505,
-                    "meta_name": "tease",
-                    "meta_value": "The Lenexa-based company, which also had a location in Kansas City, ranked No. 141 on Electrical Wholesaling's Top 150 ranking in 2021 with $24.6 million in 2020 sales.",
-                    "ord": 7,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437506,
-                    "meta_name": "layout_type",
-                    "meta_value": "standard",
-                    "ord": 8,
-                    "page_id": 22099864
-                },
-                {
-                    "meta_id": 67437507,
-                    "meta_name": "event",
-                    "meta_value": "167829",
-                    "ord": 9,
-                    "page_id": 22099864
-                }
-            ]
-        },
+        }
+    },
+    "leadins": {
+        "data": [
+            {
+                "auto_query": "",
+                "group_class": "related_content",
+                "group_id": 9107575,
+                "group_teaser": null,
+                "group_title": null,
+                "group_topic": null,
+                "group_type": "curate",
+                "group_url": null,
+                "items": [
+                    {
+                        "additional_data": "{\"medialibrary_id\":\"10668229\",\"crops\":{\"16:9\":{\"cropdata\":\"3000-1690-0-32-3000-1851\",\"ratio\":\"16:9\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx3000-1690-0-32.jpg\"},\"3:2\":{\"cropdata\":\"2773-1851-106-0-3000-1851\",\"ratio\":\"3:2\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx2773-1851-106-0.jpg\"},\"4:3\":{\"cropdata\":\"2465-1851-243-0-3000-1851\",\"ratio\":\"4:3\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx2465-1851-243-0.jpg\"},\"1:1\":{\"cropdata\":\"1849-1851-908-0-3000-1851\",\"ratio\":\"1:1\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx1849-1851-908-0.jpg\"},\"3:4\":{\"cropdata\":\"1388-1851-806-0-3000-1851\",\"ratio\":\"3:4\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx1388-1851-806-0.jpg\"},\"2:3\":{\"cropdata\":\"1234-1851-883-0-3000-1851\",\"ratio\":\"2:3\",\"url\":\"https:\\/\\/media.bizj.us\\/view\\/img\\/10668229\\/20171025familybusiness117*xx1234-1851-883-0.jpg\"}}}",
+                        "group_id": 9107575,
+                        "headline": "Talking family (business) dynamics with KCES' Kaylin Crain, others",
+                        "item_id": 58134907,
+                        "item_media_id": 4294967295,
+                        "item_media_url": "https://media.bizj.us/view/img/10668229/20171025familybusiness117*xx3000-1690-0-32.jpg",
+                        "item_page_id": 21150900,
+                        "item_video_id": "",
+                        "kicker": "",
+                        "media_alt_text": null,
+                        "media_caption": null,
+                        "ord": 1,
+                        "teaser": "KCBJ recently convened a panel to talk about life in the family business. Four executives shared their insights into the experience. Here are a few highlights.",
+                        "thumb_media_id": null,
+                        "url": "https://www.bizjournals.com/kansascity/news/2017/11/09/entrepreneur-talking-family-business-dynamics.html"
+                    }
+                ],
+                "ord": 0,
+                "page_id": 22099864,
+                "placement": "story_grouping"
+            }
+        ]
+    },
+    "metadata": {
+        "data": [
+            {
+                "meta_id": 67437537,
+                "meta_name": "cxense_premium_score",
+                "meta_value": "-0.159662102",
+                "ord": 0,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437538,
+                "meta_name": "cxense_normalized_score",
+                "meta_value": "3",
+                "ord": 0,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437539,
+                "meta_name": "cxense_autotag",
+                "meta_value": "business-and-finance",
+                "ord": 0,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437499,
+                "meta_name": "meta_title",
+                "meta_value": "Kansas City Electrical Supply sells to Elliott Electric Supply",
+                "ord": 1,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437500,
+                "meta_name": "meta_description",
+                "meta_value": "The Lenexa-based company, which also had a location in Kansas City, ranked No. 141 on Electrical Wholesaling's Top 150 ranking in 2021 with $24.6 million in 2020 sales.",
+                "ord": 2,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437501,
+                "meta_name": "meta_og_image",
+                "meta_value": "https://media.bizj.us/view/img/10668219/20171025familybusiness103*400xx2012-2012-0-119.jpg",
+                "ord": 3,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437502,
+                "meta_name": "staff_author",
+                "meta_value": "16871",
+                "ord": 4,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437503,
+                "meta_name": "social_teaser",
+                "meta_value": "After nearly a century in business, one of the #KansasCity area's largest women-owned businesses has sold. #KCbiz",
+                "ord": 5,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437504,
+                "meta_name": "story_type",
+                "meta_value": "standard",
+                "ord": 6,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437505,
+                "meta_name": "tease",
+                "meta_value": "The Lenexa-based company, which also had a location in Kansas City, ranked No. 141 on Electrical Wholesaling's Top 150 ranking in 2021 with $24.6 million in 2020 sales.",
+                "ord": 7,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437506,
+                "meta_name": "layout_type",
+                "meta_value": "standard",
+                "ord": 8,
+                "page_id": 22099864
+            },
+            {
+                "meta_id": 67437507,
+                "meta_name": "event",
+                "meta_value": "167829",
+                "ord": 9,
+                "page_id": 22099864
+            }
+        ]
+    },
+    "randos": {
         "cxense_autotag": "business-and-finance",
         "cxense_normalized_score": "3",
         "cxense_premium_score": "-0.159662102",

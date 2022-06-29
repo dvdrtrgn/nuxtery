@@ -18,6 +18,7 @@ const nav = useRouteExtract();
     background-color: #eee;
     box-shadow: 0 0 1em silver;
     display: flex;
+    flex-wrap: wrap;
     font-family: sans-serif;
 
     a {
