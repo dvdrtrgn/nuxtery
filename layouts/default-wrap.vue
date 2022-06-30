@@ -2,10 +2,6 @@
 /* eslint-disable vue/singleline-html-element-content-newline */
 import DefaultVue from './default.vue';
 
-import AnnoText from './components/AnnoText.vue';
-import AnnoToggle from './components/AnnoToggle.vue';
-import AlertSlug from './components/AlertSlug.vue';
-
 const toggle = ref(false);
 </script>
 

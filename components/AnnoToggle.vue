@@ -26,26 +26,26 @@ function switchEmit () {
 </template>
 
 <style lang="scss">
-$unit: 0.3rem;
+    $unit: 0.3rem;
 
-[dev-toggle] {
-    bottom: $unit;
-    right: $unit;
-    position: fixed;
-    z-index: 1;
-    // end positioning
-    background-color: white;
-    border: 1px solid silver;
-    box-shadow: 0 0 $unit silver;
-    color: steelblue;
-    font-size: 50%;
-    font-weight: bold;
-    line-height: 1;
-    opacity: 0.7;
-    padding: $unit 2 * $unit;
+    [dev-toggle] {
+        bottom: $unit;
+        right: $unit;
+        position: fixed;
+        z-index: 1;
+        // end positioning
+        background-color: white;
+        border: 1px solid silver;
+        box-shadow: 0 0 $unit silver;
+        color: steelblue;
+        font-size: 50%;
+        font-weight: bold;
+        line-height: 1;
+        opacity: 0.7;
+        padding: $unit 2 * $unit;
 
-    &:hover {
-        color: red;
+        &:hover {
+            color: red;
+        }
     }
-}
 </style>

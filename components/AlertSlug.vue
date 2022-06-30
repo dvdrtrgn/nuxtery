@@ -1,8 +1,5 @@
 <script setup lang="ts">
 /* eslint-disable vue/singleline-html-element-content-newline */
-
-import AnnoText from './AnnoText.vue';
-
 </script>
 
 <template>
@@ -19,11 +16,9 @@ import AnnoText from './AnnoText.vue';
 </template>
 
 <style lang="scss">
-
-.v-notice {
-    background-color: rgba(yellow, 0.2);
-    margin: 0;
-    padding: 1em;
-}
-
+    .v-notice {
+        background-color: rgba(yellow, 0.2);
+        margin: 0;
+        padding: 1em;
+    }
 </style>
