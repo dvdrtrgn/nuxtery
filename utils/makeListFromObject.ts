@@ -1,4 +1,5 @@
-import { isPrimitive, sanitizeHTML } from './domOps';
+import { sanitizeHTML } from './domOps';
+import { isPrimitive } from './typeChecks';
 
 export function makeListFromObject (obj:object) {
     const arr = Object.entries(obj);
