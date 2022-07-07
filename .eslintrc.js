@@ -19,5 +19,10 @@ module.exports = {
         }],
         'vue/max-attributes-per-line': ['warn', { singleline: 3, multiline: 2 }],
         'vue/no-multiple-template-root': ['off'],
+        'vue/singleline-html-element-content-newline': ['error', {
+            'ignoreWhenNoAttributes': true,
+            'ignoreWhenEmpty': true,
+            'ignores': ['AnnoText', 'button', 'pre', 'textarea'],
+        }],
     },
 };

@@ -1,4 +1,4 @@
 import pickResponse from '~/server/utils/pickResponse';
-import { article } from '~/data/potentialfullreturn.json';
+import data from '~/data/sample1/index.js';
 
-export default pickResponse(article);
+export default pickResponse(data.article);

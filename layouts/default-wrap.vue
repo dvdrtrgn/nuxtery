@@ -1,5 +1,4 @@
 <script setup lang="ts">
-/* eslint-disable vue/singleline-html-element-content-newline */
 import DefaultVue from './default.vue';
 
 const toggle = ref(false);

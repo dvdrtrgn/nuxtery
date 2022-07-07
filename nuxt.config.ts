@@ -14,5 +14,7 @@ export default defineNuxtConfig({
     ],
     modules: [
         '@vueuse/nuxt',
+        '~/modules/tv/index',
+        '~/modules/article/index',
     ],
 });
