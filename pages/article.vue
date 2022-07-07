@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { makeListFromObject } from '~/utils';
+import { makeListFromObject } from '~/utils/makeListFromObject';
 
 const url = '/api/article';
 const looseItems = ref([]);
@@ -71,7 +71,10 @@ onMounted(() => {
 
 <style lang="scss">
 [vue-article] {
-    h1,h2,h3 {
+
+    h1,
+    h2,
+    h3 {
         margin: 1rem;
         text-align: center;
         text-transform: capitalize;

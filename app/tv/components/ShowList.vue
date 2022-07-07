@@ -17,9 +17,9 @@ defineProps({
         <ul>
             <ShowLine
                 v-for="detail in listify(show)"
-                :key="detail.order"
-                :desc="detail.desc"
-                :name="detail.name"
+                :key="detail.index"
+                :desc="detail.value"
+                :name="detail.key"
             />
         </ul>
     </div>
