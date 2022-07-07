@@ -1,6 +1,12 @@
 {
     "article": {
         "authors": {
+            "123": {
+                "contact_id": 123,
+                "data": {
+                    "contact_description": "Jane Doe: ...."
+                }
+            },
             "37081": {
                 "contact_id": 37081,
                 "created_at": "2015-01-20 15:23:24",
@@ -59,12 +65,6 @@
                 "market_id": 2311,
                 "staff_id": 26971,
                 "updated_at": "2015-01-20 15:23:24"
-            },
-            "123": {
-                "contact_id": 123,
-                "data": {
-                    "contact_description": "Jane Doe: ...."
-                }
             }
         },
         "content": [
