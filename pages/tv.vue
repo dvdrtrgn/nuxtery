@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TV from '~/modules/tv/TvApp.vue';
+import ModTv from '~/modules/tv/ModTv.vue';
 </script>
 
 <template>
-    <TV />
+    <ModTv />
 </template>
 
 <!-- <style lang="scss">
