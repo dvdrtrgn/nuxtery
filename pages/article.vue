@@ -5,11 +5,11 @@ const url = '/api/article';
 const looseItems = ref([]);
 const articleData = ref(await $fetch(url) as any);
 
-definePageMeta({ layout: 'default' });
-
+// definePageMeta({ layout: 'default' });
 useTitleHelper('TITLE: ' + articleData.value.title);
 
 onMounted(() => {
+    // look for non-object entries (randos)
     looseItems.value = makeListFromObject(articleData.value);
 });
 </script>

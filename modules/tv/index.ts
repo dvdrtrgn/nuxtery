@@ -29,8 +29,8 @@ export default defineNuxtModule({
             dirs.push(path.resolve(__dirname, './composables'));
         },
     },
-    async setup (moduleOptions, nuxt) {
-    // -- Add your module logic here --
-        await console.log({ moduleOptions, nuxt });
-    },
+    // async setup (moduleOptions, nuxt) {
+    //     // -- Add your module logic here --
+    //     await console.log({ moduleOptions, nuxt });
+    // },
 });
