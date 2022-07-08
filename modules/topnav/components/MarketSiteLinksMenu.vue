@@ -25,14 +25,18 @@ const props = defineProps({
 
     ul {
         display: flex;
+        flex-wrap: wrap;
         padding: 0;
         width: 125%;
-    }
-    li {
-        list-style: none;
+        li {
+            list-style: none;
+        }
         a {
-            padding: 1em;
+            display: inline-block;
+            padding: 0.25em 1em;
             text-decoration: none;
+            white-space: nowrap;
+
             &:hover {
                 color: red;
             }
