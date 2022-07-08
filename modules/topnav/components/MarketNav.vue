@@ -4,6 +4,7 @@ const props = defineProps({
     data: { type: Object, required: true },
 });
 const flyoutOpen = ref(false);
+const searchOpen = ref(false);
 
 </script>
 
@@ -18,18 +19,13 @@ const flyoutOpen = ref(false);
                 <!-- mock -->
             </MarketSiteLinksMenu>
 
-            <MarketSearch>
+            <MarketSearch :open="searchOpen" @click="searchOpen = !searchOpen">
                 <!-- mock -->
             </MarketSearch>
         </div>
-
         <MarketSiteLinksDropdownMenu>
             <div v-if="flyoutOpen">
-                <p>MarketSiteLinksDropdownMenu</p>
-                <p>MarketSiteLinksDropdownMenu</p>
-                <p>MarketSiteLinksDropdownMenu</p>
-                <p>MarketSiteLinksDropdownMenu</p>
-                <p>MarketSiteLinksDropdownMenu</p>
+                <slot></slot>
             </div>
         </MarketSiteLinksDropdownMenu>
     </div>

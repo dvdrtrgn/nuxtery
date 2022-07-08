@@ -10,7 +10,10 @@
     </div>
 </template>
 
-<!--
 <style lang="scss">
+#MarketSiteLinksDropdownMenu {
+    background-color: #eee;
+    position: absolute;
+    width: 100%;
+}
 </style>
--->

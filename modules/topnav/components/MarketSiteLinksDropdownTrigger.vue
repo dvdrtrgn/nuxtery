@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-defineProps({
+const props = defineProps({
     open: { type: Boolean, default: false },
 });
 
@@ -8,7 +8,7 @@ defineProps({
 
 <template>
     <div id="MarketSiteLinksDropdownTrigger">
-        <button>FLYOUT {{ !open ? 'OPEN' : 'CLOSE' }}</button>
+        <button>FLYOUT {{ !props.open ? 'OPEN' : 'CLOSE' }}</button>
     </div>
 </template>
 
