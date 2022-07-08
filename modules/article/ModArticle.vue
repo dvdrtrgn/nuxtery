@@ -16,11 +16,12 @@ onMounted(() => {
 
 <template>
     <div vue-article>
+        <h1>Data</h1>
+
         <div dev-flex>
-            <h1>Article Data</h1>
             <div dev-inset>
-                <PreCollapse :data="data">
-                    <b>All Data</b>
+                <PreCollapse :data="data.topnav">
+                    <b>Top nav</b>
                 </PreCollapse>
             </div>
         </div>
@@ -65,6 +66,15 @@ onMounted(() => {
                 <b>metadata: </b>
                 # items {{ data.metadata.data.length }}
             </PreCollapse>
+        </div>
+
+        <div dev-flex>
+            <h2>Article Data</h2>
+            <div dev-inset>
+                <PreCollapse :data="data">
+                    <b>All Data</b>
+                </PreCollapse>
+            </div>
         </div>
     </div>
 </template>

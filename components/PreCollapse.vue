@@ -1,5 +1,8 @@
-<script setup lang="ts">
+<!--
+    DEV ONLY: dump any data into into a collapseable element
+-->
 
+<script setup lang="ts">
 defineProps({
     data: { type: Object, required: true },
 });
