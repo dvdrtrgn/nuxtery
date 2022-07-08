@@ -23,6 +23,7 @@ const searchOpen = ref(false);
                 <!-- mock -->
             </MarketSearch>
         </div>
+
         <MarketSiteLinksDropdownMenu>
             <div v-if="flyoutOpen">
                 <slot></slot>
