@@ -3,6 +3,7 @@
 const props = defineProps({
     data: { type: Object, required: true },
 });
+
 const flyoutOpen = ref(false);
 const searchOpen = ref(false);
 
@@ -10,19 +11,13 @@ const searchOpen = ref(false);
 
 <template>
     <div id="MarketNav">
-        <div id="MarketSiteLinksBar" dev-flex>
-            <MarketSiteLinksDropdownTrigger :open="flyoutOpen" @click="flyoutOpen = !flyoutOpen">
-                <!-- mock -->
-            </MarketSiteLinksDropdownTrigger>
-
-            <MarketSiteLinksMenu :data="props.data">
-                <!-- mock -->
-            </MarketSiteLinksMenu>
-
-            <MarketSearch :open="searchOpen" @click="searchOpen = !searchOpen">
-                <!-- mock -->
-            </MarketSearch>
-        </div>
+        <MarketSiteLinksBar
+            :data="props.data"
+            :flyout-open="flyoutOpen"
+            :search-open="searchOpen"
+            @flyoutFlip="flyoutOpen = $event"
+            @searchFlip="searchOpen = $event"
+        ></MarketSiteLinksBar>
 
         <MarketSiteLinksDropdownMenu>
             <div v-if="flyoutOpen">
