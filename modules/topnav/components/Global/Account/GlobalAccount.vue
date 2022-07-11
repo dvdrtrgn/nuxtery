@@ -11,9 +11,9 @@ const dropdownOpen = ref(false);
             :open="dropdownOpen"
             @dropdownFlip="dropdownOpen = $event"
         ></GlobalAccountTrigger>
-        <GlobalAccountDropdown
+        <GlobalAccountMenu
             :open="dropdownOpen"
-        ></GlobalAccountDropdown>
+        ></GlobalAccountMenu>
         <slot></slot>
     </div>
 </template>

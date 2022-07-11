@@ -14,10 +14,10 @@ const dropdownOpen = ref(false);
             @dropdownFlip="dropdownOpen = $event"
         ></GlobalSelectCityTrigger>
 
-        <GlobalSelectCityDropdown
+        <GlobalSelectCityMenu
             :data="citydata"
             :open="dropdownOpen"
-        ></GlobalSelectCityDropdown>
+        ></GlobalSelectCityMenu>
         <slot></slot>
     </div>
 </template>

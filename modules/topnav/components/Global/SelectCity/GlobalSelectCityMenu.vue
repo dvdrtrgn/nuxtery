@@ -15,11 +15,11 @@ const props = defineProps({
             aria-labelledby="SelectCityDropdownTrigger"
             class="dropdown-menu rounded-0 border-0 py-3 px-5 px-lg-4 m-0 shadow"
         >
-            <GlobalSelectCityDropdownItem
+            <GlobalSelectCityMenuItem
                 v-for="item in props.data"
                 :key="item.id"
                 :data="item"
-            ></GlobalSelectCityDropdownItem>
+            ></GlobalSelectCityMenuItem>
         </div>
         <slot></slot>
     </div>
