@@ -26,9 +26,9 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-#SelectCityDropdown {
+#SelectCityDropdown > div {
     background: white;
-    box-shadow: 0 0 1em gray;
+    border: 1px solid gray;
     column-count: 4;
     left: 0;
     position: absolute;

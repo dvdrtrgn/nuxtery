@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import citydata from '~/data/city-dropdown-data';
-/*
-const props = defineProps({
-    data: { type: Object, required: true },
-});
-*/
+// interface Props {}
+// const props = defineProps<Props>();
+
 // DATA
 const dropdownOpen = ref(false);
 </script>

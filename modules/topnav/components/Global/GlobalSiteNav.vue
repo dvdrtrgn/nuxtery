@@ -14,7 +14,7 @@
 
         <GlobalSelectCity></GlobalSelectCity>
 
-        <GlobalAccountDropdown></GlobalAccountDropdown>
+        <GlobalAccount></GlobalAccount>
     </div>
 </template>
 
