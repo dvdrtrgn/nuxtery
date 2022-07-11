@@ -10,6 +10,10 @@ const { topItems, sections } = topnav;
 
 <template>
     <div>
+        <GlobalSiteNav>
+            <!-- mock -->
+        </GlobalSiteNav>
+
         <MarketNav :data="topItems">
             <div dev-inset>
                 <PreCollapse :data="sections.industries">
