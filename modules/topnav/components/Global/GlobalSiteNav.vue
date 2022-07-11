@@ -5,7 +5,6 @@
 // });
 
 // DATA
-import citydata from '~/data/city-dropdown-data';
 
 </script>
 
@@ -13,9 +12,7 @@ import citydata from '~/data/city-dropdown-data';
     <div id="SiteNav" dev-flex>
         <GlobalSiteNavBranding></GlobalSiteNavBranding>
 
-        <GlobalSelectCityDropdown
-            :data="citydata"
-        ></GlobalSelectCityDropdown>
+        <GlobalSelectCity></GlobalSelectCity>
 
         <GlobalAccountDropdown></GlobalAccountDropdown>
     </div>
