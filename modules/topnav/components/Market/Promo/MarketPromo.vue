@@ -19,7 +19,9 @@
     </div>
 </template>
 
-<!--
 <style lang="scss">
+#MarketPromo {
+    border: 1px solid green;
+    max-width: 20%;
+}
 </style>
--->

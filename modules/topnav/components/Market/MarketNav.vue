@@ -12,6 +12,10 @@ const searchOpen = ref(false);
 
 <template>
     <div id="MarketNav">
+        <div dev-flex>
+            <MarketBranding></MarketBranding>
+            <MarketPromo></MarketPromo>
+        </div>
         <MarketSiteLinksBar
             :data="props.data"
             :flyout-open="flyoutOpen"
@@ -28,7 +32,8 @@ const searchOpen = ref(false);
     </div>
 </template>
 
-<!--
 <style lang="scss">
+#MarketNav {
+    border: 1px solid cyan;
+}
 </style>
--->

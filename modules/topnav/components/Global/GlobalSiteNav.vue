@@ -18,7 +18,8 @@
     </div>
 </template>
 
-<!--
 <style lang="scss">
+#SiteNav {
+    background-color: #f1f1f1;
+}
 </style>
--->
