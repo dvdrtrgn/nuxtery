@@ -26,21 +26,25 @@ const props = defineProps({
 
 <style lang="scss">
 #MarketNav {
-    border: 1px solid cyan;
+    border: 1px solid yellow;
 
     /* hookup area names */
-    #MarketBranding { grid-area: Ga1; }
-    #MarketPromo    { grid-area: Ga2; }
-    #MarketSubOffer { grid-area: Ga3; }
-    #MarketSiteLinksDropdown { grid-area: Ga4; }
-    #MarketSiteLinksBar      { grid-area: Ga5; }
-    #MarketSearch            { grid-area: Ga6; }
+    #MarketBranding          { grid-area: BR; border: 1px solid red; }
+    #MarketPromo             { grid-area: PR; border: 1px solid green; }
+    #MarketSubOffer          { grid-area: SO; border: 1px solid blue; }
+    #MarketSiteLinksDropdown { grid-area: DD; border: 1px solid cyan; }
+    #MarketSiteLinksBar      { grid-area: LB; border: 1px solid orange; }
+    #MarketSearch            { grid-area: SR; border: 1px solid purple; }
 
     display: grid;
     gap: 1rem;
-    grid-auto-columns: 1fr; /* make even width */
-    grid-template-areas:
-    ' Ga1 Ga1 Ga2 Ga2 Ga2 Ga3 Ga3 . '
-    ' Ga4 Ga5 Ga5 Ga5 Ga5 Ga5 Ga5 Ga6 '
+    // grid-auto-columns: 1fr; /* make even width */
+    grid-template-areas: ' DD BR SR ' 'PR PR PR' ' LB LB LB ' ' SO SO SO';
+
+    @media (min-width: 768px) {
+        grid-template-areas:
+        ' BR BR PR PR PR SO SO SO . '
+        ' DD LB LB LB LB LB LB LB SR '
+    }
 }
 </style>
