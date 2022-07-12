@@ -29,22 +29,41 @@ const props = defineProps({
     border: 1px solid yellow;
 
     /* hookup area names */
-    #MarketBranding          { grid-area: BR; border: 1px solid red; }
-    #MarketPromo             { grid-area: PR; border: 1px solid green; }
-    #MarketSubOffer          { grid-area: SO; border: 1px solid blue; }
-    #MarketSiteLinksDropdown { grid-area: DD; border: 1px solid cyan; }
-    #MarketSiteLinksBar      { grid-area: LB; border: 1px solid orange; }
-    #MarketSearch            { grid-area: SR; border: 1px solid purple; }
+    #MarketBranding          { grid-area: BRD; border: 1px solid red; }
+    #MarketPromo             { grid-area: PRM; border: 1px solid green; display: none; }
+    #MarketSubOffer          { grid-area: MEM; border: 1px solid blue; }
+    #MarketSiteLinksDropdown { grid-area: DRD; border: 1px solid cyan; }
+    #MarketSiteLinksBar      { grid-area: LKS; border: 1px solid orange; display: none; }
+    #MarketSearch            { grid-area: SRH; border: 1px solid purple; }
 
     display: grid;
     gap: 1rem;
     // grid-auto-columns: 1fr; /* make even width */
-    grid-template-areas: ' DD BR SR ' 'PR PR PR' ' LB LB LB ' ' SO SO SO';
+    $SM: 640px;
+    $MD: 768px;
+    $LG: 1024px;
+    $XL: 1280px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 0px) {
         grid-template-areas:
-        ' BR BR PR PR PR SO SO SO . '
-        ' DD LB LB LB LB LB LB LB SR '
+        ' DRD BRD SRH '
+        ' MEM MEM MEM '
+    }
+    @media (min-width: ($SM)) {
+        grid-template-areas:
+        ' DRD BRD MEM SRH '
+    }
+    @media (min-width: ($LG)) {
+        #MarketPromo             { display: block; }
+        #MarketSiteLinksBar      { display: block; }
+        grid-template-areas:
+        ' BRD BRD PRM PRM ... MEM SRH '
+        ' DRD LKS LKS LKS LKS LKS LKS '
+    }
+    @media (min-width: ($XL)) {
+        grid-template-areas:
+        ' BRD BRD PRM PRM ... MEM MEM '
+        ' DRD LKS LKS LKS LKS LKS SRH '
     }
 }
 </style>

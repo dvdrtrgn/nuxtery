@@ -15,7 +15,7 @@ function dropdownFlip () {
         <button
             @click="dropdownFlip"
         >
-            FLYOUT {{ !props.open ? 'OPEN' : 'CLOSE' }}
+            MENU {{ !props.open ? 'OPEN' : 'CLOSE' }}
         </button>
     </div>
 </template>

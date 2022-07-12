@@ -40,7 +40,8 @@
     </div>
 </template>
 
-<!--
 <style lang="scss">
+#MarketSubOffer {
+    text-align: right;
+}
 </style>
--->
