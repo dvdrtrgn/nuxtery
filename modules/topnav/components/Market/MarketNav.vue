@@ -29,18 +29,18 @@ const props = defineProps({
     border: 1px solid cyan;
 
     /* hookup area names */
-    .chunk.g-content_1 { grid-area: Ga1; }
-    .chunk.g-content_2 { grid-area: Ga2; }
-    .chunk.g-content_3 { grid-area: Ga3; }
-    .chunk.g-content_4 { grid-area: Ga4; }
-    .chunk.g-content_5 { grid-area: Ga5; }
-    .chunk.g-content_6 { grid-area: Ga6; }
+    #MarketBranding { grid-area: Ga1; }
+    #MarketPromo    { grid-area: Ga2; }
+    #MarketSubOffer { grid-area: Ga3; }
+    #MarketSiteLinksDropdown { grid-area: Ga4; }
+    #MarketSiteLinksBar      { grid-area: Ga5; }
+    #MarketSearch            { grid-area: Ga6; }
 
-    .layout {
-        display: grid;
-        gap: 1rem;
-        grid-auto-columns: 1fr; /* make even width */
-        grid-template-areas: 'Ga1' 'Ga2' 'Ga3' 'Ga4' 'Ga5' 'Ga6';
-    }
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: 1fr; /* make even width */
+    grid-template-areas:
+    ' Ga1 Ga1 Ga2 Ga2 Ga2 Ga3 Ga3 . '
+    ' Ga4 Ga5 Ga5 Ga5 Ga5 Ga5 Ga5 Ga6 '
 }
 </style>
