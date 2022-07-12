@@ -20,7 +20,6 @@ const dropdownOpen = ref(false);
 
 <style lang="scss">
 #MarketSearch {
-    padding-left: 1em;
     form{
         position: absolute;
         right: 0;

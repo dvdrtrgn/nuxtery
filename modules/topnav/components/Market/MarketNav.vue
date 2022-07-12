@@ -31,11 +31,12 @@ const props = defineProps({
     /* hookup area names */
     #MarketBranding          { grid-area: BRD; border: 1px solid red; }
     #MarketPromo             { grid-area: PRM; border: 1px solid green; display: none; }
-    #MarketSubOffer          { grid-area: MEM; border: 1px solid blue; }
+    #MarketSubOffer          { grid-area: SOF; border: 1px solid blue; }
     #MarketSiteLinksDropdown { grid-area: DRD; border: 1px solid cyan; }
     #MarketSiteLinksBar      { grid-area: LKS; border: 1px solid orange; display: none; }
     #MarketSearch            { grid-area: SRH; border: 1px solid purple; }
 
+    align-items: center;
     display: grid;
     gap: 1rem;
     // grid-auto-columns: 1fr; /* make even width */
@@ -47,22 +48,22 @@ const props = defineProps({
     @media (min-width: 0px) {
         grid-template-areas:
         ' DRD BRD SRH '
-        ' MEM MEM MEM '
+        ' SOF SOF SOF '
     }
     @media (min-width: ($SM)) {
         grid-template-areas:
-        ' DRD BRD MEM SRH '
+        ' DRD BRD SOF SRH '
     }
     @media (min-width: ($LG)) {
         #MarketPromo             { display: block; }
         #MarketSiteLinksBar      { display: block; }
         grid-template-areas:
-        ' BRD BRD PRM PRM ... MEM SRH '
+        ' BRD BRD PRM PRM ... SOF SRH '
         ' DRD LKS LKS LKS LKS LKS LKS '
     }
     @media (min-width: ($XL)) {
         grid-template-areas:
-        ' BRD BRD PRM PRM ... MEM MEM '
+        ' BRD BRD PRM PRM ... SOF SOF '
         ' DRD LKS LKS LKS LKS LKS SRH '
     }
 }

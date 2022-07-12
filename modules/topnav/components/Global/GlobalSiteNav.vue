@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <div id="SiteNav" dev-flex>
+    <div id="SiteNav">
         <GlobalSiteNavBranding></GlobalSiteNavBranding>
 
         <GlobalSelectCity></GlobalSelectCity>
@@ -20,6 +20,10 @@
 
 <style lang="scss">
 #SiteNav {
+    align-items: center;
     background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    min-height: 3rem;
 }
 </style>

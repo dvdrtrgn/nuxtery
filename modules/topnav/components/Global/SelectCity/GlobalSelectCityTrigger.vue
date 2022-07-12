@@ -20,11 +20,11 @@ function dropdownFlip () {
             data-toggle="dropdown"
             aria-haspopup="true"
             :aria-expanded="props.open"
-            class="dropdown-toggle dropdown-toggle-remove-bs-icon border-0 rounded-0"
             @click="dropdownFlip"
         >
-            <span class="font-weight-bold">Select a City</span>
-            <i class="bi bi-chevron-down px-1" style="font-size: 1rem;"></i>
+            <b>Select a City</b>
+            <br />
+            {{ !props.open ? 'OPEN' : 'CLOSE' }}
         </button>
         <slot></slot>
     </div>

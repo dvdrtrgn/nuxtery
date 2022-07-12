@@ -51,5 +51,6 @@ const { topItems, sections } = topnav;
     border: 1px solid pink;
     font-family: sans-serif;
     margin-bottom: 9em;
+    min-width: var(--basis);
 }
 </style>

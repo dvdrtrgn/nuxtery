@@ -12,17 +12,20 @@ function dropdownFlip () {
 </script>
 
 <template>
-    <div>
+    <div id="MarketSearchTrigger">
         <button
             id="MarketSearchDropDownTrigger"
             @click="dropdownFlip"
         >
             SEARCH
+            <br />
+            {{ !props.open ? 'OPEN' : 'CLOSE' }}
         </button>
     </div>
 </template>
 
-<!--
 <style lang="scss">
+#MarketSearchTrigger {
+    text-align: right;
+}
 </style>
--->
