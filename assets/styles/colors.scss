@@ -1,0 +1,16 @@
+$sapphire: #0f357d;
+$emerald: #16703c;
+$ruby: #b82c2e;
+
+:root,
+.sapphire {
+    --C-primary: #{$sapphire};
+}
+
+.emerald {
+    --C-primary: #{$emerald};
+}
+
+.ruby {
+    --C-primary: #{$ruby};
+}

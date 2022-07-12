@@ -25,16 +25,17 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
+@import '~/modules/topnav/dev-defs.scss';
+
 #MarketNav {
-    border: 1px solid yellow;
 
     /* hookup area names */
-    #MarketBranding          { grid-area: BRD; border: 1px solid red; }
-    #MarketPromo             { grid-area: PRM; border: 1px solid green; display: none; }
-    #MarketSubOffer          { grid-area: SOF; border: 1px solid blue; }
-    #MarketSiteLinksDropdown { grid-area: DRD; border: 1px solid cyan; }
-    #MarketSiteLinksBar      { grid-area: LKS; border: 1px solid orange; display: none; }
-    #MarketSearch            { grid-area: SRH; border: 1px solid purple; }
+    #MarketBranding          { grid-area: BRD; @include outline(red); }
+    #MarketPromo             { grid-area: PRM; @include outline(green); display: none; }
+    #MarketSubOffer          { grid-area: SOF; @include outline(blue); }
+    #MarketSiteLinksDropdown { grid-area: DRD; @include outline(cyan); }
+    #MarketSiteLinksBar      { grid-area: LKS; @include outline(orange); display: none; }
+    #MarketSearch            { grid-area: SRH; @include outline(purple); }
 
     align-items: center;
     display: grid;
@@ -58,8 +59,8 @@ const props = defineProps({
         #MarketPromo             { display: block; }
         #MarketSiteLinksBar      { display: block; }
         grid-template-areas:
-        ' BRD BRD PRM PRM ... SOF SRH '
-        ' DRD LKS LKS LKS LKS LKS LKS '
+        ' BRD BRD PRM PRM ... SOF SOF '
+        ' DRD LKS LKS LKS LKS LKS SRH '
     }
     @media (min-width: ($XL)) {
         grid-template-areas:

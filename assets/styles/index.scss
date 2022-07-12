@@ -1,3 +1,8 @@
 @import './dev';
+@import './colors';
 @import './queries';
 // @import 'bizj';
+
+div {
+    box-sizing: border-box;
+}
