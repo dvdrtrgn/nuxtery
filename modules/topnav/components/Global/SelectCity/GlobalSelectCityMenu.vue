@@ -13,7 +13,7 @@ const props = defineProps({
             v-if="props.open"
             id="SelectCityDropdownMenu"
             aria-labelledby="SelectCityDropdownTrigger"
-            class="dropdown-menu rounded-0 border-0 py-3 px-5 px-lg-4 m-0 shadow"
+            class=""
         >
             <GlobalSelectCityMenuItem
                 v-for="item in props.data"
