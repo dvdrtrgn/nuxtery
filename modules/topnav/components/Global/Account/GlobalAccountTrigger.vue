@@ -13,23 +13,23 @@ function dropdownFlip () {
 </script>
 
 <template>
-    <div class="vue-dropdown-trigger dropdown-trigger">
+    <div id="GlobalAccountTrigger">
         <button
             data-cy="nav-account-dropdown-activator"
             aria-haspopup="true"
             :aria-expanded="props.open"
-            tabindex="0"
-            class="nav-top-btn nav-account-btn"
             @click="dropdownFlip"
         >
-            <span>Sign In</span>
-            <i class="icon-custom nav-account-icon"></i>
+            <b>Sign In</b>
+            <br />
+            {{ !props.open ? 'OPEN' : 'CLOSE' }}
         </button>
         <slot></slot>
     </div>
 </template>
 
-<!--
 <style lang="scss">
+#GlobalAccountTrigger {
+    text-align: right;
+}
 </style>
--->

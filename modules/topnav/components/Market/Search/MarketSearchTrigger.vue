@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const props = defineProps({
     open: { type: Boolean, required: true },
 });
@@ -13,24 +12,20 @@ function dropdownFlip () {
 </script>
 
 <template>
-    <div>
+    <div id="MarketSearchTrigger">
         <button
-            id="SelectCityDropdownTrigger"
-            data-cy="nav-city-btn"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            :aria-expanded="props.open"
+            id="MarketSearchDropDownTrigger"
             @click="dropdownFlip"
         >
-            <b>Select a City</b>
+            SEARCH
             <br />
             {{ !props.open ? 'OPEN' : 'CLOSE' }}
         </button>
-        <slot></slot>
     </div>
 </template>
 
-<!--
 <style lang="scss">
+#MarketSearchTrigger {
+    text-align: right;
+}
 </style>
--->

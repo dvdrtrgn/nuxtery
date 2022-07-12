@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div id="MarketSiteLinksMenuDesktop">
+    <div id="MarketSiteLinksMenu">
         <ul>
             <li v-for="item in props.data.items" :key="item.uri">
                 <a :href="item.uri">
@@ -19,7 +19,7 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-#MarketSiteLinksMenuDesktop {
+#MarketSiteLinksMenu {
     width: 100%;
     overflow: hidden;
 

@@ -8,21 +8,23 @@ const dropdownOpen = ref(false);
 </script>
 
 <template>
-    <div id="SelectCity" class="pl-3 pl-sm-4">
+    <div id="SelectCity">
         <GlobalSelectCityTrigger
             :open="dropdownOpen"
             @dropdownFlip="dropdownOpen = $event"
         ></GlobalSelectCityTrigger>
 
+        <slot></slot>
+
         <GlobalSelectCityMenu
             :data="citydata"
             :open="dropdownOpen"
         ></GlobalSelectCityMenu>
-        <slot></slot>
     </div>
 </template>
 
-<!--
 <style lang="scss">
+#SelectCity {
+    flex-basis: 66%;
+}
 </style>
--->

@@ -6,11 +6,14 @@ const dropdownOpen = ref(false);
 </script>
 
 <template>
-    <div class="vue-dropdown dropdown nav-top-dropdown nav-top-account-dropdown">
+    <div id="GlobalAccount">
         <GlobalAccountTrigger
             :open="dropdownOpen"
             @dropdownFlip="dropdownOpen = $event"
         ></GlobalAccountTrigger>
+
+        <slot></slot>
+
         <GlobalAccountMenu
             :open="dropdownOpen"
         ></GlobalAccountMenu>

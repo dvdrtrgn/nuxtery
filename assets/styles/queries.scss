@@ -1,0 +1,36 @@
+$SM: 640px;
+$MD: 768px;
+$LG: 1024px;
+$XL: 1280px;
+
+:root {
+    --basis: 360px; // basically 0
+    --sm: 640px;
+    --md: 768px;
+    --lg: 1024px;
+    --xl: 1280px;
+}
+
+@media (min-width: ($SM)) {
+    :root {
+        --basis: #{$SM};
+    }
+}
+
+@media (min-width: ($MD)) {
+    :root {
+        --basis: #{$MD};
+    }
+}
+
+@media (min-width: ($LG)) {
+    :root {
+        --basis: #{$LG};
+    }
+}
+
+@media (min-width: ($XL)) {
+    :root {
+        --basis: #{$XL};
+    }
+}
