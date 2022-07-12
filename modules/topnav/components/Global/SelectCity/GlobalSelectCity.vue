@@ -5,10 +5,14 @@ import citydata from '~/data/city-dropdown-data';
 
 // DATA
 const dropdownOpen = ref(false);
+const target = ref(null);
+// METHODS
+onClickOutside(target, () => (dropdownOpen.value = false));
+
 </script>
 
 <template>
-    <div id="SelectCity">
+    <div id="SelectCity" ref="target">
         <GlobalSelectCityTrigger
             :open="dropdownOpen"
             @dropdownFlip="dropdownOpen = $event"

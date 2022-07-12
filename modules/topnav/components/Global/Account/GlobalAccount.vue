@@ -1,12 +1,17 @@
 <script setup lang="ts">
 
 // defineProps({});
+
+// DATA
 const dropdownOpen = ref(false);
+const target = ref(null);
+// METHODS
+onClickOutside(target, () => (dropdownOpen.value = false));
 
 </script>
 
 <template>
-    <div id="GlobalAccount">
+    <div id="GlobalAccount" ref="target">
         <GlobalAccountTrigger
             :open="dropdownOpen"
             @dropdownFlip="dropdownOpen = $event"

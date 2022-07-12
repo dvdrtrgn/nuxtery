@@ -11,7 +11,7 @@ const dev = ref(true);
 
 <template>
     <div :class="{dev: dev}">
-        <div id="TopNav">
+        <div id="TopNav" dev-inset>
             <GlobalSiteNav>
             <!-- mock -->
             </GlobalSiteNav>
@@ -53,8 +53,6 @@ const dev = ref(true);
 @import '~/modules/topnav/dev-defs.scss';
 
 #TopNav {
-    padding: 1rem;
-    box-shadow: inset 0 0 0.5rem silver;
     font-family: sans-serif;
     margin-bottom: 9em;
     min-width: var(--S-basis);
