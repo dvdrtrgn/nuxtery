@@ -6,7 +6,7 @@ $XL: 1280px;
 
 
 // dev helper for quick outlines
-@mixin outline($color: 'red', $style: dotted, $weight: 2px) {
+@mixin devoutline($color: 'red', $style: dotted, $weight: 2px) {
     .dev & {
         outline: $color $style $weight;
         outline-offset: calc($weight / -2);

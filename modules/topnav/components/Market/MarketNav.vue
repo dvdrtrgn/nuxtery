@@ -5,7 +5,6 @@ const props = defineProps({
 });
 
 </script>
-
 <template>
     <div id="MarketNav">
         <MarketBranding></MarketBranding>
@@ -23,19 +22,18 @@ const props = defineProps({
         <MarketSearch></MarketSearch>
     </div>
 </template>
-
 <style lang="scss">
+
 @import '~/modules/topnav/dev-defs.scss';
 
 #MarketNav {
-
     /* hookup area names */
-    #MarketBranding          { grid-area: BRD; @include outline(red); }
-    #MarketPromo             { grid-area: PRM; @include outline(green); display: none; }
-    #MarketSubOffer          { grid-area: SOF; @include outline(blue); }
-    #MarketSiteLinksDropdown { grid-area: DRD; @include outline(cyan); }
-    #MarketSiteLinksBar      { grid-area: LKS; @include outline(orange); display: none; }
-    #MarketSearch            { grid-area: SRH; @include outline(purple); }
+    #MarketBranding          { grid-area: BRD; @include devoutline(red); }
+    #MarketPromo             { grid-area: PRM; @include devoutline(green); display: none; }
+    #MarketSubOffer          { grid-area: SOF; @include devoutline(blue); }
+    #MarketSiteLinksDropdown { grid-area: DRD; @include devoutline(cyan); }
+    #MarketSiteLinksBar      { grid-area: LKS; @include devoutline(orange); display: none; }
+    #MarketSearch            { grid-area: SRH; @include devoutline(purple); }
 
     align-items: center;
     display: grid;
@@ -68,4 +66,5 @@ const props = defineProps({
         ' DRD LKS LKS LKS LKS LKS SRH '
     }
 }
+
 </style>
