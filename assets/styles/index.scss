@@ -1,8 +1,7 @@
-@import './dev';
+@import './reset';
 @import './colors';
+@import './common';
 @import './queries';
-// @import 'bizj';
 
-div {
-    box-sizing: border-box;
-}
+@import './dev';
+// @import 'bizj';

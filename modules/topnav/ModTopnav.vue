@@ -56,11 +56,23 @@ const dev = ref(true);
     font-family: sans-serif;
     margin-bottom: 9em;
     min-width: var(--S-basis);
+    overflow: visible;
+
+    a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+            color: var(--C-primary);
+            text-decoration: underline;
+        }
+    }
 }
 #SiteNav {
     @include outline(green, solid);
+    position: relative;
 }
 #MarketNav {
     @include outline(red, solid);
+    position: relative;
 }
 </style>

@@ -13,7 +13,7 @@ const props = defineProps({
         x-placement="bottom"
     >
         <div x-arrow="" style="left: 0px;"></div>
-        <ul class="">
+        <ul class="flexlist">
             <li class="">
                 <a
                     href="/login/bizjournals?r=%2F"
@@ -53,9 +53,15 @@ const props = defineProps({
     position: absolute;
     transform: translate3d(0px, 0px, 0px);
     will-change: transform;
+    z-index: 1;
+
+    ul {
+        flex-direction: column;
+        padding: 1rem;
+    }
     a {
         display: inline-block;
-        padding: 0.5em 1em;
+        padding: 1em;
     }
 }
 </style>

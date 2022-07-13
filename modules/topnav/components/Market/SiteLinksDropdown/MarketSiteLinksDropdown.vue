@@ -15,10 +15,8 @@ onClickOutside(target, () => (dropdownOpen.value = false));
             @dropdownFlip="dropdownOpen = $event"
         ></MarketSiteLinksDropdownTrigger>
 
-        <MarketSiteLinksDropdownMenu>
-            <div v-if="dropdownOpen">
-                <slot></slot>
-            </div>
+        <MarketSiteLinksDropdownMenu v-if="dropdownOpen">
+            <slot></slot>
         </MarketSiteLinksDropdownMenu>
     </div>
 </template>

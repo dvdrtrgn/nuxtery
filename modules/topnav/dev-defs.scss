@@ -9,6 +9,6 @@ $XL: 1280px;
 @mixin outline($color: 'red', $style: dotted, $weight: 2px) {
     .dev & {
         outline: $color $style $weight;
-        outline-offset: calc($weight / -1);
+        outline-offset: calc($weight / -2);
     }
 }

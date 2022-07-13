@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
     <div id="MarketSiteLinksMenu">
-        <ul>
+        <ul class="flexlist">
             <li v-for="item in props.data.items" :key="item.uri">
                 <a :href="item.uri">
                     {{ item.title ?? '|' }}
@@ -24,22 +24,12 @@ const props = defineProps({
     overflow: hidden;
 
     ul {
-        display: flex;
         flex-wrap: wrap;
-        padding: 0;
-        width: 125%;
-        li {
-            list-style: none;
-        }
+        width: 110%;
         a {
             display: inline-block;
             padding: 0.25em 1em;
-            text-decoration: none;
             white-space: nowrap;
-
-            &:hover {
-                color: red;
-            }
         }
     }
 }

@@ -1,20 +1,20 @@
 <script setup lang="ts">
-
-// defineProps({});
+import data from '~/data/adhoc/market-promo';
 
 </script>
 
 <template>
     <div id="MarketPromo">
         <div role="link">
-            <a href="/bizjournals/the-playbook">
-                <div class="">
-                    The Playbook
+            <a :href="data.link">
+                <div class="title">
+                    {{ data.title }}
                 </div>
-                <div class="">
-                    What business owners need to know
-                    to grow and protect their
-                    businesses
+                <div class="body">
+                    {{ data.body }}
+                    <span title="add a chevron">
+                        ﹥
+                    </span>
                 </div>
             </a>
         </div>
@@ -22,5 +22,16 @@
 </template>
 
 <style lang="scss">
-#MarketPromo {}
+#MarketPromo {
+    text-emphasis: none;
+    .title {
+        font-size: x-small;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    .body {
+        font-size: small;
+        font-weight: 600;
+    }
+}
 </style>

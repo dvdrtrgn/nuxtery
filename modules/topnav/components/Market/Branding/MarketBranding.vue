@@ -31,7 +31,7 @@ const props = defineProps({
 <style lang="scss">
 #MarketBranding {
     background-color: steelblue;
-    padding: 0.5rem 1rem;
-    width: 9rem;
+    padding: 1rem 3rem;
+    width: 18rem;
 }
 </style>

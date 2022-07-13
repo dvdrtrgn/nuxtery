@@ -23,9 +23,5 @@ onClickOutside(target, () => (dropdownOpen.value = false));
 
 <style lang="scss">
 #MarketSearch {
-    form{
-        position: absolute;
-        right: 0;
-    }
 }
 </style>

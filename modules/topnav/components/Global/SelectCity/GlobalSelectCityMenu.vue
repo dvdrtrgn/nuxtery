@@ -31,7 +31,10 @@ const props = defineProps({
     border: 1px solid gray;
     column-count: 4;
     left: 0;
+    padding: 1rem;
     position: absolute;
+    z-index: 1;
+
     a {
         display: inline-block;
         padding: 0.5em 1em;

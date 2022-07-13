@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import citydata from '~/data/city-dropdown-data';
+import citydata from '~/data/adhoc/city-dropdown';
 // interface Props {}
 // const props = defineProps<Props>();
 
