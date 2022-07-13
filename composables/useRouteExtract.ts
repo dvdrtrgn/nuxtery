@@ -1,3 +1,8 @@
+/*
+# useRouteExtract
+
+Extract top route paths for making a nav.
+*/
 import { RouteRecord } from 'vue-router';
 
 type xRecord = {

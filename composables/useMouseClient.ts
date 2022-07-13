@@ -1,5 +1,8 @@
-import { ref, onMounted, onUnmounted } from 'vue';
+/*
+# useMouseClient
 
+Modify vueuse to experiment with throttling.
+*/
 export default function useMyMouse (options:any = {}) {
     const x = ref(0);
     const y = ref(0);

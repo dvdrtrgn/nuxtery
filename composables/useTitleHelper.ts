@@ -1,5 +1,7 @@
 /*
-    Leverage vueuse to update page title to route name
+# useTitleHelper
+
+Leverage VueUse to update page title to route name.
 */
 import { useTitle } from '@vueuse/core';
 import { RouteRecord } from 'vue-router';
