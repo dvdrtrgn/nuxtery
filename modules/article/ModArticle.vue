@@ -1,17 +1,28 @@
 <script setup lang="ts">
 import { makeListFromObject } from '~/utils/makeListFromObject';
 
-const looseItems = ref([]);
 const props = defineProps({
     data: { type: Object, required: true },
 });
 
+//
+// DATA
+//
 const data = props.data;
-
+const htmlClass = useClassHelper(':root');
+const looseItems = ref([]);
+/*
+HOOKS
+*/
 onMounted(() => {
+    htmlClass.add('dev');
     // look for non-object entries (randos)
     looseItems.value = makeListFromObject(props.data);
 });
+onUnmounted(() => {
+    htmlClass.remove('dev');
+});
+
 </script>
 
 <template>

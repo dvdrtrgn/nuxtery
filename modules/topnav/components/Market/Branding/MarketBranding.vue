@@ -1,37 +1,35 @@
 <script setup lang="ts">
 /*
-const props = defineProps({
-    data: { type: Object, required: true },
-});
-*/
-</script>
+DATA */
+const svg2png = `
+this.onerror = null;
+this.src = this.src.replace('.svg','.png');
+`; // is this for old IE??
 
+</script>
 <template>
     <div id="MarketBranding">
-        <div
-            role="link"
-            class="order-0 flex-grow-1 flex-sm-grow-0 text-center header__logo"
-        >
-            <a
-                href="bizjournals"
-                data-ct="Logo"
-                class="d-flex align-items-center text-center mx-auto h-100 logo-link"
-            >
-                <img
-                    src="/assets/images/bizjournals-logo.svg"
-                    alt="The Business Journals"
-                    data-cy="nav-banner-brand-img"
-                    onerror="this.onerror=null;this.src=this.src.replace('.svg','.png');"
-                    class="nav-banner-brand-img m-auto"
-                /></a>
-        </div>
+        <a href="/" data-ct="Logo">
+            <img
+                src="/assets/images/bizjournals-logo.svg"
+                alt="The Business Journals"
+                data-cy="nav-banner-brand-img"
+                :onerror="svg2png"
+                class=""
+            />
+        </a>
     </div>
 </template>
-
 <style lang="scss">
+
 #MarketBranding {
-    background-color: steelblue;
-    padding: 0.5rem 1rem;
-    width: 9rem;
+    background-color: var(--C-primary);
+    background-image: url('/assets/images/stripes-12px.png');
+    background-repeat: repeat;
+    width: 18rem;
+
+    a { display: block; }
+    img { margin: 1rem 3rem; }
 }
+
 </style>

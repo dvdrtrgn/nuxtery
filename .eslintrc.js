@@ -2,6 +2,7 @@ module.exports = {
     extends: ['@nuxtjs/eslint-config-typescript'],
     rules: {
         '@typescript-eslint/no-unused-vars': ['warn'],
+        'brace-style': ['warn', '1tbs'],
         'comma-dangle': ['warn', 'always-multiline'],
         'indent': ['warn',
             4, { MemberExpression: 1, SwitchCase: 1 },

@@ -5,12 +5,12 @@ const props = defineProps({
 
 const { topnav } = props.data;
 const { topItems, sections } = topnav;
+const dev = ref(true);
 
 </script>
-
 <template>
-    <div>
-        <div id="TopNav">
+    <div :class="{dev: dev}">
+        <div id="TopNav" dev-inset>
             <GlobalSiteNav>
             <!-- mock -->
             </GlobalSiteNav>
@@ -40,17 +40,15 @@ const { topItems, sections } = topnav;
             </MarketNav>
         </div>
 
-        <PreCollapse dev-inset :data="topnav">
+        <PreCollapse v-show="dev" dev-inset :data="topnav">
             <b>All data</b>
         </PreCollapse>
+
+        <ThemePicker></ThemePicker>
+
+        <button @click="dev = !dev">Toggle dev bondaries</button>
     </div>
 </template>
-
 <style lang="scss">
-#TopNav {
-    border: 1px solid pink;
-    font-family: sans-serif;
-    margin-bottom: 9em;
-    min-width: var(--basis);
-}
+@import '~/modules/topnav/styles/';
 </style>

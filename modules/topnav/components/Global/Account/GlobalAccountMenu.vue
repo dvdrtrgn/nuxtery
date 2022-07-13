@@ -8,32 +8,34 @@ const props = defineProps({
     <div
         v-if="props.open"
         id="AccountDropdown"
-        class="vue-dropdown-contents"
+        class=""
 
         x-placement="bottom"
     >
         <div x-arrow="" style="left: 0px;"></div>
-        <ul class="dropdown-content nav-top-dropdown-account-list">
-            <li class="nav-top-dropdown-account-list-item">
+        <ul class="flexlist">
+            <li class="">
                 <a
                     href="/login/bizjournals?r=%2F"
                     data-ct="Nav : Account Anonymous User : Sign In"
                     data-cy="nav-account-dropdown-login"
-                    class="nav-account-link"
+                    class=""
                 >
-                    <b>Sign In</b> <small class="nav-account-link-sub">
+                    <b>Sign In</b>
+                    <small class="">
                         Existing Members
                     </small>
                 </a>
-            </li> <li class="nav-top-dropdown-account-list-item">
+            </li>
+            <li class="">
                 <a
                     href="/register/bizjournals?r=%2F"
                     data-ct="Nav : Account Anonymous User : Create Your FREE Account"
                     data-cy="nav-account-dropdown-register"
-                    class="nav-account-link"
+                    class=""
                 >
                     <b>Become a Member</b>
-                    <small class="nav-account-link-sub">
+                    <small class="">
                         It’s FREE!
                     </small>
                 </a>
@@ -51,9 +53,15 @@ const props = defineProps({
     position: absolute;
     transform: translate3d(0px, 0px, 0px);
     will-change: transform;
+    z-index: 1;
+
+    ul {
+        flex-direction: column;
+        padding: 1rem;
+    }
     a {
         display: inline-block;
-        padding: 0.5em 1em;
+        padding: 1em;
     }
 }
 </style>

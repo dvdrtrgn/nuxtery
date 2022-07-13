@@ -2,11 +2,14 @@
 
 // DATA
 const dropdownOpen = ref(false);
+const $parent = ref(null);
+// METHODS
+onClickOutside($parent, () => (dropdownOpen.value = false));
 
 </script>
 
 <template>
-    <div id="MarketSearch">
+    <div id="MarketSearch" ref="$parent">
         <MarketSearchTrigger
             :open="dropdownOpen"
             @dropdownFlip="dropdownOpen = $event"
@@ -18,11 +21,10 @@ const dropdownOpen = ref(false);
     </div>
 </template>
 
+<!--
 <style lang="scss">
 #MarketSearch {
-    form{
-        position: absolute;
-        right: 0;
-    }
+
 }
 </style>
+ -->

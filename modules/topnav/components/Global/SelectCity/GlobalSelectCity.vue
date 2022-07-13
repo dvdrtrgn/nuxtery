@@ -1,14 +1,18 @@
 <script setup lang="ts">
-import citydata from '~/data/city-dropdown-data';
+import citydata from '~/data/adhoc/city-dropdown';
 // interface Props {}
 // const props = defineProps<Props>();
 
 // DATA
 const dropdownOpen = ref(false);
+const $parent = ref(null);
+// METHODS
+onClickOutside($parent, () => (dropdownOpen.value = false));
+
 </script>
 
 <template>
-    <div id="SelectCity">
+    <div id="SelectCity" ref="$parent">
         <GlobalSelectCityTrigger
             :open="dropdownOpen"
             @dropdownFlip="dropdownOpen = $event"

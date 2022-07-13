@@ -1,8 +1,13 @@
+/*
+# useTitleHelper
+
+Leverage VueUse to update page title to route name.
+*/
 import { useTitle } from '@vueuse/core';
 import { RouteRecord } from 'vue-router';
 
 const Orig = {
-    router: null,
+    router: null, // placeholder
     title: useTitle('Biz', { titleTemplate: '%s | Biz' }),
 };
 
@@ -18,9 +23,13 @@ function watchRouter () {
 
 export default function (override = '') {
     // console.log('useTitleHelper', Orig.title);
-    if (!Orig.router) { watchRouter(); }
+    if (!Orig.router) {
+        watchRouter(); // fulfill placeholder
+    }
 
-    if (override) { Orig.title.value = override; }
+    if (override) {
+        Orig.title.value = override;
+    }
 
     return Orig.title;
 }

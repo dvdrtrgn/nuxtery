@@ -1,21 +1,24 @@
 <script setup lang="ts">
 
-// DATA
+/*
+DATA */
 const dropdownOpen = ref(false);
+const $parent = ref(null);
+
+/*
+METHODS */
+onClickOutside($parent, () => (dropdownOpen.value = false));
 
 </script>
-
 <template>
-    <div id="MarketSiteLinksDropdown">
+    <div id="MarketSiteLinksDropdown" ref="$parent">
         <MarketSiteLinksDropdownTrigger
             :open="dropdownOpen"
             @dropdownFlip="dropdownOpen = $event"
         ></MarketSiteLinksDropdownTrigger>
 
-        <MarketSiteLinksDropdownMenu>
-            <div v-if="dropdownOpen">
-                <slot></slot>
-            </div>
+        <MarketSiteLinksDropdownMenu v-if="dropdownOpen">
+            <slot></slot>
         </MarketSiteLinksDropdownMenu>
     </div>
 </template>

@@ -12,7 +12,7 @@ const props = defineProps({
             :href="props.data.href"
             data-ct="Nav : Select City : {{ props.data.name}}"
             data-cy="market-nav-{{ props.data.id}}"
-            class="dropdown-item p-0 m-0"
+            class=""
         >
             {{ props.data.name }}
         </a>

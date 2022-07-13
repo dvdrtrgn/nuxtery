@@ -13,7 +13,7 @@ const props = defineProps({
             v-if="props.open"
             id="SelectCityDropdownMenu"
             aria-labelledby="SelectCityDropdownTrigger"
-            class="dropdown-menu rounded-0 border-0 py-3 px-5 px-lg-4 m-0 shadow"
+            class=""
         >
             <GlobalSelectCityMenuItem
                 v-for="item in props.data"
@@ -31,7 +31,10 @@ const props = defineProps({
     border: 1px solid gray;
     column-count: 4;
     left: 0;
+    padding: 1rem;
     position: absolute;
+    z-index: 1;
+
     a {
         display: inline-block;
         padding: 0.5em 1em;

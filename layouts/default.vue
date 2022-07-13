@@ -7,7 +7,9 @@ useTitleHelper();
         <header>
             <TheNav />
         </header>
+
         <slot></slot>
+
         <TheFooter />
     </div>
 </template>
