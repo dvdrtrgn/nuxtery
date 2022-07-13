@@ -8,10 +8,17 @@ const props = defineProps({
 
 const data = props.data;
 
+const htmlClass = useClassHelper(':root');
+
 onMounted(() => {
+    htmlClass.add('dev');
     // look for non-object entries (randos)
     looseItems.value = makeListFromObject(props.data);
 });
+onUnmounted(() => {
+    htmlClass.remove('dev');
+});
+
 </script>
 
 <template>

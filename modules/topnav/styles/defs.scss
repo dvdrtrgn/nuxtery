@@ -4,7 +4,6 @@ $MD: 768px;
 $LG: 1024px;
 $XL: 1280px;
 
-
 // dev helper for quick outlines
 @mixin devoutline($color: 'red', $style: dotted, $weight: 2px) {
     .dev & {

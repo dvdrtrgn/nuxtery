@@ -57,7 +57,7 @@ onMounted(() => {
 </template>
 <style lang="scss">
 
-@import '~/modules/topnav/dev-defs.scss';
+@import '~/modules/topnav/styles/defs.scss';
 
 #TopNav {
     font-family: sans-serif;
