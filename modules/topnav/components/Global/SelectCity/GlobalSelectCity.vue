@@ -5,14 +5,14 @@ import citydata from '~/data/adhoc/city-dropdown';
 
 // DATA
 const dropdownOpen = ref(false);
-const target = ref(null);
+const $parent = ref(null);
 // METHODS
-onClickOutside(target, () => (dropdownOpen.value = false));
+onClickOutside($parent, () => (dropdownOpen.value = false));
 
 </script>
 
 <template>
-    <div id="SelectCity" ref="target">
+    <div id="SelectCity" ref="$parent">
         <GlobalSelectCityTrigger
             :open="dropdownOpen"
             @dropdownFlip="dropdownOpen = $event"

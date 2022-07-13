@@ -4,11 +4,11 @@
 const props = defineProps({
     open: { type: Boolean, required: true },
 });
-const searchEl = ref(null);
+const $searchEl = ref(null);
 
 watchEffect(() => {
     if (props.open) {
-        nextTick(() => searchEl.value.focus());
+        nextTick(() => $searchEl.value.focus());
     }
 });
 
@@ -18,7 +18,7 @@ watchEffect(() => {
     <div v-show="props.open" id="MarketSearchDropDown">
         <form @submit.prevent>
             <input
-                ref="searchEl"
+                ref="$searchEl"
                 type="text"
                 placeholder="add terms here"
             />
