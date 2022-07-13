@@ -19,32 +19,32 @@
     /* hookup area names */
     #MarketBranding {
         grid-area: BRD;
-        @include devoutline(red);
+        @include devOutline(red);
     }
 
     #MarketPromo {
         grid-area: PRM;
-        @include devoutline(green);
+        @include devOutline(green);
     }
 
     #MarketSubOffer {
         grid-area: SOF;
-        @include devoutline(blue);
+        @include devOutline(blue);
     }
 
     #MarketSiteLinksDropdown {
         grid-area: DRD;
-        @include devoutline(cyan);
+        @include devOutline(cyan);
     }
 
     #MarketSiteLinksBar {
         grid-area: LKS;
-        @include devoutline(orange);
+        @include devOutline(orange);
     }
 
     #MarketSearch {
         grid-area: SRH;
-        @include devoutline(purple);
+        @include devOutline(purple);
     }
 
     align-items: center;

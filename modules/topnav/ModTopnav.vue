@@ -67,12 +67,12 @@ onMounted(() => {
 }
 
 #SiteNav {
-    @include devoutline(green, solid);
+    @include devOutline(green, solid);
     position: relative;
 }
 
 #MarketNav {
-    @include devoutline(red, solid);
+    @include devOutline(red, solid);
     position: relative;
 }
 

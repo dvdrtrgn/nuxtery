@@ -1,12 +1,12 @@
 <script setup lang="ts">
 /*
-const props = defineProps({
-    data: { type: Object, required: true },
-});
-*/
-const svg2png = 'this.onerror = null; this.src = this.src.replace(\'.svg\',\'.png\');'; // is this for old IE??
-</script>
+DATA */
+const svg2png = `
+this.onerror = null;
+this.src = this.src.replace('.svg','.png');
+`; // is this for old IE??
 
+</script>
 <template>
     <div id="MarketBranding">
         <a href="/" data-ct="Logo">
@@ -20,8 +20,8 @@ const svg2png = 'this.onerror = null; this.src = this.src.replace(\'.svg\',\'.pn
         </a>
     </div>
 </template>
-
 <style lang="scss">
+
 #MarketBranding {
     background-color: var(--C-primary);
     background-image: url('/assets/images/stripes-12px.png');
@@ -31,4 +31,5 @@ const svg2png = 'this.onerror = null; this.src = this.src.replace(\'.svg\',\'.pn
     a { display: block; }
     img { margin: 1rem 3rem; }
 }
+
 </style>

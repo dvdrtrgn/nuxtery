@@ -1,13 +1,15 @@
 <script setup lang="ts">
 
-// DATA
+/*
+DATA */
 const dropdownOpen = ref(false);
 const $parent = ref(null);
-// METHODS
+
+/*
+METHODS */
 onClickOutside($parent, () => (dropdownOpen.value = false));
 
 </script>
-
 <template>
     <div id="MarketSiteLinksDropdown" ref="$parent">
         <MarketSiteLinksDropdownTrigger
