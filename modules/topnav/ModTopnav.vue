@@ -7,12 +7,6 @@ const { topnav } = props.data;
 const { topItems, sections } = topnav;
 const dev = ref(true);
 
-const bodyClass = useClassHelper('body');
-
-onMounted(() => {
-    bodyClass.add('bizj');
-});
-
 </script>
 <template>
     <div :class="{dev: dev}">
@@ -56,24 +50,5 @@ onMounted(() => {
     </div>
 </template>
 <style lang="scss">
-
-@import '~/modules/topnav/styles/defs.scss';
-
-#TopNav {
-    font-family: sans-serif;
-    margin-bottom: 9em;
-    min-width: var(--S-basis);
-    overflow: visible;
-}
-
-#SiteNav {
-    @include devOutline(green, solid);
-    position: relative;
-}
-
-#MarketNav {
-    @include devOutline(red, solid);
-    position: relative;
-}
-
+@import '~/modules/topnav/styles/';
 </style>

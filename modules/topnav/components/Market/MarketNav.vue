@@ -22,8 +22,3 @@ const props = defineProps({
         <MarketSearch></MarketSearch>
     </div>
 </template>
-<style lang="scss">
-
-@import '~/modules/topnav/styles/skeleton.scss';
-
-</style>

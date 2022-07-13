@@ -1,11 +1,4 @@
-@import './defs';
-
-
 #MarketNav {
-    .bizj & {
-        @import './bizj';
-    }
-
     a {
         color: black;
         text-decoration: none;
@@ -19,32 +12,26 @@
     /* hookup area names */
     #MarketBranding {
         grid-area: BRD;
-        @include devOutline(red);
     }
 
     #MarketPromo {
         grid-area: PRM;
-        @include devOutline(green);
     }
 
     #MarketSubOffer {
         grid-area: SOF;
-        @include devOutline(blue);
     }
 
     #MarketSiteLinksDropdown {
         grid-area: DRD;
-        @include devOutline(cyan);
     }
 
     #MarketSiteLinksBar {
         grid-area: LKS;
-        @include devOutline(orange);
     }
 
     #MarketSearch {
         grid-area: SRH;
-        @include devOutline(purple);
     }
 
     align-items: center;
