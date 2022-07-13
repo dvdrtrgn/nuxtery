@@ -1,6 +1,24 @@
 <script setup lang="ts">
 import { useStorage } from '@vueuse/core';
 
+interface ThemeOpts {
+    value: string;
+    text: string;
+};
+
+const props = defineProps({
+    options: {
+        type: Array<ThemeOpts>,
+        default: () => {
+            return [
+                { value: 'sapphire', text: 'Sapphire blue' },
+                { value: 'emerald', text: 'Emerald green' },
+                { value: 'ruby', text: 'Ruby red' },
+            ] as ThemeOpts[];
+        },
+    },
+});
+
 const docClass = useClassHelper(':root');
 const themePick = useStorage('theme-pick', 'sapphire');
 
@@ -12,19 +30,13 @@ onMounted(() => {
     }, { immediate: true });
 });
 
-const options = [
-    { value: 'sapphire', text: 'Sapphire blue' },
-    { value: 'emerald', text: 'Emerald green' },
-    { value: 'ruby', text: 'Ruby red' },
-];
 </script>
-
 <template>
     <span id="ThemePicker">
         <b>Theme picker:</b>
         <select v-model="themePick">
             <option
-                v-for="option in options"
+                v-for="option in props.options"
                 :key="option.value"
                 :value="option.value"
             >
@@ -33,8 +45,8 @@ const options = [
         </select>
     </span>
 </template>
-
 <style lang="scss">
+
 #ThemePicker {
     background-color: var(--C-primary);
     color: white;
@@ -43,4 +55,5 @@ const options = [
     font-family: sans-serif;
     padding: 1rem;
 }
+
 </style>
