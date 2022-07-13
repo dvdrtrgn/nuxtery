@@ -7,8 +7,13 @@ const { topnav } = props.data;
 const { topItems, sections } = topnav;
 const dev = ref(true);
 
-</script>
+const bodyClass = useClassHelper('body');
 
+onMounted(() => {
+    bodyClass.add('bizj');
+});
+
+</script>
 <template>
     <div :class="{dev: dev}">
         <div id="TopNav" dev-inset>
@@ -50,8 +55,8 @@ const dev = ref(true);
         <button @click="dev = !dev">Toggle dev bondaries</button>
     </div>
 </template>
-
 <style lang="scss">
+
 @import '~/modules/topnav/dev-defs.scss';
 
 #TopNav {
@@ -77,4 +82,5 @@ const dev = ref(true);
     @include outline(red, solid);
     position: relative;
 }
+
 </style>

@@ -11,22 +11,27 @@ const props = defineProps({
         type: Array<ThemeOpts>,
         default: () => {
             return [
-                { value: 'sapphire', text: 'Sapphire blue' },
+                { value: '', text: 'Pick one' },
                 { value: 'emerald', text: 'Emerald green' },
                 { value: 'ruby', text: 'Ruby red' },
+                { value: 'sapphire', text: 'Sapphire blue' },
             ] as ThemeOpts[];
         },
     },
 });
 
-const docClass = useClassHelper(':root');
+const htmlClass = useClassHelper(':root');
 const themePick = useStorage('theme-pick', 'sapphire');
 
 onMounted(() => {
     watch(themePick, (nv, ov) => {
-        docClass.add(nv);
-        docClass.remove(ov);
-        // console.log({ nv, ov, docClass, theme: themePick.value });
+        if (nv) {
+            htmlClass.add(nv);
+        }
+        if (ov) {
+            htmlClass.remove(ov);
+        }
+        // console.log({ nv, ov, htmlClass, theme: themePick.value });
     }, { immediate: true });
 });
 
