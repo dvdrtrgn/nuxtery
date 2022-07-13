@@ -1,6 +1,8 @@
 function calcVirtualLines (ele) {
-
+    // find a way to guess number of lines based on a standard div
+    return ele;
 }
+calcVirtualLines();
 
 export default {
     space_between_ad: 999,

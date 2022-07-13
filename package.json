@@ -5,7 +5,8 @@
         "build": "nuxt build",
         "generate": "nuxt generate",
         "preview": "nuxt preview",
-        "revpkgs": "npx npm-check-updates -u; npm install"
+        "revpkgs": "npx npm-check-updates -u; npm install",
+        "lint": "eslint --fix --ext .ts,.js,.vue ."
     },
     "devDependencies": {
         "@nuxtjs/eslint-config-typescript": "^10.0.0",
