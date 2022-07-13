@@ -1,16 +1,30 @@
 $sapphire: #0f357d;
+$sapphireDarkest: #08173b;
+$sapphireLightest: #d4e0ff;
+
 $emerald: #16703c;
+$emeraldDarkest: #063b1c;
+$emeraldLightest: #f0fff6;
+
 $ruby: #b82c2e;
+$rubyDarkest: #540001;
+$rubyLightest: #ffe8e8;
 
 :root,
 .sapphire {
     --C-primary: #{$sapphire};
+    --C-primaryDarkest: #{$sapphireDarkest};
+    --C-primaryLightest: #{$sapphireLightest};
 }
 
 .emerald {
     --C-primary: #{$emerald};
+    --C-primaryDarkest: #{$emeraldDarkest};
+    --C-primaryLightest: #{$emeraldLightest};
 }
 
 .ruby {
     --C-primary: #{$ruby};
+    --C-primaryDarkest: #{$rubyDarkest};
+    --C-primaryLightest: #{$rubyLightest};
 }
