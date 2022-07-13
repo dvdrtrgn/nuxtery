@@ -1,26 +1,20 @@
 <script setup lang="ts">
+import data from '~/data/adhoc/sub-offer';
 
 // defineProps({});
 
 </script>
 
 <template>
-    <div id="MarketSubOffer">
-        <div
-            role="link"
-        >
-            <div id="cxense_marketing_nav_sub_offer">
-                <div>
-                    ACCESS 45+ CITIES
-                </div>
-                <div class="">
-                    <a
-                        id="cXLinkIdl5gsgntqjja5gxw7"
-                        href="https://www.bizjournals.com/bizjournals/subscription?csrc=6310&amp;cpncd=ntlpaywall&amp;utm_source=cx&amp;utm_medium=paw&amp;utm_campaign=sb&amp;utm_content=eliteintro&amp;redirectmarket=bizjournals"
-                    >
-                        BECOME A MEMBER
-                    </a>
-                </div>
+    <div id="MarketSubOffer" role="link">
+        <div id="cxense_marketing_nav_sub_offer">
+            <div class="sub_offer_heading">
+                {{ data.heading }}
+            </div>
+            <div class="btn sub_offer_link">
+                <a :id="data.id" :href="data.href">
+                    {{ data.text }}
+                </a>
             </div>
         </div>
     </div>
