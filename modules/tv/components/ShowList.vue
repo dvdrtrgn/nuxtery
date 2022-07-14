@@ -32,7 +32,10 @@ defineProps({
 
     img {
         background: url('/show.jpg') no-repeat;
-        float: left;
+        height: fit-content;
+        margin: 1em;
+    }
+    ul {
         margin: 1em;
     }
 }
