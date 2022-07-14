@@ -5,14 +5,16 @@ const props = defineProps({
 });
 
 </script>
+
 <template>
     <div id="MarketNav">
         <MarketBranding></MarketBranding>
         <MarketPromo></MarketPromo>
         <MarketSubOffer></MarketSubOffer>
 
-        <MarketSiteLinks :data="props.data.topnav">
-        </MarketSiteLinks>
+        <MarketSiteLinks
+            :data="props.data.topnav"
+        ></MarketSiteLinks>
 
         <MarketSearch></MarketSearch>
     </div>

@@ -18,8 +18,3 @@ const dropdownFlip = () => emit('dropdownFlip', !props.open);
         </button>
     </div>
 </template>
-
-<!--
-<style lang="scss">
-</style>
- -->

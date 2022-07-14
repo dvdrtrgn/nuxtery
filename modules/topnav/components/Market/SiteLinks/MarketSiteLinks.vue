@@ -10,24 +10,23 @@ const dropdownOpen = ref(false);
 const $parent = ref(null);
 
 // METHODS
-const setDropdown = bool => (dropdownOpen.value = bool);
+const setDropdown = (evt: boolean) => (dropdownOpen.value = evt);
 onClickOutside($parent, () => setDropdown(false));
 
 </script>
 
 <template>
     <div id="MarketSiteLinks" ref="$parent">
-        <div dev-flex>
-            <!-- keep these stuck together -->
-
+        <div style="align-items: center; display: flex;">
             <MarketSiteLinksDropdownTrigger
                 id="MarketSiteLinksDropdownTrigger"
                 :open="dropdownOpen"
                 @dropdownFlip="setDropdown"
             ></MarketSiteLinksDropdownTrigger>
 
-            <MarketSiteLinksBar class="outside" :data="topItems">
-            </MarketSiteLinksBar>
+            <MarketSiteLinksBar
+                class="outside" :data="topItems"
+            ></MarketSiteLinksBar>
         </div>
 
         <MarketSiteLinksDropdownMenu
@@ -35,11 +34,9 @@ onClickOutside($parent, () => setDropdown(false));
             id="MarketSiteLinksDropdownMenu"
             :data="sections"
         >
-            <MarketSiteLinksBar class="inside" :data="topItems">
-            </MarketSiteLinksBar>
+            <MarketSiteLinksBar
+                class="inside" :data="topItems"
+            ></MarketSiteLinksBar>
         </MarketSiteLinksDropdownMenu>
     </div>
 </template>
-
-<style lang="scss">
-</style>

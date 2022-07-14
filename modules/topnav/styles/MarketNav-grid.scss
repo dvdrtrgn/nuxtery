@@ -1,5 +1,8 @@
 /* GRID  */
 #MarketNav {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
 
     /* hookup area names */
     #MarketBranding {
@@ -18,43 +21,31 @@
         grid-area: SHAR;
     }
 
-    align-items: center;
-    display: grid;
-    gap: 1rem;
-
     @media (min-width: 0) {
-        #MarketPromo,
-        .outside.marketSiteLinksBar {
-            display: none;
-        }
-
         grid-template-areas: //
-        ' LBAR BRND SHAR '
-        ' SOFF SOFF SOFF '
+            ' LBAR BRND SHAR '
+            ' SOFF SOFF SOFF '
+        ;
     }
 
     @media (min-width: ($SM)) {
         grid-template-areas: //
             ' LBAR BRND SOFF SHAR '
+        ;
+    }
+
+    @media (min-width: ($MD)) {
+        // same
     }
 
     @media (min-width: ($LG)) {
-        #MarketPromo,
-        .outside.marketSiteLinksBar {
-            display: inline-block;
-        }
-        .inside.marketSiteLinksBar {
-            display: none;
-        }
-
         grid-template-areas: //
-        ' BRND BRND PRMO PRMO .... SOFF SOFF '
-        ' LBAR LBAR LBAR LBAR LBAR LBAR SHAR '
+            ' BRND PRMO PRMO .... SOFF '
+            ' LBAR LBAR LBAR LBAR SHAR '
+        ;
     }
 
     @media (min-width: ($XL)) {
-        grid-template-areas: //
-            ' BRND BRND PRMO PRMO .... SOFF SOFF '
-            ' LBAR LBAR LBAR LBAR LBAR LBAR SHAR '
+        // same
     }
 }

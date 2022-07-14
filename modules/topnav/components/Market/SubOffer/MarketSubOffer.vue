@@ -18,15 +18,3 @@ import data from '~/data/adhoc/sub-offer';
         </div>
     </div>
 </template>
-
-<style lang="scss">
-
-#MarketSubOffer {
-    text-align: center;
-
-    @media (min-width: 640px) {
-        text-align: right;
-    }
-}
-
-</style>
