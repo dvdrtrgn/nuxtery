@@ -3,22 +3,22 @@
 
     /* hookup area names */
     #MarketBranding {
-        grid-area: BRD;
+        grid-area: BRND;
     }
     #MarketPromo {
-        grid-area: PRM;
+        grid-area: PRMO;
     }
     #MarketSubOffer {
-        grid-area: SOF;
+        grid-area: SOFF;
     }
     #MarketSiteLinksDropdown {
-        grid-area: DRD;
+        grid-area: DROP;
     }
     #MarketSiteLinksBar {
-        grid-area: LKS;
+        grid-area: LBAR;
     }
     #MarketSearch {
-        grid-area: SRH;
+        grid-area: SHAR;
     }
 
     align-items: center;
@@ -32,13 +32,13 @@
         }
 
         grid-template-areas: //
-        ' DRD BRD SRH '
-        ' SOF SOF SOF '
+        ' DROP BRND SHAR '
+        ' SOFF SOFF SOFF '
     }
 
     @media (min-width: ($SM)) {
         grid-template-areas: //
-            ' DRD BRD SOF SRH '
+            ' DROP BRND SOFF SHAR '
     }
 
     @media (min-width: ($LG)) {
@@ -48,13 +48,13 @@
         }
 
         grid-template-areas: //
-        ' BRD BRD PRM PRM ... SOF SOF '
-        ' DRD LKS LKS LKS LKS LKS SRH '
+        ' BRND BRND PRMO PRMO .... SOFF SOFF '
+        ' DROP LBAR LBAR LBAR LBAR LBAR SHAR '
     }
 
     @media (min-width: ($XL)) {
         grid-template-areas: //
-            ' BRD BRD PRM PRM ... SOF SOF '
-            ' DRD LKS LKS LKS LKS LKS SRH '
+            ' BRND BRND PRMO PRMO .... SOFF SOFF '
+            ' DROP LBAR LBAR LBAR LBAR LBAR SHAR '
     }
 }

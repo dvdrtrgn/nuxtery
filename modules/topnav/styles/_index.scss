@@ -5,16 +5,6 @@
 @import './MarketNav-grid';
 @import './TopNav-links';
 
-@import './bizj-bones'; // brand essentials to make skeleton
-
-#TopNav {
-    @extend %bizj;
-
-    font-family: sans-serif;
-    margin-bottom: 9em;
-    min-width: var(--S-basis);
-    overflow: visible;
-}
 
 // temp dev tricks
 @import './z-dt';

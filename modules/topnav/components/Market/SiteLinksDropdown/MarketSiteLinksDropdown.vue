@@ -10,6 +10,7 @@ METHODS */
 onClickOutside($parent, () => (dropdownOpen.value = false));
 
 </script>
+
 <template>
     <div id="MarketSiteLinksDropdown" ref="$parent">
         <MarketSiteLinksDropdownTrigger
