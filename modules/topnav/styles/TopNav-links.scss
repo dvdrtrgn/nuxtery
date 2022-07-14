@@ -1,0 +1,11 @@
+#TopNav {
+    a {
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--C-primary);
+            text-decoration: underline;
+        }
+    }
+}

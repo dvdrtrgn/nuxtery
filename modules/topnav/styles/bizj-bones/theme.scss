@@ -1,14 +1,4 @@
-$sapphire: #0f357d;
-$sapphireDarkest: #08173b;
-$sapphireLightest: #d4e0ff;
-
-$emerald: #16703c;
-$emeraldDarkest: #063b1c;
-$emeraldLightest: #f0fff6;
-
-$ruby: #b82c2e;
-$rubyDarkest: #540001;
-$rubyLightest: #ffe8e8;
+@import './_defs';
 
 :root,
 .sapphire {

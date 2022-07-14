@@ -1,35 +1,22 @@
+/* GRID  */
 #MarketNav {
-    a {
-        color: black;
-        text-decoration: none;
-
-        &:hover {
-            color: var(--C-primary);
-            text-decoration: underline;
-        }
-    }
 
     /* hookup area names */
     #MarketBranding {
         grid-area: BRD;
     }
-
     #MarketPromo {
         grid-area: PRM;
     }
-
     #MarketSubOffer {
         grid-area: SOF;
     }
-
     #MarketSiteLinksDropdown {
         grid-area: DRD;
     }
-
     #MarketSiteLinksBar {
         grid-area: LKS;
     }
-
     #MarketSearch {
         grid-area: SRH;
     }
@@ -37,14 +24,8 @@
     align-items: center;
     display: grid;
     gap: 1rem;
-    // grid-auto-columns: 1fr; /* make even width */
-    $SM: 640px;
-    $MD: 768px;
-    $LG: 1024px;
-    $XL: 1280px;
 
-    @media (min-width: 0px) {
-
+    @media (min-width: 0) {
         #MarketPromo,
         #MarketSiteLinksBar {
             display: none;
@@ -61,7 +42,6 @@
     }
 
     @media (min-width: ($LG)) {
-
         #MarketPromo,
         #MarketSiteLinksBar {
             display: block;
