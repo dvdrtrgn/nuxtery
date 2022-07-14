@@ -4,7 +4,6 @@ const props = defineProps({
 });
 
 const { topnav } = props.data;
-const { topItems, sections } = topnav;
 const dev = ref(true);
 
 </script>
@@ -15,28 +14,7 @@ const dev = ref(true);
             <!-- mock -->
             </GlobalSiteNav>
 
-            <MarketNav :data="topItems">
-                <div dev-inset>
-                    <PreCollapse :data="sections.industries">
-                        <b>Top sections / industries</b>
-                    </PreCollapse>
-
-                    <PreCollapse :data="sections.sponsored_content">
-                        <b>Top sections / sponsored_content</b>
-                    </PreCollapse>
-
-                    <PreCollapse :data="sections.events">
-                        <b>Top sections / events</b>
-                    </PreCollapse>
-
-                    <PreCollapse :data="sections.products">
-                        <b>Top sections / products</b>
-                    </PreCollapse>
-
-                    <PreCollapse :data="sections.publications">
-                        <b>Top sections / publications</b>
-                    </PreCollapse>
-                </div>
+            <MarketNav :data="data">
             </MarketNav>
         </div>
 

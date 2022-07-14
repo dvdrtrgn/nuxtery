@@ -11,10 +11,7 @@
     #MarketSubOffer {
         grid-area: SOFF;
     }
-    #MarketSiteLinksDropdown {
-        grid-area: DROP;
-    }
-    #MarketSiteLinksBar {
+    #MarketSiteLinks {
         grid-area: LBAR;
     }
     #MarketSearch {
@@ -27,34 +24,37 @@
 
     @media (min-width: 0) {
         #MarketPromo,
-        #MarketSiteLinksBar {
+        .outside.marketSiteLinksBar {
             display: none;
         }
 
         grid-template-areas: //
-        ' DROP BRND SHAR '
+        ' LBAR BRND SHAR '
         ' SOFF SOFF SOFF '
     }
 
     @media (min-width: ($SM)) {
         grid-template-areas: //
-            ' DROP BRND SOFF SHAR '
+            ' LBAR BRND SOFF SHAR '
     }
 
     @media (min-width: ($LG)) {
         #MarketPromo,
-        #MarketSiteLinksBar {
-            display: block;
+        .outside.marketSiteLinksBar {
+            display: inline-block;
+        }
+        .inside.marketSiteLinksBar {
+            display: none;
         }
 
         grid-template-areas: //
         ' BRND BRND PRMO PRMO .... SOFF SOFF '
-        ' DROP LBAR LBAR LBAR LBAR LBAR SHAR '
+        ' LBAR LBAR LBAR LBAR LBAR LBAR SHAR '
     }
 
     @media (min-width: ($XL)) {
         grid-template-areas: //
             ' BRND BRND PRMO PRMO .... SOFF SOFF '
-            ' DROP LBAR LBAR LBAR LBAR LBAR SHAR '
+            ' LBAR LBAR LBAR LBAR LBAR LBAR SHAR '
     }
 }

@@ -11,13 +11,8 @@ const props = defineProps({
         <MarketPromo></MarketPromo>
         <MarketSubOffer></MarketSubOffer>
 
-        <MarketSiteLinksDropdown>
-            <slot></slot>
-        </MarketSiteLinksDropdown>
-
-        <MarketSiteLinksBar
-            :data="props.data"
-        ></MarketSiteLinksBar>
+        <MarketSiteLinks :data="props.data.topnav">
+        </MarketSiteLinks>
 
         <MarketSearch></MarketSearch>
     </div>
