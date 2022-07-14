@@ -10,7 +10,8 @@ const dropdownOpen = ref(false);
 const $parent = ref(null);
 
 // METHODS
-onClickOutside($parent, () => (dropdownOpen.value = false));
+const setDropdown = bool => (dropdownOpen.value = bool);
+onClickOutside($parent, () => setDropdown(false));
 
 </script>
 
@@ -22,7 +23,7 @@ onClickOutside($parent, () => (dropdownOpen.value = false));
             <MarketSiteLinksDropdownTrigger
                 id="MarketSiteLinksDropdownTrigger"
                 :open="dropdownOpen"
-                @dropdownFlip="dropdownOpen = $event"
+                @dropdownFlip="setDropdown"
             ></MarketSiteLinksDropdownTrigger>
 
             <MarketSiteLinksBar class="outside" :data="topItems">

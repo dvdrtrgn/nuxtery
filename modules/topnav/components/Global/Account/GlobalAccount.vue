@@ -6,7 +6,8 @@
 const dropdownOpen = ref(false);
 const $parent = ref(null);
 // METHODS
-onClickOutside($parent, () => (dropdownOpen.value = false));
+const setDropdown = bool => (dropdownOpen.value = bool);
+onClickOutside($parent, () => setDropdown(false));
 
 </script>
 
@@ -14,7 +15,7 @@ onClickOutside($parent, () => (dropdownOpen.value = false));
     <div id="GlobalAccount" ref="$parent">
         <GlobalAccountTrigger
             :open="dropdownOpen"
-            @dropdownFlip="dropdownOpen = $event"
+            @dropdownFlip="setDropdown"
         ></GlobalAccountTrigger>
 
         <slot></slot>

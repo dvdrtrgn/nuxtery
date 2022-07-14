@@ -5,10 +5,7 @@ const props = defineProps({
 });
 
 const emit = defineEmits(['dropdownFlip']);
-
-function dropdownFlip () {
-    emit('dropdownFlip', !props.open);
-}
+const dropdownFlip = () => emit('dropdownFlip', !props.open);
 
 </script>
 
