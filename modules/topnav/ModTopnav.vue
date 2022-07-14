@@ -44,8 +44,6 @@ const dev = ref(true);
             <b>All data</b>
         </PreCollapse>
 
-        <ThemePicker></ThemePicker>
-
         <button @click="dev = !dev">Toggle dev bondaries</button>
     </div>
 </template>
