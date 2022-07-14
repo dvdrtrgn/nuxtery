@@ -4,10 +4,13 @@ import citydata from '~/data/adhoc/city-dropdown';
 // const props = defineProps<Props>();
 
 // DATA
+
 const dropdownOpen = ref(false);
 const $parent = ref(null);
+
 // METHODS
-const setDropdown = bool => (dropdownOpen.value = bool);
+
+const setDropdown = (evt: boolean) => (dropdownOpen.value = evt);
 onClickOutside($parent, () => setDropdown(false));
 
 </script>
@@ -19,8 +22,6 @@ onClickOutside($parent, () => setDropdown(false));
             @dropdownFlip="setDropdown"
         ></GlobalSelectCityTrigger>
 
-        <slot></slot>
-
         <GlobalSelectCityMenu
             :data="citydata"
             :open="dropdownOpen"
@@ -29,7 +30,4 @@ onClickOutside($parent, () => setDropdown(false));
 </template>
 
 <style lang="scss">
-#SelectCity {
-    flex-basis: 66%;
-}
 </style>

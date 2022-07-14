@@ -1,35 +1,59 @@
 /* OTHER  */
-#MarketNav {
-    @media (min-width: 0) {
+#MarketBranding {
+    background-color: var(--C-primary);
+    background-image: url('/assets/images/stripes-12px.png');
+    background-repeat: repeat;
+    width: 18rem;
 
-        #MarketPromo,
-        .outside.marketSiteLinksBar {
-            display: none;
-        }
-        #MarketSubOffer {
-            background-color: var(--C-primaryLightest);
-            text-align: center;
-        }
+    a {
+        display: block;
     }
-
-    @media (min-width: ($SM)) {}
-    @media (min-width: ($MD)) {
-        #MarketSubOffer {
-            background-color: inherit;
-            text-align: right;
-        }
+    img {
+        margin: 1rem 3rem;
     }
+}
 
-    @media (min-width: ($LG)) {
-        #MarketPromo,
-        .outside.marketSiteLinksBar {
-            display: inline-block;
-        }
-        .inside.marketSiteLinksBar {
-            display: none;
-        }
-
+#MarketPromo {
+    text-emphasis: none;
+    .title {
+        font-size: x-small;
+        font-weight: 100;
+        text-transform: uppercase;
     }
+    .body {
+        font-size: small;
+        font-weight: 600;
+    }
+}
 
-    @media (min-width: ($XL)) {}
+#MarketSearchDropDown {
+    background-color: var(--C-primary);
+    left: 0;
+    padding: 1em;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    input {
+        font-size: 2rem;
+        margin: auto;
+        width: 80%;
+    }
+}
+
+#MarketSiteLinksDropdownMenu {
+    background-color: #eee;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+#MarketSearchTrigger {
+    text-align: right;
 }

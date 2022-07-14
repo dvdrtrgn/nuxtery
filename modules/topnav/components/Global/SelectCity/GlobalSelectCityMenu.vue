@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const props = defineProps({
     data: { type: Object, required: true },
     open: { type: Boolean, required: true },
@@ -21,23 +20,5 @@ const props = defineProps({
                 :data="item"
             ></GlobalSelectCityMenuItem>
         </div>
-        <slot></slot>
     </div>
 </template>
-
-<style lang="scss">
-#SelectCityDropdown > div {
-    background: white;
-    border: 1px solid gray;
-    column-count: 4;
-    left: 0;
-    padding: 1rem;
-    position: absolute;
-    z-index: 1;
-
-    a {
-        display: inline-block;
-        padding: 0.5em 1em;
-    }
-}
-</style>

@@ -2,6 +2,7 @@
 const props = defineProps({
     open: { type: Boolean, required: true },
 });
+
 </script>
 
 <template>
@@ -9,7 +10,6 @@ const props = defineProps({
         v-if="props.open"
         id="AccountDropdown"
         class=""
-
         x-placement="bottom"
     >
         <div x-arrow="" style="left: 0px;"></div>
@@ -41,27 +41,5 @@ const props = defineProps({
                 </a>
             </li>
         </ul>
-        <slot></slot>
     </div>
 </template>
-
-<style lang="scss">
-#AccountDropdown {
-    background: white;
-    border: 1px solid gray;
-    right: 0;
-    position: absolute;
-    transform: translate3d(0px, 0px, 0px);
-    will-change: transform;
-    z-index: 1;
-
-    ul {
-        flex-direction: column;
-        padding: 1rem;
-    }
-    a {
-        display: inline-block;
-        padding: 1em;
-    }
-}
-</style>

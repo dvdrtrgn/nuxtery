@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const props = defineProps({
     data: { type: Object, required: true },
 });
@@ -8,7 +7,9 @@ const props = defineProps({
 
 <template>
     <div dev-inset>
-        <slot></slot>
+        <slot>
+            <!-- inside topNav -->
+        </slot>
 
         <PreCollapse :data="props.data.industries">
             <b>Top sections / industries</b>
@@ -31,15 +32,3 @@ const props = defineProps({
         </PreCollapse>
     </div>
 </template>
-
-<style lang="scss">
-
-#MarketSiteLinksDropdownMenu {
-    background-color: #eee;
-    padding: 1rem;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-}
-
-</style>

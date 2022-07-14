@@ -1,10 +1,13 @@
 <script setup lang="ts">
 
 // DATA
+
 const dropdownOpen = ref(false);
 const $parent = ref(null);
+
 // METHODS
-const setDropdown = bool => (dropdownOpen.value = bool);
+
+const setDropdown = (evt: boolean) => (dropdownOpen.value = evt);
 onClickOutside($parent, () => setDropdown(false));
 
 </script>
@@ -21,11 +24,3 @@ onClickOutside($parent, () => setDropdown(false));
         ></MarketSearchDropdown>
     </div>
 </template>
-
-<!--
-<style lang="scss">
-#MarketSearch {
-
-}
-</style>
- -->

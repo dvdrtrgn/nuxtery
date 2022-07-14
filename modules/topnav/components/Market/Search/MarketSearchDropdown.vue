@@ -1,10 +1,13 @@
 <script setup lang="ts">
-/*
-*/
 const props = defineProps({
     open: { type: Boolean, required: true },
 });
+
+// DATA
+
 const $searchEl = ref(null);
+
+// WATCH
 
 watchEffect(() => {
     if (props.open) {
@@ -25,25 +28,3 @@ watchEffect(() => {
         </form>
     </div>
 </template>
-
-<style lang="scss">
-#MarketSearchDropDown {
-    background-color: var(--C-primary);
-    left: 0;
-    padding: 1em;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-
-    form {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    input {
-        font-size: 2rem;
-        margin: auto;
-        width: 80%;
-    }
-}
-</style>
