@@ -10,23 +10,15 @@
     #MarketBranding {
         @include devOutline(red);
     }
-
     #MarketPromo {
         @include devOutline(green);
     }
-
     #MarketSubOffer {
         @include devOutline(blue);
     }
-
-    #MarketSiteLinksDropdown {
+    #MarketSiteLinks {
         @include devOutline(cyan);
     }
-
-    #MarketSiteLinksBar {
-        @include devOutline(orange);
-    }
-
     #MarketSearch {
         @include devOutline(purple);
     }

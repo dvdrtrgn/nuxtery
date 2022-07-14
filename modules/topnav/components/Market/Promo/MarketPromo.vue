@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import data from '~/data/adhoc/market-promo';
 
 </script>
@@ -22,16 +23,4 @@ import data from '~/data/adhoc/market-promo';
 </template>
 
 <style lang="scss">
-#MarketPromo {
-    text-emphasis: none;
-    .title {
-        font-size: x-small;
-        font-weight: 100;
-        text-transform: uppercase;
-    }
-    .body {
-        font-size: small;
-        font-weight: 600;
-    }
-}
 </style>

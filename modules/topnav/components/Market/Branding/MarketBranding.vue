@@ -1,10 +1,10 @@
 <script setup lang="ts">
-/*
-DATA */
-const svg2png = `
-this.onerror = null;
-this.src = this.src.replace('.svg','.png');
-`; // is this for old IE??
+
+// DATA
+
+// is this for old IE??
+const svg2png = `this.onerror = null;
+this.src = this.src.replace('.svg','.png');`;
 
 </script>
 <template>
@@ -20,16 +20,3 @@ this.src = this.src.replace('.svg','.png');
         </a>
     </div>
 </template>
-<style lang="scss">
-
-#MarketBranding {
-    background-color: var(--C-primary);
-    background-image: url('/assets/images/stripes-12px.png');
-    background-repeat: repeat;
-    width: 18rem;
-
-    a { display: block; }
-    img { margin: 1rem 3rem; }
-}
-
-</style>

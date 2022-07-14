@@ -5,24 +5,16 @@ const props = defineProps({
 });
 
 const emit = defineEmits(['dropdownFlip']);
-function dropdownFlip () {
-    emit('dropdownFlip', !props.open);
-}
+const dropdownFlip = () => emit('dropdownFlip', !props.open);
+
 </script>
 
 <template>
-    <div id="MarketSiteLinksDropdownTrigger">
-        <button
-            @click="dropdownFlip"
-        >
+    <div class="marketSiteLinksDropdownTrigger">
+        <button @click="dropdownFlip">
             MENU
             <br />
             {{ !props.open ? 'OPEN' : 'CLOSE' }}
         </button>
     </div>
 </template>
-
-<!--
-<style lang="scss">
-</style>
--->

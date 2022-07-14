@@ -10,7 +10,11 @@ useTitleHelper('TITLE: ' + articleData.value.title);
 </script>
 
 <template>
-    <ModTopnav :data="articleData"></ModTopnav>
+    <div>
+        <ModTopnav :data="articleData"></ModTopnav>
+
+        <ThemePicker></ThemePicker>
+    </div>
 </template>
 
 <!--

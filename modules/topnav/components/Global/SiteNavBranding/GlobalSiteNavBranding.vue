@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 // defineProps({});
 
 </script>
@@ -9,8 +8,3 @@
         The Business Journals
     </div>
 </template>
-
-<!--
-<style lang="scss">
-</style>
--->

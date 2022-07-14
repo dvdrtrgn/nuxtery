@@ -1,9 +1,8 @@
 <script setup lang="ts">
-/*
-*/
 const props = defineProps({
     data: { type: Object, required: true },
 });
+
 </script>
 
 <template>
@@ -18,8 +17,3 @@ const props = defineProps({
         </a>
     </div>
 </template>
-
-<!--
-<style lang="scss">
-</style>
--->

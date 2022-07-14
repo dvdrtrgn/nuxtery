@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const props = defineProps({
     data: { type: Object, required: true },
 });
@@ -7,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div id="MarketSiteLinksMenu">
+    <div class="marketSiteLinksBar">
         <ul class="flexlist">
             <li v-for="item in props.data.items" :key="item.uri">
                 <a :href="item.uri">
@@ -19,9 +18,11 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-#MarketSiteLinksMenu {
-    width: 100%;
+
+.marketSiteLinksBar {
+    display: inline-block;
     overflow: hidden;
+    width: 100%;
 
     ul {
         flex-wrap: wrap;
@@ -33,4 +34,5 @@ const props = defineProps({
         }
     }
 }
+
 </style>

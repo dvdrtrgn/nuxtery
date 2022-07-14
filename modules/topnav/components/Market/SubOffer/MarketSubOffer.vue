@@ -3,6 +3,7 @@
 import data from '~/data/adhoc/sub-offer';
 
 </script>
+
 <template>
     <div id="MarketSubOffer" role="link">
         <div id="cxense_marketing_nav_sub_offer">
@@ -17,14 +18,3 @@ import data from '~/data/adhoc/sub-offer';
         </div>
     </div>
 </template>
-<style lang="scss">
-
-#MarketSubOffer {
-    text-align: center;
-
-    @media (min-width: 640px) {
-        text-align: right;
-    }
-}
-
-</style>

@@ -3,11 +3,10 @@ const props = defineProps({
     open: { type: Boolean, required: true },
 });
 
-const emit = defineEmits(['dropdownFlip']);
+// METHODS
 
-function dropdownFlip () {
-    emit('dropdownFlip', !props.open);
-}
+const emit = defineEmits(['dropdownFlip']);
+const dropdownFlip = () => emit('dropdownFlip', !props.open);
 
 </script>
 
@@ -23,9 +22,3 @@ function dropdownFlip () {
         </button>
     </div>
 </template>
-
-<style lang="scss">
-#MarketSearchTrigger {
-    text-align: right;
-}
-</style>

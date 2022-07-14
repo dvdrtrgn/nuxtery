@@ -1,14 +1,11 @@
-
 <script setup lang="ts">
 const props = defineProps({
     open: { type: Boolean, required: true },
 });
 
+// METHODS
 const emit = defineEmits(['dropdownFlip']);
-
-function dropdownFlip () {
-    emit('dropdownFlip', !props.open);
-}
+const dropdownFlip = () => emit('dropdownFlip', !props.open);
 
 </script>
 
@@ -24,12 +21,5 @@ function dropdownFlip () {
             <br />
             {{ !props.open ? 'OPEN' : 'CLOSE' }}
         </button>
-        <slot></slot>
     </div>
 </template>
-
-<style lang="scss">
-#GlobalAccountTrigger {
-    text-align: right;
-}
-</style>

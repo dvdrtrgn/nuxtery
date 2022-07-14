@@ -1,0 +1,45 @@
+/* QUERIES
+
+todo: make max limit to clean up the cascade
+todo: create media query function to simplify this, too
+
+*/
+#MarketNav {
+    @media (min-width: 0) {
+
+        #MarketPromo,
+        .outside.marketSiteLinksBar {
+            display: none;
+        }
+        #MarketSubOffer {
+            background-color: var(--C-primaryLightest);
+            text-align: center;
+        }
+    }
+
+    @media (min-width: ($SM)) {
+        // same
+    }
+
+    @media (min-width: ($MD)) {
+        #MarketSubOffer {
+            background-color: inherit;
+            text-align: right;
+        }
+    }
+
+    @media (min-width: ($LG)) {
+        #MarketPromo,
+        .outside.marketSiteLinksBar {
+            display: inline-block;
+        }
+        .inside.marketSiteLinksBar {
+            display: none;
+        }
+
+    }
+
+    @media (min-width: ($XL)) {
+        // same
+    }
+}

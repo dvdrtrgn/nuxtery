@@ -1,12 +1,14 @@
 <script setup lang="ts">
 
-// defineProps({});
-
 // DATA
+
 const dropdownOpen = ref(false);
 const $parent = ref(null);
+
 // METHODS
-onClickOutside($parent, () => (dropdownOpen.value = false));
+
+const setDropdown = (evt: boolean) => (dropdownOpen.value = evt);
+onClickOutside($parent, () => setDropdown(false));
 
 </script>
 
@@ -14,19 +16,11 @@ onClickOutside($parent, () => (dropdownOpen.value = false));
     <div id="GlobalAccount" ref="$parent">
         <GlobalAccountTrigger
             :open="dropdownOpen"
-            @dropdownFlip="dropdownOpen = $event"
+            @dropdownFlip="setDropdown"
         ></GlobalAccountTrigger>
-
-        <slot></slot>
 
         <GlobalAccountMenu
             :open="dropdownOpen"
         ></GlobalAccountMenu>
-        <slot></slot>
     </div>
 </template>
-
-<!--
-<style lang="scss">
-</style>
--->

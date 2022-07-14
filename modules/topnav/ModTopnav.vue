@@ -1,54 +1,34 @@
 <script setup lang="ts">
+
 const props = defineProps({
     data: { type: Object, required: true },
 });
 
+// DATA
 const { topnav } = props.data;
-const { topItems, sections } = topnav;
 const dev = ref(true);
 
+// METHODS
+const toggle = () => (dev.value = !dev.value);
+
 </script>
+
 <template>
     <div :class="{dev: dev}">
         <div id="TopNav" dev-inset>
-            <GlobalSiteNav>
-            <!-- mock -->
-            </GlobalSiteNav>
+            <GlobalSiteNav></GlobalSiteNav>
 
-            <MarketNav :data="topItems">
-                <div dev-inset>
-                    <PreCollapse :data="sections.industries">
-                        <b>Top sections / industries</b>
-                    </PreCollapse>
-
-                    <PreCollapse :data="sections.sponsored_content">
-                        <b>Top sections / sponsored_content</b>
-                    </PreCollapse>
-
-                    <PreCollapse :data="sections.events">
-                        <b>Top sections / events</b>
-                    </PreCollapse>
-
-                    <PreCollapse :data="sections.products">
-                        <b>Top sections / products</b>
-                    </PreCollapse>
-
-                    <PreCollapse :data="sections.publications">
-                        <b>Top sections / publications</b>
-                    </PreCollapse>
-                </div>
-            </MarketNav>
+            <MarketNav :data="data"></MarketNav>
         </div>
 
         <PreCollapse v-show="dev" dev-inset :data="topnav">
             <b>All data</b>
         </PreCollapse>
 
-        <ThemePicker></ThemePicker>
-
-        <button @click="dev = !dev">Toggle dev bondaries</button>
+        <button @click="toggle">Toggle dev bondaries</button>
     </div>
 </template>
+
 <style lang="scss">
 @import '~/modules/topnav/styles/';
 </style>

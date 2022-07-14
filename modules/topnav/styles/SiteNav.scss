@@ -1,0 +1,51 @@
+#SiteNav {
+    align-items: center;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    min-height: 3rem;
+}
+
+#AccountDropdown {
+    background: white;
+    border: 1px solid gray;
+    right: 0;
+    position: absolute;
+    transform: translate3d(0px, 0px, 0px);
+    will-change: transform;
+    z-index: 1;
+
+    ul {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    a {
+        display: inline-block;
+        padding: 1em;
+    }
+}
+
+#SelectCity {
+    flex-basis: 66%;
+
+    #SelectCityDropdown {
+        >div {
+            background: white;
+            border: 1px solid gray;
+            column-count: 4;
+            left: 0;
+            padding: 1rem;
+            position: absolute;
+            z-index: 1;
+
+            a {
+                display: inline-block;
+                padding: 0.5em 1em;
+            }
+        }
+    }
+}
+
+#GlobalAccountTrigger {
+    text-align: right;
+}
