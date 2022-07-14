@@ -26,8 +26,19 @@
     }
 }
 
+#MarketSiteLinksDropdownMenu {
+    background-color: #eee;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+#MarketSearchTrigger {
+    text-align: right;
+}
 #MarketSearchDropDown {
-    background-color: var(--C-primary);
+    background-color: var(--C-primaryDarkest);
     left: 0;
     padding: 1em;
     position: absolute;
@@ -44,16 +55,4 @@
         margin: auto;
         width: 80%;
     }
-}
-
-#MarketSiteLinksDropdownMenu {
-    background-color: #eee;
-    padding: 1rem;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-}
-
-#MarketSearchTrigger {
-    text-align: right;
 }

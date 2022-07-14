@@ -1,4 +1,9 @@
-/* OTHER  */
+/* QUERIES
+
+todo: make max limit to clean up the cascade
+todo: create media query function to simplify this, too
+
+*/
 #MarketNav {
     @media (min-width: 0) {
 
@@ -12,7 +17,10 @@
         }
     }
 
-    @media (min-width: ($SM)) {}
+    @media (min-width: ($SM)) {
+        // same
+    }
+
     @media (min-width: ($MD)) {
         #MarketSubOffer {
             background-color: inherit;
@@ -31,5 +39,7 @@
 
     }
 
-    @media (min-width: ($XL)) {}
+    @media (min-width: ($XL)) {
+        // same
+    }
 }

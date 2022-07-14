@@ -1,5 +1,11 @@
 @import './_defs';
 
+:root {
+    --C-primary: gray;
+    --C-primaryDarkest: black;
+    --C-primaryLightest: silver;
+}
+
 .sapphire {
     --C-primary: #{$sapphire};
     --C-primaryDarkest: #{$sapphireDarkest};

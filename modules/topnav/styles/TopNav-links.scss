@@ -1,7 +1,7 @@
 @import './bizj-bones'; // brand essentials to make skeleton
 
 #TopNav {
-    @extend %bizj;
+    @extend %bizj; // work with bizj bones
 
     font-family: sans-serif;
     margin-bottom: 9em;
