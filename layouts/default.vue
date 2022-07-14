@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import '~/assets/styles/tailwind.css';
+
 useTitleHelper();
+
 </script>
 
 <template>
@@ -15,6 +18,7 @@ useTitleHelper();
 </template>
 
 <style lang="scss">
+
 html {
     $headerHeight: 7vh;
     $footerHeight: 5vh;
@@ -39,4 +43,5 @@ html {
         height: $footerHeight;
     }
 }
+
 </style>

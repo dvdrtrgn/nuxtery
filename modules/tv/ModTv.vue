@@ -43,5 +43,10 @@ onMounted(() => {
         justify-content: center;
         height: 10rem;
     }
+    input {
+        box-shadow: inset 0 0 1em silver;
+        margin: 1em;
+        padding: 0.1em 0.4em;
+    }
 }
 </style>
