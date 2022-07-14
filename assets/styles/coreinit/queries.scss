@@ -1,0 +1,47 @@
+/*
+
+# provide width *SIZE-basis* vars thru css custom properties
+
+*/
+$XS: 320px;
+$SM: 640px;
+$MD: 768px;
+$LG: 1024px;
+$XL: 1280px;
+
+// :root {
+//     --S-xs: 320px;
+//     --S-sm: 640px;
+//     --S-md: 768px;
+//     --S-lg: 1024px;
+//     --S-xl: 1280px;
+// }
+
+@media (max-width: ($SM - 1px)) {
+    :root {
+        --S-basis: #{$XS};
+    }
+}
+@media (min-width: $SM) and (max-width: ($MD - 1px)) {
+    :root {
+        --S-basis: #{$SM};
+    }
+}
+
+@media (min-width: $MD) and (max-width: ($LG - 1px)) {
+    :root {
+        --S-basis: #{$MD};
+    }
+}
+
+@media (min-width: $LG) and (max-width: ($XL - 1px)) {
+    :root {
+        --S-basis: #{$LG};
+    }
+}
+
+@media (min-width: $XL) {
+    :root {
+        --S-basis: #{$XL};
+    }
+}
