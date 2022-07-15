@@ -2,7 +2,7 @@
 import ModTopnav from '~/modules/topnav/ModTopnav.vue';
 
 // defineProps({});
-const url = '/api/article';
+const url = '/api/mock/article';
 const articleData = ref(await $fetch(url) as any);
 
 definePageMeta({ layout: 'default' });

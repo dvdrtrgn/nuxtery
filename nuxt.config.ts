@@ -26,4 +26,7 @@ export default defineNuxtConfig({
         '~/modules/topnav/index',
         '~/modules/tv/index',
     ],
+    typescript: {
+        typeCheck: true,
+    },
 });
