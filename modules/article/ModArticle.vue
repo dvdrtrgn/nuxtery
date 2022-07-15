@@ -29,14 +29,6 @@ onUnmounted(() => {
     <div vue-article>
         <h1>Data</h1>
 
-        <div dev-flex>
-            <div dev-inset>
-                <PreCollapse :data="data.topnav">
-                    <b>Top nav</b>
-                </PreCollapse>
-            </div>
-        </div>
-
         <h2>JOURNAL / MARKET</h2>
         <div dev-inset>
             <PreCollapse :data="data.journal">
