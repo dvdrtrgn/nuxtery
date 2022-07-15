@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         },
     },
     css: [
-        '@/assets/styles/coreinit/_index.scss',
+        // '@/assets/styles/coreinit/_index.scss',
     ],
     modules: [
         '@vueuse/nuxt',
