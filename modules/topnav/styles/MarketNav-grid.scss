@@ -12,7 +12,7 @@
         grid-area: PRMO;
     }
     #MarketSubOffer {
-        grid-area: SOFF;
+        grid-area: SUBO;
     }
     #MarketSiteLinks {
         grid-area: LBAR;
@@ -24,13 +24,13 @@
     @media (min-width: 0) {
         grid-template-areas: //
             ' LBAR BRND SHAR '
-            ' SOFF SOFF SOFF '
+            ' SUBO SUBO SUBO '
         ;
     }
 
     @media (min-width: ($SM)) {
         grid-template-areas: //
-            ' LBAR BRND SOFF SHAR '
+            ' LBAR BRND SUBO SHAR '
         ;
     }
 
@@ -40,7 +40,7 @@
 
     @media (min-width: ($LG)) {
         grid-template-areas: //
-            ' BRND PRMO PRMO .... SOFF SOFF '
+            ' BRND PRMO PRMO .... SUBO SUBO '
             ' LBAR LBAR LBAR LBAR LBAR SHAR '
         ;
     }

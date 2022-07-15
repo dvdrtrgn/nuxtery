@@ -23,3 +23,27 @@
         @include devOutline(purple);
     }
 }
+
+.dev {
+    [dev-flex] {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    [dev-grid] {
+        border-bottom: 1px dotted silver;
+        display: grid;
+        grid-auto-flow: column;
+
+        pre {
+            border: 1px dashed silver;
+        }
+    }
+
+    [dev-inset] {
+        box-shadow: 0 0 0.5rem inset silver;
+        overflow: scroll;
+        padding: 1em;
+    }
+}

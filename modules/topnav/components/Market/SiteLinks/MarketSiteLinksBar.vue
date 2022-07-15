@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
     <div class="marketSiteLinksBar">
-        <ul class="flexlist">
+        <ul class="flex">
             <li v-for="item in props.data.items" :key="item.uri">
                 <a :href="item.uri">
                     {{ item.title ?? '|' }}

@@ -13,27 +13,10 @@
     }
 }
 
-@layer dev {
-    .dev [dev-flex] {
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-    }
+@layer components {
 
-    .dev [dev-grid] {
-        border-bottom: 1px dotted silver;
-        display: grid;
-        grid-auto-flow: column;
+    button,
+    .btn {
+        @apply border-2 border-gray-400 py-2 px-4 font-semibold rounded-sm shadow-sm;
     }
-
-    .dev [dev-grid] pre {
-        border: 1px dashed silver;
-    }
-
-    .dev [dev-inset] {
-        box-shadow: 0 0 0.5rem inset silver;
-        overflow: scroll;
-        padding: 1em;
-    }
-
 }
