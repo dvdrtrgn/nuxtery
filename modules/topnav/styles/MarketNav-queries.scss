@@ -17,18 +17,18 @@ todo: create media query function to simplify this, too
         }
     }
 
-    @media (min-width: ($SM)) {
+    @media (min-width: $SM) {
         // same
     }
 
-    @media (min-width: ($MD)) {
+    @media (min-width: $MD) {
         #MarketSubOffer {
             background-color: inherit;
             text-align: right;
         }
     }
 
-    @media (min-width: ($LG)) {
+    @media (min-width: $LG) {
         #MarketPromo,
         .outside.marketSiteLinksBar {
             display: inline-block;
@@ -39,7 +39,7 @@ todo: create media query function to simplify this, too
 
     }
 
-    @media (min-width: ($XL)) {
+    @media (min-width: $XL) {
         // same
     }
 }

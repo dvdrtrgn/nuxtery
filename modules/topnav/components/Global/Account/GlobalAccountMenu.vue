@@ -13,7 +13,7 @@ const props = defineProps({
         x-placement="bottom"
     >
         <div x-arrow="" style="left: 0px;"></div>
-        <ul class="flexlist">
+        <ul class="">
             <li class="">
                 <a
                     href="/login/bizjournals?r=%2F"
