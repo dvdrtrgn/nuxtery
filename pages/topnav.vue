@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import ModTopnav from '~/modules/topnav/ModTopnav.vue';
+import topnav from '~/data/adhoc/topnav';
 
-// defineProps({});
-const url = '/api/article';
+const url = '/api/mock/article';
 const articleData = ref(await $fetch(url) as any);
+const navData = ref({ topnav });
 
 definePageMeta({ layout: 'default' });
 useTitleHelper('TITLE: ' + articleData.value.title);
@@ -11,13 +12,8 @@ useTitleHelper('TITLE: ' + articleData.value.title);
 
 <template>
     <div>
-        <ModTopnav :data="articleData"></ModTopnav>
+        <ModTopnav :data="navData"></ModTopnav>
 
         <ThemePicker></ThemePicker>
     </div>
 </template>
-
-<!--
-<style lang="scss">
-</style>
--->

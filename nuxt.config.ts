@@ -18,12 +18,16 @@ export default defineNuxtConfig({
         },
     },
     css: [
-        // '@/assets/styles/coreinit/_index.scss',
+        '@/assets/styles/coreinit/_index.scss',
     ],
     modules: [
+        // '@nuxtjs/tailwindcss',
         '@vueuse/nuxt',
-        '~/modules/article/index',
-        '~/modules/topnav/index',
-        '~/modules/tv/index',
+        '~/modules/article',
+        '~/modules/topnav',
+        '~/modules/tv',
     ],
+    typescript: {
+        typeCheck: true,
+    },
 });

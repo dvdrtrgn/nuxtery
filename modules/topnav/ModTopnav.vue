@@ -6,7 +6,7 @@ const props = defineProps({
 
 // DATA
 const { topnav } = props.data;
-const dev = ref(true);
+const dev = ref(false);
 
 // METHODS
 const toggle = () => (dev.value = !dev.value);

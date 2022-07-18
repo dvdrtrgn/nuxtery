@@ -21,7 +21,7 @@ const props = defineProps({
 });
 
 const htmlClass = useClassHelper(':root');
-const themePick = useStorage('theme-pick', 'sapphire');
+const themePick = useStorage('theme-pick', '');
 
 onMounted(() => {
     watch(themePick, (nv, ov) => {

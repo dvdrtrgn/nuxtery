@@ -7,7 +7,6 @@ import market from './business/market.js';
 
 import metadata from './other/metadata.js';
 import randos from './other/randos.js';
-import topnav from './other/topnav.js';
 
 // match potentialfullreturn.json
 export default {
@@ -20,7 +19,6 @@ export default {
         metadata: {
             data: metadata,
         },
-        topnav,
         ...randos,
     },
 };
