@@ -10,25 +10,24 @@ const props = defineProps({
         <slot>
             <!-- inside topNav -->
         </slot>
-
-        <PreCollapse :data="props.data.industries">
+        <MarketSiteLinksMenuGrid :data="props.data.industries">
             <b>Top sections / industries</b>
-        </PreCollapse>
+        </MarketSiteLinksMenuGrid>
 
-        <PreCollapse :data="props.data.sponsored_content">
+        <MarketSiteLinksMenuGrid :data="props.data.sponsored_content">
             <b>Top sections / sponsored_content</b>
-        </PreCollapse>
+        </MarketSiteLinksMenuGrid>
 
-        <PreCollapse :data="props.data.events">
+        <MarketSiteLinksMenuGrid :data="props.data.events">
             <b>Top sections / events</b>
-        </PreCollapse>
+        </MarketSiteLinksMenuGrid>
 
-        <PreCollapse :data="props.data.products">
+        <MarketSiteLinksMenuGrid :data="props.data.products">
             <b>Top sections / products</b>
-        </PreCollapse>
+        </MarketSiteLinksMenuGrid>
 
-        <PreCollapse :data="props.data.publications">
+        <MarketSiteLinksMenuGrid :data="props.data.publications">
             <b>Top sections / publications</b>
-        </PreCollapse>
+        </MarketSiteLinksMenuGrid>
     </div>
 </template>
