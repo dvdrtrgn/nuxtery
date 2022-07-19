@@ -5,7 +5,7 @@ const props = defineProps({
 });
 
 // DATA
-const { topnav } = props.data;
+const topnav = props.data;
 const dev = ref(false);
 
 // METHODS
@@ -18,7 +18,7 @@ const toggle = () => (dev.value = !dev.value);
         <div id="TopNav" dev-inset>
             <GlobalSiteNav></GlobalSiteNav>
 
-            <MarketNav :data="props.data"></MarketNav>
+            <MarketNav :data="topnav"></MarketNav>
         </div>
 
         <PreCollapse v-show="dev" dev-inset :data="topnav">
