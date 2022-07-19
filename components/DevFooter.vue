@@ -7,15 +7,15 @@ const vitals = computed(() => {
 </script>
 
 <template>
-    <footer>
-        <client-only>
+    <ClientOnly>
+        <footer dev-footer>
             <code>runtime{{ configJson }} <br />route{{ vitals }} </code>
-        </client-only>
-    </footer>
+        </footer>
+    </ClientOnly>
 </template>
 
 <style lang="scss">
-footer {
+[dev-footer] {
     background-color: #eee;
     box-shadow: 0 0 1em silver;
     overflow: scroll;

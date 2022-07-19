@@ -1,8 +1,13 @@
 <script setup lang="ts">
 
+import suboffer from '~/data/adhoc/sub-offer';
+
 const props = defineProps({
     data: { type: Object, required: true },
 });
+
+// DATA
+const topnav = props.data;
 
 </script>
 
@@ -10,10 +15,16 @@ const props = defineProps({
     <div id="MarketNav">
         <MarketBranding></MarketBranding>
         <MarketPromo></MarketPromo>
-        <MarketSubOffer></MarketSubOffer>
+        <MarketSubOffer
+            :id="suboffer.id"
+            :heading="suboffer.heading"
+            :href="suboffer.href"
+            :text="suboffer.text"
+        ></MarketSubOffer>
 
         <MarketSiteLinks
-            :data="props.data.topnav"
+            :top-items="topnav.topItems"
+            :sections="topnav.sections"
         ></MarketSiteLinks>
 
         <MarketSearch></MarketSearch>

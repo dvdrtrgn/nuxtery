@@ -5,7 +5,7 @@ const props = defineProps({
 });
 
 // DATA
-const { topnav } = props.data;
+const topnav = props.data;
 const dev = ref(false);
 
 // METHODS
@@ -18,14 +18,14 @@ const toggle = () => (dev.value = !dev.value);
         <div id="TopNav" dev-inset>
             <GlobalSiteNav></GlobalSiteNav>
 
-            <MarketNav :data="data"></MarketNav>
+            <MarketNav :data="topnav"></MarketNav>
         </div>
 
         <PreCollapse v-show="dev" dev-inset :data="topnav">
             <b>All data</b>
         </PreCollapse>
 
-        <button @click="toggle">Toggle dev bondaries</button>
+        <button @click="toggle">Toggle dev</button>
     </div>
 </template>
 

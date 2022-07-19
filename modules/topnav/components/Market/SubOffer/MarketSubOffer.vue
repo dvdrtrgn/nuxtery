@@ -1,6 +1,12 @@
 <script setup lang="ts">
 
-import data from '~/data/adhoc/sub-offer';
+interface Props {
+    heading: string,
+    id?: string,
+    href: string,
+    text: string,
+}
+defineProps<Props>();
 
 </script>
 
@@ -8,11 +14,11 @@ import data from '~/data/adhoc/sub-offer';
     <div id="MarketSubOffer" role="link">
         <div id="cxense_marketing_nav_sub_offer">
             <div class="sub_offer_heading">
-                {{ data.heading }}
+                {{ heading }}
             </div>
             <div class="sub_offer_link">
-                <a :id="data.id" :href="data.href" class="btn primary">
-                    {{ data.text }}
+                <a :id="id" :href="href" class="btn primary">
+                    {{ text }}
                 </a>
             </div>
         </div>

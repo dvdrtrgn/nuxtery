@@ -6,14 +6,12 @@ useTitleHelper();
 </script>
 
 <template>
-    <div default-template>
-        <header>
-            <TheNav />
-        </header>
+    <div dev-template>
+        <DevHeader></DevHeader>
 
         <slot></slot>
 
-        <TheFooter />
+        <DevFooter></DevFooter>
     </div>
 </template>
 
@@ -23,22 +21,22 @@ html {
     $headerHeight: 7vh;
     $footerHeight: 5vh;
 
-    body {
+    body, [dev-template] {
         margin: 0;
         margin-top: $headerHeight * 1;
         margin-bottom: $footerHeight * 1.2;
     }
-    header, footer {
+    [dev-header], [dev-footer] {
         left: 0;
         position: fixed;
         width: 100%;
     }
 
-    header {
+    [dev-header] {
         top: 0;
         height: $headerHeight;
     }
-    footer {
+    [dev-footer] {
         bottom: 0;
         height: $footerHeight;
     }
