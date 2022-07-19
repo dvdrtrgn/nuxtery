@@ -7,18 +7,10 @@ const props = defineProps({
 </script>
 
 <template>
-    <footer class="footer m-12 bg-slate-200">
+    <footer class=" bg-neutral-100 ">
         <FooterHeader></FooterHeader>
 
-        <div class="footer__body flex gap-20">
-            <FooterBodySubscribers></FooterBodySubscribers>
-
-            <FooterBodyAbout></FooterBodyAbout>
-
-            <FooterBodyShare :data="props.data.social"></FooterBodyShare>
-
-            <FooterBodyAcbj></FooterBodyAcbj>
-        </div>
+        <FooterBody :data="props.data"></FooterBody>
 
         <FooterFooter></FooterFooter>
     </footer>
