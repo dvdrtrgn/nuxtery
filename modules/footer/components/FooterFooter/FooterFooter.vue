@@ -28,8 +28,8 @@ const data = [
 </script>
 
 <template>
-    <div class="py-12 px-24  bg-neutral-50">
-        <ul class="flex gap-12">
+    <div class="py-10 px-20  bg-neutral-50">
+        <ul class="flex gap-10">
             <li v-for="item in data" :key="item.href">
                 <a :href="item.href">
                     {{ item.text }}

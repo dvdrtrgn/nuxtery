@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class=" flex py-10 px-20 gap-12 ">
+    <div class=" flex py-10 px-20 gap-10 ">
         <FooterBodySubscribers></FooterBodySubscribers>
 
         <FooterBodyAbout></FooterBodyAbout>
