@@ -25,7 +25,7 @@ const toggle = () => (dev.value = !dev.value);
             <b>All data</b>
         </PreCollapse>
 
-        <button @click="toggle">Toggle dev bondaries</button>
+        <button @click="toggle">Toggle dev</button>
     </div>
 </template>
 
