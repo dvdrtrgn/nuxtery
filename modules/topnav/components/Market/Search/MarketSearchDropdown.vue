@@ -1,15 +1,13 @@
 <script setup lang="ts">
 
-const props = defineProps({
-    open: { type: Boolean, required: true },
-});
+const props = defineProps<{
+    open: false,
+}>();
 
 // DATA
-
 const $searchEl = ref(null);
 
 // WATCH
-
 watchEffect(() => {
     if (props.open) {
         nextTick(() => $searchEl.value.focus());
@@ -19,7 +17,7 @@ watchEffect(() => {
 </script>
 
 <template>
-    <div v-show="props.open" id="MarketSearchDropDown">
+    <div v-show="open" id="MarketSearchDropDown">
         <form @submit.prevent>
             <input
                 ref="$searchEl"
