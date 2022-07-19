@@ -1,11 +1,19 @@
 <script setup lang="ts">
 
-const props = defineProps({
-    data: { type: Object, required: true },
-});
+defineProps<{
+    topItems: {
+        items: object[],
+    },
+    sections: {
+        industries: object,
+        sponsored_content: object,
+        events: object,
+        products: object,
+        publications: object,
+    },
+}>();
 
 // DATA
-const { topItems, sections } = props.data;
 const dropdownOpen = ref(false);
 const $parent = ref(null);
 
@@ -32,10 +40,15 @@ onClickOutside($parent, () => setDropdown(false));
         <MarketSiteLinksDropdownMenu
             v-if="dropdownOpen"
             id="MarketSiteLinksDropdownMenu"
-            :data="sections"
+            :industries="sections.industries"
+            :sponsored-content="sections.sponsored_content"
+            :events="sections.events"
+            :products="sections.products"
+            :publications="sections.publications"
         >
             <MarketSiteLinksBar
-                class="inside" :data="topItems"
+                class="inside"
+                :data="topItems"
             ></MarketSiteLinksBar>
         </MarketSiteLinksDropdownMenu>
     </div>

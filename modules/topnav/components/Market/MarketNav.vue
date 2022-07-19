@@ -22,7 +22,10 @@ const topnav = props.data;
             :text="suboffer.text"
         ></MarketSubOffer>
 
-        <MarketSiteLinks :data="topnav"></MarketSiteLinks>
+        <MarketSiteLinks
+            :top-items="topnav.topItems"
+            :sections="topnav.sections"
+        ></MarketSiteLinks>
 
         <MarketSearch></MarketSearch>
     </div>

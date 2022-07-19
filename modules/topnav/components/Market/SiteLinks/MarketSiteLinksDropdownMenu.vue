@@ -1,33 +1,36 @@
 <script setup lang="ts">
 
-const props = defineProps({
-    data: { type: Object, required: true },
-});
+defineProps<{
+    industries: object,
+    sponsoredContent: object,
+    events: object,
+    products: object,
+    publications: object,
+}>();
 
 </script>
 
 <template>
     <div dev-inset>
-        <slot>
-            <!-- inside topNav -->
-        </slot>
-        <MarketSiteLinksMenuGrid :data="props.data.industries">
+        <slot><!-- inside topNav --></slot>
+
+        <MarketSiteLinksMenuGrid :data="industries">
             <b>Top sections / industries</b>
         </MarketSiteLinksMenuGrid>
 
-        <MarketSiteLinksMenuGrid :data="props.data.sponsored_content">
+        <MarketSiteLinksMenuGrid :data="sponsoredContent">
             <b>Top sections / sponsored_content</b>
         </MarketSiteLinksMenuGrid>
 
-        <MarketSiteLinksMenuGrid :data="props.data.events">
+        <MarketSiteLinksMenuGrid :data="events">
             <b>Top sections / events</b>
         </MarketSiteLinksMenuGrid>
 
-        <MarketSiteLinksMenuGrid :data="props.data.products">
+        <MarketSiteLinksMenuGrid :data="products">
             <b>Top sections / products</b>
         </MarketSiteLinksMenuGrid>
 
-        <MarketSiteLinksMenuGrid :data="props.data.publications">
+        <MarketSiteLinksMenuGrid :data="publications">
             <b>Top sections / publications</b>
         </MarketSiteLinksMenuGrid>
     </div>
