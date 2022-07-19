@@ -1,20 +1,24 @@
 <script setup lang="ts">
+
 const nav = useRouteExtract();
+
 </script>
 
 <template>
-    <nav the-nav>
-        <NuxtLink
-            v-for="item in nav" :key="item.path"
-            :to="item.path"
-        >
-            {{ item.name }}
-        </NuxtLink>
-    </nav>
+    <header dev-header>
+        <nav dev-nav>
+            <NuxtLink
+                v-for="item in nav" :key="item.path"
+                :to="item.path"
+            >
+                {{ item.name }}
+            </NuxtLink>
+        </nav>
+    </header>
 </template>
 
 <style lang="scss">
-[the-nav] {
+[dev-nav] {
     background-color: #eee;
     box-shadow: 0 0 1em silver;
     display: flex;

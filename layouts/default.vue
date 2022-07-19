@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import '~/assets/styles/tailwind.css';
+import DevHeader from '~~/components/DevHeader.vue';
 
 useTitleHelper();
 
@@ -7,13 +8,11 @@ useTitleHelper();
 
 <template>
     <div default-template>
-        <header>
-            <TheNav />
-        </header>
+        <DevHeader></DevHeader>
 
         <slot></slot>
 
-        <TheFooter />
+        <DevFooter></DevFooter>
     </div>
 </template>
 
@@ -28,17 +27,17 @@ html {
         margin-top: $headerHeight * 1;
         margin-bottom: $footerHeight * 1.2;
     }
-    header, footer {
+    [dev-header], [dev-footer] {
         left: 0;
         position: fixed;
         width: 100%;
     }
 
-    header {
+    [dev-header] {
         top: 0;
         height: $headerHeight;
     }
-    footer {
+    [dev-footer] {
         bottom: 0;
         height: $footerHeight;
     }

@@ -7,7 +7,7 @@ const vitals = computed(() => {
 </script>
 
 <template>
-    <footer>
+    <footer dev-footer>
         <client-only>
             <code>runtime{{ configJson }} <br />route{{ vitals }} </code>
         </client-only>
@@ -15,7 +15,7 @@ const vitals = computed(() => {
 </template>
 
 <style lang="scss">
-footer {
+[dev-footer] {
     background-color: #eee;
     box-shadow: 0 0 1em silver;
     overflow: scroll;
