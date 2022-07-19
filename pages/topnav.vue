@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 import ModTopnav from '~/modules/topnav/ModTopnav.vue';
+
 import topnav from '~/data/adhoc/topnav.js';
 
 const url = '/api/mock/article';
