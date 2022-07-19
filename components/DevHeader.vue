@@ -5,16 +5,18 @@ const nav = useRouteExtract();
 </script>
 
 <template>
-    <header dev-header>
-        <nav dev-nav>
-            <NuxtLink
-                v-for="item in nav" :key="item.path"
-                :to="item.path"
-            >
-                {{ item.name }}
-            </NuxtLink>
-        </nav>
-    </header>
+    <ClientOnly>
+        <header dev-header>
+            <nav dev-nav>
+                <NuxtLink
+                    v-for="item in nav" :key="item.path"
+                    :to="item.path"
+                >
+                    {{ item.name }}
+                </NuxtLink>
+            </nav>
+        </header>
+    </ClientOnly>
 </template>
 
 <style lang="scss">
