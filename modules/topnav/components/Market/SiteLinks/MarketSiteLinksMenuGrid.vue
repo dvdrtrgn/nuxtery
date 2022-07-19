@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ensureArray } from './ensureArray';
+import { ensureArray } from '~/modules/topnav/utils/ensureArray';
 
 const props = defineProps({
     data: { type: Object, required: true },
