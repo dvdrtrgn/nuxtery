@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 const props = defineProps({
     data: { type: Array[''], required: true },
 });

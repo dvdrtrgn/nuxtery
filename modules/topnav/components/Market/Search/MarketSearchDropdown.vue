@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 const props = defineProps({
     open: { type: Boolean, required: true },
 });

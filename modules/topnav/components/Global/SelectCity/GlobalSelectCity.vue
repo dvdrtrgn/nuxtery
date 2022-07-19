@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import citydata from '~/data/adhoc/city-dropdown';
 // interface Props {}
 // const props = defineProps<Props>();
@@ -28,6 +29,3 @@ onClickOutside($parent, () => setDropdown(false));
         ></GlobalSelectCityMenu>
     </div>
 </template>
-
-<style lang="scss">
-</style>

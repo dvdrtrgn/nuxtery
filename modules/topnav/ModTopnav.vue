@@ -18,7 +18,7 @@ const toggle = () => (dev.value = !dev.value);
         <div id="TopNav" dev-inset>
             <GlobalSiteNav></GlobalSiteNav>
 
-            <MarketNav :data="data"></MarketNav>
+            <MarketNav :data="props.data"></MarketNav>
         </div>
 
         <PreCollapse v-show="dev" dev-inset :data="topnav">
