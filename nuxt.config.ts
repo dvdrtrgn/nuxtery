@@ -25,6 +25,7 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '~/modules/article',
         '~/modules/topnav',
+        '~/modules/footer',
         '~/modules/tv',
     ],
     typescript: {
