@@ -1,42 +1,27 @@
 <script setup lang="ts">
-const data = [
-    {
-        href: '/useragreement',
-        text: 'User Agreement',
-    },
-    {
-        href: '/privacy',
-        text: 'Privacy Policy',
-    },
-    {
-        href: '/privacy#VII',
-        text: 'Ad Choices',
-    },
-    {
-        href: '/privacy#X',
-        text: 'Your California Privacy Rights',
-    },
-    {
-        href: '/useragreement',
-        text: 'User Agreement',
-    },
-    {
-        href: '/useragreement',
-        text: 'User Agreement',
-    },
-];
+
+const props = defineProps({
+    data: { type: Object, required: true },
+});
+
 </script>
 
 <template>
-    <div class="py-10 px-20  bg-neutral-50">
-        <ul class="flex gap-10">
-            <li v-for="item in data" :key="item.href">
+    <div
+        class="
+            p-10 md:px-20
+            bg-neutral-50
+        "
+    >
+        <ul class=" md:flex gap-20 ">
+            <li v-for="item in props.data.list" :key="item.href">
                 <a :href="item.href">
                     {{ item.text }}
                 </a>
             </li>
         </ul>
-        <p>
+
+        <p class="mt-10">
             © 2022 American City Business Journals. All rights reserved.
             Use of and/or registration on any portion
             of this site constitutes acceptance of our
