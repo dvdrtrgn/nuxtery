@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import DateUtil from '~/utils/dateUtil';
+
 const props = {
     data: {
         'contact_name': 'Greg Ryan',
@@ -14,7 +16,11 @@ const props = {
 </script>
 
 <template>
-    <div class="p-10 md:px-20 space-x-10 flex">
+    <BrowserDump>
+        {{ DateUtil.sample }}
+    </BrowserDump>
+
+    <div class="p-10 md:px-20 space-x-10 flex items-center ">
         <div class="mock-pic  bg-neutral-300">
             <img
                 :src="props.data.photo_headshot_url"
