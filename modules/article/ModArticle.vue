@@ -29,7 +29,7 @@ data.value.correction = 'Sometimes we make mistakes and need to correct them.';
 </script>
 
 <template>
-    <div vue-article>
+    <div vue-article style="margin: auto; max-width: 1024px;">
         <ArticleHeader></ArticleHeader>
 
         <FeaturedMedia></FeaturedMedia>
@@ -44,7 +44,9 @@ data.value.correction = 'Sometimes we make mistakes and need to correct them.';
             </ArticleCorrection>
         </div>
 
-        <h1>Data</h1>
+        <h1 class=" text-5xl font-bold font-serif bg-rose-100 ">
+            Data
+        </h1>
 
         <h2>JOURNAL / MARKET</h2>
         <div dev-inset>

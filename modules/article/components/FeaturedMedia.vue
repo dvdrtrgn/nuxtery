@@ -16,6 +16,7 @@ const props = {
     <div class="px-10 md:px-20">
         <div
             class=" mock-media   bg-slate-400 mb-5   aspect-video  "
+            style="max-height: 480px"
         >
             <img
                 class=" object-fill "
