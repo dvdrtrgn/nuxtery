@@ -1,49 +1,35 @@
 <script setup lang="ts">
-/*
-const props = defineProps({
-    data: { type: Object, required: true },
-});
-*/
+
+const props = {
+    title: 'Subscribers',
+    list: [
+        {
+            track: '2016 Footer : Manage your Account',
+            href: '/myaccount?market=bizjournals',
+            text: 'Manage your Account',
+        },
+        {
+            track: '2016 Footer : Manage My Advertising',
+            href: 'https://www.bizjournals.com/ads',
+            text: 'Manage My Advertising',
+        },
+        {
+            track: '2016 Footer : Book of Lists',
+            href: 'https://www.bizjournals.com/book-of-lists',
+            text: 'Book of Lists',
+        },
+    ],
+};
+
 </script>
 
 <template>
     <div>
-        <div class="1/1 subscriber-promo md__1/4">
-            <h4 class="link-list-title">
-                Subscribers
+        <div class=" subscriber-promo ">
+            <h4 class="link-list-title font-bold">
+                {{ props.title }}
             </h4>
-            <div class="row">
-                <div class="1/1">
-                    <ul class="link-list">
-                        <li data-ct="2016 Footer : Manage your Account">
-                            <a href="/myaccount?market=bizjournals">
-                                <span
-                                    class="link-list-item__title"
-                                >Manage
-                                    your Account</span>
-                            </a>
-                        </li>
-                        <li
-                            data-ct="2016 Footer : Manage My Advertising"
-                        >
-                            <a href="https://www.bizjournals.com/ads">
-                                <span
-                                    class="link-list-item__title"
-                                >Manage
-                                    My Advertising</span>
-                            </a>
-                        </li>
-                        <li data-ct="2016 Footer : Book of Lists">
-                            <a
-                                href="https://www.bizjournals.com/book-of-lists"
-                            >
-                                <span class="link-list-item__title">Book
-                                    of Lists</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <FooterListLinks :list="props.list"></FooterListLinks>
         </div>
     </div>
 </template>
