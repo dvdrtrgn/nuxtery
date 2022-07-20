@@ -12,7 +12,7 @@ const props = defineProps({
             Follow Us
         </h4>
 
-        <FooterListSocials :list="props.data"></FooterListSocials>
+        <FooterListSocials :list="props.data.follow"></FooterListSocials>
 
         <hr class="my-5" />
 
@@ -21,11 +21,7 @@ const props = defineProps({
                 Newsletters
             </h4>
             <FooterListLinks
-                :list="[{
-                    track: '2016 Footer : Sign Up Now',
-                    href: 'https://www.bizjournals.com/account/bizjournals/newsletters',
-                    text:'Sign Up Now'
-                }]"
+                :list="props.data.signup"
             ></FooterListLinks>
         </div>
     </div>

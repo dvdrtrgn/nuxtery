@@ -9,8 +9,8 @@ const props = defineProps({
 <template>
     <ul
         class=" social-follow-bizj
-                    mx-8 my-2 gap-x-2 gap-y-4
-                    grid grid-cols-2 "
+                mx-8 my-2 gap-x-2 gap-y-4
+                grid grid-cols-2 "
     >
         <li
             v-for="item in props.list"
