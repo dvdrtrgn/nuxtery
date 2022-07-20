@@ -27,6 +27,10 @@ onUnmounted(() => {
 
 <template>
     <div vue-article>
+        <ArticleHeader></ArticleHeader>
+
+        <FeaturedMedia></FeaturedMedia>
+
         <h1>Data</h1>
 
         <h2>JOURNAL / MARKET</h2>
