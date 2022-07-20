@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <ul class="link-list">
+    <ul class="link-list space-y-2">
         <li
             v-for="item in props.list"
             :key="item.text"

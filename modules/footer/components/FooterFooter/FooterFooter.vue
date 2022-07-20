@@ -29,14 +29,14 @@ const data = [
 
 <template>
     <div class="py-10 px-20  bg-neutral-50">
-        <ul class="flex gap-10">
+        <ul class="flex gap-20">
             <li v-for="item in data" :key="item.href">
                 <a :href="item.href">
                     {{ item.text }}
                 </a>
             </li>
         </ul>
-        <p>
+        <p class="mt-10">
             © 2022 American City Business Journals. All rights reserved.
             Use of and/or registration on any portion
             of this site constitutes acceptance of our
