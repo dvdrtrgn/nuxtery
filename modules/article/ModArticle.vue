@@ -33,6 +33,10 @@ onUnmounted(() => {
 
         <ArticleAuthor></ArticleAuthor>
 
+        <div class=" p-10 md:px-20 ">
+            <ContentDump :data="data.content"></ContentDump>
+        </div>
+
         <h1>Data</h1>
 
         <h2>JOURNAL / MARKET</h2>
@@ -62,7 +66,6 @@ onUnmounted(() => {
                     # items {{ data.content.length }}
                 </PreCollapse>
             </div>
-            <ContentDump :data="data.content" />
         </div>
 
         <h2>RANDOS / METADATA</h2>

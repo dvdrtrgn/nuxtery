@@ -27,8 +27,8 @@ onBeforeMount(() => {
 
 <!-- eslint-disable vue/no-v-html -->
 <template>
-    <article>
-        <slot></slot>
+    <article class=" space-y-10 ">
+        <slot>wip</slot>
         <client-only>
             <component
                 :is="item.tag"
