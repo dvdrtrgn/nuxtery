@@ -11,41 +11,39 @@ const props = {
     },
 };
 
-const { data } = props;
-
 </script>
 
 <template>
-    <div class="px-10 md:p-20 space-x-10 flex">
-        <div class="mock-pic bg-neutral-300">
+    <div class="p-10 md:px-20 space-x-10 flex">
+        <div class="mock-pic  bg-neutral-300">
             <img
-                :src="data.photo_headshot_url"
-                alt="person"
-                style="height: 66px;"
+                :src="props.data.photo_headshot_url"
+                class=" aspect-square    w-24 h-24 "
+                :alt="props.data.contact_name"
             />
         </div>
         <div class="mock-text">
             <div class="mock-line1">
-                <span class="mock-name">
+                <span class="mock-name  ">
                     <a
-                        :href="data.social1" class="
-                        text-green-700"
+                        :href="props.data.social1"
+                        class="text-green-700"
                     >
-                        {{ data.contact_name }}
+                        {{ props.data.contact_name }}
                     </a>
                 </span>
                 –
-                <span class="mock-title">
-                    {{ data.contact_title }}
+                <span class="mock-title  ">
+                    {{ props.data.contact_title }}
                 </span>
             </div>
-            <div class="mock-line2">
+            <div class="mock-line2   flex flex-wrap gap-x-5">
                 <span class="mock-date">
-                    {{ data.updated_at }}
+                    {{ props.data.updated_at }}
                 </span>
-                <span class="mock-update">
+                <span class="mock-update   ">
                     <b> Updated </b>
-                    {{ data.created_at }}
+                    {{ props.data.created_at }}
                 </span>
             </div>
         </div>

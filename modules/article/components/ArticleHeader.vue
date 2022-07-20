@@ -26,52 +26,28 @@ const props = {
     },
 };
 
-const { data } = props;
-
 </script>
 
 <template>
     <div class="p-10 md:p-20 space-y-10">
-        <div
-            class=" mock-channel
-                flex gap-5 font-bold
-            "
-        >
-            <div class=" mock-primary text-green-700 ">
-                {{ data.channel.primary }}
+        <div class=" mock-channel   flex flex-wrap gap-x-5   font-bold  ">
+            <div class=" mock-primary   text-green-700 ">
+                {{ props.data.channel.primary }}
             </div>
-            |
             <div class=" mock-overline ">
-                {{ data.channel.overline }}
+                {{ props.data.channel.overline }}
             </div>
         </div>
         <div
-            class=" mock-headline
-                text-5xl font-bold font-serif
-            "
+            class=" mock-headline   text-5xl font-bold font-serif "
         >
-            {{ data.headlines.main }}
+            {{ props.data.headlines.main }}
         </div>
-        <div
-            class=" mock-subhead
-                text-3xl font-bold font-serif
-                text-neutral-500
-            "
-        >
-            {{ data.headlines.sub }}
+        <div class=" mock-subhead   text-3xl font-bold font-serif text-neutral-500 ">
+            {{ props.data.headlines.sub }}
         </div>
-        <div
-            class=" mock-social
-                flex flex-wrap
-                gap-5 pt-10
-            "
-        >
-            <button>social</button>
-            <button>social</button>
-            <button>social</button>
-            <button>social</button>
-            <button>social</button>
-        </div>
+
+        <ArticleHeaderSocial></ArticleHeaderSocial>
     </div>
 </template>
 
