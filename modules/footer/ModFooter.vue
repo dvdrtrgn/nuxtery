@@ -2,7 +2,7 @@
 
 const props = {
     data: {
-        header: {
+        head: {
             logo: {
                 track: '2016 Footer : Logo',
                 src: 'https://assets.bizjournals.com/static/img/logos/horizontal-black/bizjournals-logo.svg',
@@ -147,32 +147,34 @@ const props = {
                 },
             ],
         },
-        footer: [
-            {
-                href: '/useragreement',
-                text: 'User Agreement',
-            },
-            {
-                href: '/privacy',
-                text: 'Privacy Policy',
-            },
-            {
-                href: '/privacy#VII',
-                text: 'Ad Choices',
-            },
-            {
-                href: '/privacy#X',
-                text: 'Your California Privacy Rights',
-            },
-            {
-                href: '/useragreement',
-                text: 'User Agreement',
-            },
-            {
-                href: '/useragreement',
-                text: 'User Agreement',
-            },
-        ],
+        foot: {
+            list: [
+                {
+                    href: '/useragreement',
+                    text: 'User Agreement',
+                },
+                {
+                    href: '/privacy',
+                    text: 'Privacy Policy',
+                },
+                {
+                    href: '/privacy#VII',
+                    text: 'Ad Choices',
+                },
+                {
+                    href: '/privacy#X',
+                    text: 'Your California Privacy Rights',
+                },
+                {
+                    href: '/useragreement',
+                    text: 'User Agreement',
+                },
+                {
+                    href: '/useragreement',
+                    text: 'User Agreement',
+                },
+            ],
+        },
     },
 };
 
@@ -180,10 +182,10 @@ const props = {
 
 <template>
     <footer class=" bg-neutral-100 ">
-        <FooterHeader :data="props.data.header"></FooterHeader>
+        <FooterHead :data="props.data.head"></FooterHead>
 
         <FooterBody :data="props.data.body"></FooterBody>
 
-        <FooterFooter :data="props.data.footer"></FooterFooter>
+        <FooterFoot :data="props.data.foot"></FooterFoot>
     </footer>
 </template>

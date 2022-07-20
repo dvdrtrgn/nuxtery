@@ -9,7 +9,7 @@ const props = defineProps({
 <template>
     <div class="py-10 px-20  bg-neutral-50">
         <ul class="flex gap-20">
-            <li v-for="item in props.data" :key="item.href">
+            <li v-for="item in props.data.list" :key="item.href">
                 <a :href="item.href">
                     {{ item.text }}
                 </a>
