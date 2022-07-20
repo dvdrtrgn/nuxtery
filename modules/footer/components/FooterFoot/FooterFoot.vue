@@ -7,14 +7,20 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="py-10 px-20  bg-neutral-50">
-        <ul class="flex gap-20">
+    <div
+        class="
+            p-10 md:px-20
+            bg-neutral-50
+        "
+    >
+        <ul class=" md:flex gap-20 ">
             <li v-for="item in props.data.list" :key="item.href">
                 <a :href="item.href">
                     {{ item.text }}
                 </a>
             </li>
         </ul>
+
         <p class="mt-10">
             © 2022 American City Business Journals. All rights reserved.
             Use of and/or registration on any portion

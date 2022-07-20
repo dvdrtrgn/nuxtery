@@ -7,7 +7,12 @@ const props = defineProps({
 </script>
 
 <template>
-    <section class=" flex py-10 px-20 gap-10 ">
+    <section
+        class="
+            p-10 gap-10
+            md:flex md:px-20
+        "
+    >
         <FooterBodySubscribe :data="props.data.subscribers"></FooterBodySubscribe>
 
         <FooterBodyAbout :data="props.data.about"></FooterBodyAbout>

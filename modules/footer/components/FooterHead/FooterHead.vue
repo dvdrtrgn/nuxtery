@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <header class="p-20 bg-neutral-200">
+    <header class="p-10 md:p-20 bg-neutral-200">
         <FooterHeadBack2top></FooterHeadBack2top>
 
         <FooterHeadNav :data="props.data"></FooterHeadNav>

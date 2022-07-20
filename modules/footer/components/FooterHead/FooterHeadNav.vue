@@ -7,7 +7,11 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="flex gap-40">
+    <div
+        class="
+            md:flex gap-40
+        "
+    >
         <div class="footer__logo">
             <a
                 class="footer__logo-link"
@@ -23,7 +27,7 @@ const props = defineProps({
             </a>
         </div>
         <div>
-            <ul class="flex gap-12">
+            <ul class=" md:flex gap-12 ">
                 <li
                     v-for="item in props.data.list"
                     :key="item.text"

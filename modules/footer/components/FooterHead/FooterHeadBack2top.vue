@@ -15,7 +15,7 @@ function back2top () {
         >
             <button
                 class="
-                    absolute top-0 right-0
+                    absolute -top-10 -right-10
                 " @click="back2top"
             >
                 Back to Top
