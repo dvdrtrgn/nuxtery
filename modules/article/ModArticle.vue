@@ -31,6 +31,8 @@ onUnmounted(() => {
 
         <FeaturedMedia></FeaturedMedia>
 
+        <ArticleAuthor></ArticleAuthor>
+
         <h1>Data</h1>
 
         <h2>JOURNAL / MARKET</h2>

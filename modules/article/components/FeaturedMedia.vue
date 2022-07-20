@@ -7,10 +7,11 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="p-10 md:p-20">
+    <div class="px-10 md:px-20">
         <div
             class=" mock-media
                 bg-slate-400
+                mb-5
             "
         >
             <img src="#" alt="burger" style="height: 333px;" />
