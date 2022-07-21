@@ -49,7 +49,8 @@ const props = {
             </div>
         </div>
     </div>
-    <BrowserDump>
+
+    <BrowserDump label="DateUtil">
         <b>DateUtil.specimen</b>
         {{ DateUtil.specimen }}
         <p>
