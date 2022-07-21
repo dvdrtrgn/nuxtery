@@ -6,20 +6,11 @@ Ease converting Eastern time to UTC for frontend uses.
 
  */
 
+// GENERICS
+
 const fixSafari = (str: string) => str.replace(/-/g, '/');
 const isValid = (date: Date) => (date instanceof Date) && (`${date}` !== 'Invalid Date');
 const userZone = () => Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-// BEGIN
-
-const BIZJ_OFFSET = 5;
-const current = new Date().toString();
-const winter = safeDate('2000-01-01 00:00:00').toString();
-const summer = safeDate('2022-07-01 00:00:00').toString();
-
-const currentOffset = getOffset(current);
-const standardOffset = getOffset(winter);
-const daylightOffset = getOffset(summer);
 
 function safeDate (arg: string | number | Date) {
     const date = new Date(arg);
@@ -27,43 +18,54 @@ function safeDate (arg: string | number | Date) {
     if (isValid(date)) {
         return date;
     } else {
-        return new Date(fixSafari(arg.toString()));
+        // a DB string? ex: 2000-01-01 (safari needs slashes)
+        arg = fixSafari(arg.toString());
+        return new Date(arg);
     }
 }
+
+// SPECIFICS
+
+const BIZJ_STD_OFFSET = 5;
+const current = new Date().toString();
+const daylight = safeDate('2022-07-01 00:00:00').toString();
+const standard = safeDate('2000-01-01 00:00:00').toString();
 
 function getOffset (date: string | number | Date) {
     return safeDate(date).getTimezoneOffset() / 60; // hours from GMT
 }
 
-export function fromBizj (date: string | number | Date) {
+export function bizj2utc (date: string | number | Date) {
     const input = safeDate(date);
-    input.setHours(input.getHours() + BIZJ_OFFSET);
+    input.setHours(input.getHours() + BIZJ_STD_OFFSET);
     return input;
 }
 
-export function toBizj (date: string | number | Date) {
+export function utc2bizj (date: string | number | Date) {
     const input = safeDate(date);
-    input.setHours(input.getHours() - BIZJ_OFFSET);
+    input.setHours(input.getHours() - BIZJ_STD_OFFSET);
     return input;
 }
 
-export const sample = {
+export const specimen = {
     zone: userZone(),
-    inputs: { winter, summer, current },
-    outputs: {
-        standardOffset,
-        daylightOffset,
-        currentOffset,
+    offsets: {
+        currentOffset: getOffset(current),
+        daylightOffset: getOffset(daylight),
+        standardOffset: getOffset(standard),
     },
-    baseStd: new Date(winter).toLocaleString(),
-    fromBizj: fromBizj(winter).toLocaleString(),
-    toBizj: toBizj(winter).toLocaleString(),
+    inputs: { current, daylight, standard },
+    outputs: {
+        baseStd: new Date(standard).toLocaleString(),
+        bizj2utc: bizj2utc(standard).toLocaleString(),
+        utc2bizj: utc2bizj(standard).toLocaleString(),
+    },
 };
 
 const DateUtil = {
-    fromBizj,
-    toBizj,
-    sample,
+    bizj2utc,
+    utc2bizj,
+    specimen,
 };
 
 export default DateUtil;

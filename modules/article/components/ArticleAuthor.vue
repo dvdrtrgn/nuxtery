@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import DateUtil from '~/utils/dateUtil';
 
 const props = {
@@ -16,10 +15,6 @@ const props = {
 </script>
 
 <template>
-    <BrowserDump>
-        {{ DateUtil.sample }}
-    </BrowserDump>
-
     <div class="p-10 md:px-20 space-x-10 flex items-center ">
         <div class="mock-pic  bg-neutral-300">
             <img
@@ -44,16 +39,26 @@ const props = {
                 </span>
             </div>
             <div class="mock-line2   flex flex-wrap gap-x-5">
-                <span class="mock-date">
-                    {{ props.data.updated_at }}
-                </span>
-                <span class="mock-update   ">
+                <div class="mock-date">
+                    <time>{{ props.data.updated_at }}</time>
+                </div>
+                <div class="mock-update   ">
                     <b> Updated </b>
-                    {{ props.data.created_at }}
-                </span>
+                    <time>{{ props.data.created_at }}</time>
+                </div>
             </div>
         </div>
     </div>
+    <BrowserDump>
+        <b>DateUtil.specimen</b>
+        {{ DateUtil.specimen }}
+        <p>
+            isAdvertorial || isNative <br />
+            publish date only for sponsored content <br />
+            publish date with relative revision time <br />
+            base case, relative publish time
+        </p>
+    </BrowserDump>
 </template>
 
 <!--
