@@ -8,7 +8,7 @@ const props = defineProps({
 //
 // DATA
 //
-const data = props.data;
+const data = ref(props.data);
 const htmlClass = useClassHelper(':root');
 const looseItems = ref([]);
 /*
@@ -23,11 +23,30 @@ onUnmounted(() => {
     htmlClass.remove('dev');
 });
 
+// test correction with ...
+data.value.correction = 'Sometimes we make mistakes and need to correct them.';
+
 </script>
 
 <template>
-    <div vue-article>
-        <h1>Data</h1>
+    <div vue-article style="margin: auto; max-width: 1024px;">
+        <ArticleHeader></ArticleHeader>
+
+        <FeaturedMedia></FeaturedMedia>
+
+        <ArticleAuthor></ArticleAuthor>
+
+        <div class=" p-10 md:px-20 ">
+            <ContentDump :data="data.content"></ContentDump>
+
+            <ArticleCorrection v-if="data.correction">
+                {{ data.correction }}
+            </ArticleCorrection>
+        </div>
+
+        <h1 class=" text-5xl font-bold font-serif bg-rose-100 ">
+            Data
+        </h1>
 
         <h2>JOURNAL / MARKET</h2>
         <div dev-inset>
@@ -46,18 +65,6 @@ onUnmounted(() => {
             <b>leadins: </b>
             ex. {{ data.leadins.data[0].group_class }}
         </PreCollapse>
-
-        <h2>AUTHORS / CONTENT </h2>
-        <div dev-inset>
-            <AuthorList :authors="data.authors" />
-            <div dev-grid>
-                <b>content: </b>
-                <PreCollapse :data="data.content">
-                    # items {{ data.content.length }}
-                </PreCollapse>
-            </div>
-            <ContentDump :data="data.content" />
-        </div>
 
         <h2>RANDOS / METADATA</h2>
         <div dev-inset>
