@@ -20,11 +20,15 @@ const dev = useToggle();
             <MarketNav :data="topnav"></MarketNav>
         </div>
 
-        <PreCollapse v-show="dev.active" dev-inset :data="topnav">
-            <b>All data</b>
-        </PreCollapse>
+        <button @click="dev.toggle">Toggle borders</button>
 
-        <button @click="dev.toggle">Toggle dev</button>
+        <BrowserDump label="topnav">
+            <template #dev="{toggle, active}">
+                {{ toggle }}                {{ active }}
+            </template>
+            <b>All data</b>
+            {{ topnav }}
+        </BrowserDump>
     </div>
 </template>
 
