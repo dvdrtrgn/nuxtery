@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { debounceFilter } from '@vueuse/core';
 
+definePageMeta({ layout: 'default-dev' });
+
 const slow = debounceFilter(30, { maxWait: 333 });
 const fast = debounceFilter(15, { maxWait: 333 });
 

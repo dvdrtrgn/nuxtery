@@ -1,7 +1,11 @@
 <script setup lang="ts">
-const route = useRoute();
-definePageMeta({ samplePath: '/mpls/2022/02/01' });
 
+definePageMeta({
+    samplePath: '/mpls/2022/02/01',
+    layout: 'default-dev',
+});
+
+const route = useRoute();
 const [year, month, day] = route.params.date;
 
 </script>
@@ -13,7 +17,3 @@ const [year, month, day] = route.params.date;
         <pre>Date: {{ { year, month, day } }}</pre>
     </div>
 </template>
-
-<!-- <style lang="scss">
-// foo
-</style> -->

@@ -59,6 +59,11 @@ onMounted(() => {
     gap: 1rem;
     font-family: sans-serif;
     padding: 1rem;
+
+    select {
+        color: gray;
+        font-size: 90%;
+    }
 }
 
 </style>

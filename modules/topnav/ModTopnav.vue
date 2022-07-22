@@ -14,7 +14,7 @@ const borders = useToggle();
 
 <template>
     <div :class="{dev: borders.active}">
-        <div id="TopNav" dev-inset>
+        <div id="TopNav">
             <GlobalSiteNav></GlobalSiteNav>
 
             <MarketNav :data="topnav"></MarketNav>

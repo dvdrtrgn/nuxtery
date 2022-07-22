@@ -3,7 +3,7 @@
 import ModFooter from '~~/modules/footer/ModFooter.vue';
 import footer from '~/data/adhoc/footer.js';
 
-definePageMeta({ layout: 'default-wrap' });
+definePageMeta({ layout: 'default-dev' });
 
 </script>
 

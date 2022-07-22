@@ -4,8 +4,10 @@ import ModArticle from '~/modules/article/ModArticle.vue';
 const url = '/api/mock/article';
 const articleData = ref(await $fetch(url) as any);
 
-definePageMeta({ layout: 'default' });
+definePageMeta({ layout: 'default-dev-tw' });
+
 useTitleHelper('TITLE: ' + articleData.value.title);
+
 </script>
 
 <template>
