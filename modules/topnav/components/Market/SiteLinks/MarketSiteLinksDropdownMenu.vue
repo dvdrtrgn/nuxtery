@@ -11,7 +11,7 @@ defineProps<{
 </script>
 
 <template>
-    <div dev-inset>
+    <div>
         <slot><!-- inside topNav --></slot>
 
         <MarketSiteLinksMenuGrid :data="industries">
