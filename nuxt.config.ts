@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         '@/assets/styles/coreinit/_index.scss',
     ],
     modules: [
-        // '@nuxtjs/tailwindcss',
+        '@nuxtjs/tailwindcss',
         '@vueuse/nuxt',
         '~/modules/article',
         '~/modules/topnav',
