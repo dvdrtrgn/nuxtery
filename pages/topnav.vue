@@ -7,7 +7,8 @@ import topnav from '~/data/adhoc/topnav.js';
 const url = '/api/mock/article';
 const articleData = ref(await $fetch(url) as any);
 
-definePageMeta({ layout: 'default' });
+definePageMeta({ layout: 'default-dev' });
+
 useTitleHelper('TITLE: ' + articleData.value.title);
 
 </script>
