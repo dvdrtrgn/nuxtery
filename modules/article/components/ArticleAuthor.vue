@@ -52,13 +52,21 @@ const props = {
 
     <BrowserDump label="DateUtil">
         <b>DateUtil.specimen</b>
-        {{ DateUtil.specimen }}
-        <p>
-            isAdvertorial || isNative <br />
-            publish date only for sponsored content <br />
-            publish date with relative revision time <br />
+        <pre>
+            {{ DateUtil.specimen }}
+        </pre>
+        <pre>
+            files
+            templates/article/common/author-collection.phtml
+            templates/article/partials/author-partner.phtml
+            templates/article/partials/date-time-info.phtml
+
+            notes
+            isAdvertorial || isNative
+            publish date only for sponsored content
+            publish date with relative revision time
             base case, relative publish time
-        </p>
+        </pre>
     </BrowserDump>
 </template>
 

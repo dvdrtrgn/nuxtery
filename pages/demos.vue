@@ -11,11 +11,15 @@ const fastClient = useMouseClient({ eventFilter: fast });
 
 <template>
     <div>
-        <code>pageXY: {{ pageXY }}</code>
-        <br />
-        <br />
-        <code>slowClient: {{ slowClient }}</code>
-        <br />
-        <code>fastClient: {{ fastClient }}</code>
+        <BrowserDump label="useMouse Demo">
+            <code>pageXY: {{ pageXY }}</code>
+            <br />
+            <br />
+            <code>slowClient: {{ slowClient }}</code>
+            <br />
+            <code>fastClient: {{ fastClient }}</code>
+        </BrowserDump>
+
+        <BrowserDumpDemo />
     </div>
 </template>

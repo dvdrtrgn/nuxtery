@@ -6,25 +6,26 @@ const props = defineProps({
 
 // DATA
 const topnav = props.data;
-const dev = useToggle();
+const borders = useToggle();
 
 // METHODS
 
 </script>
 
 <template>
-    <div :class="{dev: dev.active}">
+    <div :class="{dev: borders.active}">
         <div id="TopNav" dev-inset>
             <GlobalSiteNav></GlobalSiteNav>
 
             <MarketNav :data="topnav"></MarketNav>
         </div>
 
-        <PreCollapse v-show="dev.active" dev-inset :data="topnav">
-            <b>All data</b>
-        </PreCollapse>
+        <button @click="borders.handle">Toggle borders</button>
 
-        <button @click="dev.toggle">Toggle dev</button>
+        <BrowserDump label="Nav data">
+            <b>All data</b>
+            <pre>{{ topnav }}</pre>
+        </BrowserDump>
     </div>
 </template>
 

@@ -1,19 +1,18 @@
 <script setup lang="ts">
+
 import { makeListFromObject } from '~/utils/makeListFromObject';
 
-const props = defineProps({
-    data: { type: Object, required: true },
-});
+const props = defineProps <{data:any}>();
 
 //
 // DATA
 //
 const data = ref(props.data);
 const htmlClass = useClassHelper(':root');
-const looseItems = ref([]);
-/*
-HOOKS
-*/
+const looseItems = ref([]); // convert random properties on the root data
+//
+// HOOKS
+//
 onMounted(() => {
     htmlClass.add('dev');
     // look for non-object entries (randos)
@@ -37,7 +36,9 @@ data.value.correction = 'Sometimes we make mistakes and need to correct them.';
         <ArticleAuthor></ArticleAuthor>
 
         <div class=" p-10 md:px-20 ">
-            <ContentDump :data="data.content"></ContentDump>
+            <ArticleContentDump :data="data.content">
+                <!-- just the article itself -->
+            </ArticleContentDump>
 
             <ArticleCorrection v-if="data.correction">
                 {{ data.correction }}
@@ -49,43 +50,34 @@ data.value.correction = 'Sometimes we make mistakes and need to correct them.';
         </h1>
 
         <h2>JOURNAL / MARKET</h2>
-        <div dev-inset>
-            <PreCollapse :data="data.journal">
-                <b>journal: </b>
-                ex. {{ data.journal.journal_name }}
-            </PreCollapse>
-            <PreCollapse :data="data.market">
-                <b>market: </b>
-                ex. {{ data.market.market_name }}
-            </PreCollapse>
-        </div>
 
-        <!-- LEADINS -->
+        <PreCollapse :data="data.journal">
+            <b>journal ex. {{ data.journal.journal_name }} </b>
+        </PreCollapse>
+        <PreCollapse :data="data.market">
+            <b>market ex. {{ data.market.market_name }} </b>
+        </PreCollapse>
+
+        <h2>LEADINS</h2>
+
         <PreCollapse :data="data.leadins" dev-inset>
-            <b>leadins: </b>
-            ex. {{ data.leadins.data[0].group_class }}
+            <b>leadins (like {{ data.leadins.data[0].group_class }}): </b>
         </PreCollapse>
 
         <h2>RANDOS / METADATA</h2>
-        <div dev-inset>
-            <PreCollapse :data="looseItems">
-                <b>randos: </b>
-                # items {{ looseItems.length }}
-            </PreCollapse>
-            <PreCollapse :data="data.metadata">
-                <b>metadata: </b>
-                # items {{ data.metadata.data.length }}
-            </PreCollapse>
-        </div>
 
-        <div dev-flex>
-            <h2>Article Data</h2>
-            <div dev-inset>
-                <PreCollapse :data="data">
-                    <b>All Data</b>
-                </PreCollapse>
-            </div>
-        </div>
+        <PreCollapse :data="looseItems">
+            <b>randos # items {{ looseItems.length }}</b>
+        </PreCollapse>
+        <PreCollapse :data="data.metadata">
+            <b>metadata # items {{ data.metadata.data.length }}</b>
+        </PreCollapse>
+
+        <h2>REMAINDER</h2>
+
+        <PreCollapse :data="data">
+            <b>All Data</b>
+        </PreCollapse>
     </div>
 </template>
 

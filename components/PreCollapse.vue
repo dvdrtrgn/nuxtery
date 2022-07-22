@@ -10,10 +10,12 @@ defineProps({
 </script>
 
 <template>
-    <details>
-        <summary><slot></slot></summary>
-        <pre>{{ data }}</pre>
-    </details>
+    <div dev-inset>
+        <details>
+            <summary><slot></slot></summary>
+            <pre>{{ data }}</pre>
+        </details>
+    </div>
 </template>
 
 <!-- <style lang="scss">

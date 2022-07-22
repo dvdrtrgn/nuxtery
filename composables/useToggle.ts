@@ -1,20 +1,28 @@
 /*
+
 # useToggle
 
-Helper for "toggle" handler and "active" value.
-Allows storage with label!
-*/
+Helper for simple switchable boolean.
+    toggle "handler"
+    value  "active"
 
+With a label, it will provide local persistance.
+
+*/
 import { useStorage } from '@vueuse/core';
 
-export default function (storeId?: string, initial?: boolean) {
+const safeLabel = (str: string) => str.replace(/[^a-z]*/gi, '');
+
+export default function (label?: string, initial?: boolean) {
+    let storeID = label;
     let active = ref(initial || false);
-    let toggle = () => (null);
 
-    if (storeId) {
-        active = useStorage(`toggle-${storeId}`, active);
+    const handle = () => (active.value = !active.value);
+
+    if (label) {
+        storeID = safeLabel(label).toLocaleLowerCase();
+        active = useStorage(`tgl-${storeID}`, active);
     }
-    toggle = () => (active.value = !active.value);
 
-    return reactive({ active, toggle });
+    return reactive({ active, handle, label, storeID });
 };
