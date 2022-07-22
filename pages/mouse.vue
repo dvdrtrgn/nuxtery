@@ -17,5 +17,9 @@ const fastClient = useMouseClient({ eventFilter: fast });
         <code>slowClient: {{ slowClient }}</code>
         <br />
         <code>fastClient: {{ fastClient }}</code>
+        <br />
+        <hr />
+        <br />
+        <BrowserDumpDemo></BrowserDumpDemo>
     </div>
 </template>

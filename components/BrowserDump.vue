@@ -1,14 +1,23 @@
 <script setup lang="ts">
 
-const props = defineProps<{ label?: string | null }>();
-//
-const dev = useToggle(props.label);
-
+const props = defineProps<{ label?: string }>();
+const flipper = useToggle(props.label);
+const data = {
+    ...props,
+    ...flipper,
+};
 </script>
 <template>
-    <slot name="dev" v-bind="dev"></slot>
     <ClientOnly>
-        <button @click="dev.toggle">{{ label || 'toggle' }}</button>
-        <pre v-if="dev.active"><slot></slot></pre>
+        <button @click="flipper.handle">
+            {{ label || 'toggle' }}
+        </button>
+
+        <div
+            v-if="flipper.active"
+            dev-inset
+        >
+            <slot v-bind="data"></slot>
+        </div>
     </ClientOnly>
 </template>

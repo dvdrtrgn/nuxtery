@@ -1,32 +1,32 @@
 /*
+
 # useMouseClient
 
-Modify vueuse to experiment with throttling.
+Copy vueuse useMouse to experiment with throttling.
+
 */
-export default function useMyMouse (options:any = {}) {
+export default function (options: any = {}) {
+    const { eventFilter } = options;
+
     const x = ref(0);
     const y = ref(0);
-    const {
-        eventFilter,
-    } = options;
-    const calls = ref(0);
-    const count = ref(0);
-    const accuracy = computed(
-        () => (count.value / calls.value * 100) | 0,
-    );
+    const calls = ref(1);
+    const count = ref(1);
+    const accuracy = computed(() => (count.value / calls.value * 100 | 0));
 
-    function updateMouse (evt:MouseEvent) {
+    function updateMouse (evt: MouseEvent) {
         x.value = evt.clientX;
         y.value = evt.clientY;
         count.value++;
     }
 
-    const updateMouseWrapper = (event:MouseEvent) => {
+    function updateMouseWrapper (event: MouseEvent) {
         calls.value++;
+
         return eventFilter === undefined
             ? updateMouse(event)
             : eventFilter(() => updateMouse(event), {} as any);
-    };
+    }
 
     onMounted(() => window.addEventListener('mousemove', updateMouseWrapper));
     onUnmounted(() => window.removeEventListener('mousemove', updateMouseWrapper));
