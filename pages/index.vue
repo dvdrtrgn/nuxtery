@@ -9,7 +9,7 @@ definePageMeta({ layout: 'default-wrap' });
 
 <template>
     <div>
-        <h1>hello world</h1>
+        <h1>hello mars</h1>
 
         <ModFooter :data="footer"></ModFooter>
     </div>
