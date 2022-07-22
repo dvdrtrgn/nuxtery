@@ -7,6 +7,7 @@ import DefaultDevVue from './default-dev.vue';
 <template>
     <div dev-template>
         <Script src="https://cdn.tailwindcss.com"></Script>
+        <center><i>using cdn.tailwindcss.com</i></center>
         <DefaultDevVue><slot></slot></DefaultDevVue>
     </div>
 </template>

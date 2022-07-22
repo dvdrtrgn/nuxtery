@@ -20,15 +20,17 @@ html {
     $headerHeight: 7vh;
     $footerHeight: 5vh;
 
-    body, [dev-template] {
+    body {
         margin: 0;
         margin-top: $headerHeight * 1;
         margin-bottom: $footerHeight * 1.2;
     }
     [dev-header], [dev-footer] {
+        font-size: 80%;
         left: 0;
         position: fixed;
         width: 100%;
+        z-index: 1;
     }
 
     [dev-header] {
