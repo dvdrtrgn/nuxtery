@@ -1,9 +1,13 @@
 <script setup lang="ts">
+
+import useRuntimeFED from '~~/composables/useRuntimeFED';
+
 const configJson = useRuntimeFED();
 const vitals = computed(() => {
     const { name, path, query } = useRoute();
     return { name, path, query };
 });
+
 </script>
 
 <template>

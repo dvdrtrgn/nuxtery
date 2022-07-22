@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import useRouteExtract from '~~/composables/useRouteExtract';
+
 const nav = useRouteExtract();
 
 </script>

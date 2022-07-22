@@ -1,4 +1,4 @@
-const _defaultMarketNavigation = {
+export const _defaultMarketNavigation = {
     'topItems': {
         'items': [
             {
@@ -193,7 +193,8 @@ const _defaultMarketNavigation = {
         },
     },
 };
-const _defaultNationalNavigation = {
+
+export const _defaultNationalNavigation = {
     'topItems': {
         'items': [
             {
