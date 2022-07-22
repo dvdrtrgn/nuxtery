@@ -40,10 +40,10 @@
             border: 1px dashed silver;
         }
     }
+}
 
-    [dev-inset] {
-        box-shadow: 0 0 0.5rem inset silver;
-        overflow: scroll;
-        padding: 1em;
-    }
+[dev-inset] {
+    box-shadow: 0 0 0.5rem inset silver;
+    overflow: scroll;
+    padding: 1em;
 }
