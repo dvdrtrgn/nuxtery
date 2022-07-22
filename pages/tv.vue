@@ -2,7 +2,7 @@
 
 import ModTv from '~/modules/tv/ModTv.vue';
 
-definePageMeta({ layout: 'default-dev' });
+definePageMeta({ layout: 'default-date' });
 
 </script>
 
